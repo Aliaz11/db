@@ -1,5 +1,6 @@
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using db;
 
 namespace WinFormsApp3
 {
@@ -9,22 +10,16 @@ namespace WinFormsApp3
         {
          
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;  // You control the exact position
-            this.Location = new Point(550, 200);            // Set form location on screen (e.g., x=100, y=100)
-            this.Size = new Size(1100,700 );                  // Set fixed size
+            this.StartPosition = FormStartPosition.Manual;  
+            this.Location = new Point(550, 200);            
+            this.Size = new Size(1100,700 );                 
 
-            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Prevent resizing
-            this.MaximizeBox = false;                           // Disable maximize button
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form4 form4 = new Form4();
-            form4.Show();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; 
+            this.MaximizeBox = false;                          
 
         }
+
+
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -52,7 +47,13 @@ namespace WinFormsApp3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile("C:\\Users\\ALI\\Downloads\\that.png");
+            byte[] imageBytes = Resource1.that; 
+            using (var ms = new System.IO.MemoryStream(imageBytes))
+            {
+                var image = System.Drawing.Image.FromStream(ms);
+                this.BackgroundImage = image;
+            }
+
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
         }

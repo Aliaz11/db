@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using System.Windows.Forms;
+using db;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsApp3
@@ -19,11 +20,10 @@ namespace WinFormsApp3
         {
             InitializeComponent();
             listView1.View = View.List;
-            listView1.View = View.Details;  // Show columns
-            listView1.FullRowSelect = true; // Select entire row on click
-            listView1.GridLines = true;     // Show grid lines for better readability
+            listView1.View = View.Details;
+            listView1.FullRowSelect = true;
+            listView1.GridLines = true;
 
-            // Add columns (adjust width and headers as you want)
             listView1.Columns.Add("First Name", 100);
             listView1.Columns.Add("Last Name", 100);
             listView1.Columns.Add("Phone Number", 120);
@@ -56,8 +56,17 @@ namespace WinFormsApp3
         }
         private void Form3_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile("C:\\Users\\ALI\\Downloads\\that.png");
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+            {
+                byte[] imageBytes = Resource1.that;
+                using (var ms = new System.IO.MemoryStream(imageBytes))
+                {
+                    var image = System.Drawing.Image.FromStream(ms);
+                    this.BackgroundImage = image;
+                }
+
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+
+            }
             string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Documents\\c#\\db\\Stu.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(connection_string);
             sqlConnection.Open();
@@ -65,7 +74,7 @@ namespace WinFormsApp3
             SqlCommand command = new SqlCommand(query, sqlConnection);
             SqlDataReader reader = command.ExecuteReader();
 
-            listView1.Items.Clear(); // Clear previous items
+            listView1.Items.Clear();
 
             while (reader.Read())
             {
@@ -149,21 +158,18 @@ namespace WinFormsApp3
 
                 foreach (ListViewItem item in listView1.SelectedItems)
                 {
-                    // Retrieve the unique identifier for this row
-                    // For example, let's assume "Phone Number" is unique (index 2)
                     string phonenumber = item.SubItems[2].Text;
 
-                    // Build the SQL DELETE query using parameters
+
                     string query = "DELETE FROM Student WHERE phonenumber = @phonenumber";
                     SqlCommand cmd = new SqlCommand(query, sqlConnection);
                     cmd.Parameters.AddWithValue("@phonenumber", phonenumber);
 
-                    // Execute the DELETE command
+
                     int rowsAffected = cmd.ExecuteNonQuery();
 
                     if (rowsAffected > 0)
                     {
-                        // Remove from the ListView only if the database deletion was successful
                         listView1.Items.Remove(item);
                     }
                     else
@@ -180,5 +186,9 @@ namespace WinFormsApp3
             }
         }
 
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

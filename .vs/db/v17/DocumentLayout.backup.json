@@ -7,21 +7,6 @@
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\db\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\032e2d02-b9d4-4c0c-aabd-ef9820b8a6f3_ClubMembershipApplication-master.zip.6f3\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\db\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\db\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -30,81 +15,86 @@
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\db\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\db\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\dels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:dels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\601f7a2d-e5f4-4d56-b8d1-12e68f7f7136_ClubMembershipApplication-master.zip.136\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\db\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\interface1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:interface1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\resource1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resource1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_DOCUMENTS_C__DB_STU.MDF/True/SqlTable/dbo.Student.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\db.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:db.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_DOCUMENTS_C__DB_DATABASE1.MDF/True/SqlTable/dbo.Student.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\d01ba0d1-be80-4b3c-ac02-a75d5d293e42_ClubMembershipApplication-master.zip.e42\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\db\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\ced98fd5-ad04-472e-a337-a9e7b2d0e15f_ClubMembershipApplication-master.zip.15f\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\resources\\home-button.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home-button.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\9d674de1-5ceb-4741-afbf-26d7d6139d1a_ClubMembershipApplication-master.zip.d1a\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\resources\\home.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\7e67e80b-5e96-4a46-974f-740cc38a97ca_ClubMembershipApplication-master.zip.7ca\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\resources\\home-button (2).png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home-button (2).png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\Documents\\c#\\WinFormsApp3\\Windowsform3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\resources\\home-button (1).png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home-button (1).png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\1ca91c3d-ebd5-4958-a59c-a58f8c7e5c7d_ClubMembershipApplication-master.zip.c7d\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\bitmap1.bmp||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:bitmap1.bmp||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\AppData\\Local\\Temp\\3d66f46e-61e9-4087-93bf-fe9ddcb8a067_ClubMembershipApplication-master.zip.067\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\Documents\\c#\\WinFormsApp3\\Windowsform3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\Pictures\\that.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:dataset1.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\db\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI\\Downloads\\that.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,7 +104,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Bookmark",
@@ -133,60 +123,44 @@
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "regex.cs",
               "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\regex.cs",
               "RelativeDocumentMoniker": "regex.cs",
               "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\regex.cs",
               "RelativeToolTip": "regex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAACpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:28:53.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CommonRegularExpressionValidationPatterns.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\601f7a2d-e5f4-4d56-b8d1-12e68f7f7136_ClubMembershipApplication-master.zip.136\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\601f7a2d-e5f4-4d56-b8d1-12e68f7f7136_ClubMembershipApplication-master.zip.136\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\601f7a2d-e5f4-4d56-b8d1-12e68f7f7136_ClubMembershipApplication-master.zip.136\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\601f7a2d-e5f4-4d56-b8d1-12e68f7f7136_ClubMembershipApplication-master.zip.136\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:26:54.518Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2025-05-30T17:20:22.523Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "dels.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\dels.cs",
-              "RelativeDocumentMoniker": "dels.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\dels.cs",
-              "RelativeToolTip": "dels.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAA9wGoAAAAoAAAAAAAAAA==",
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs",
+              "RelativeToolTip": "Form3.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwEIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:20:36.966Z"
+              "WhenOpened": "2025-05-30T16:58:16.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form1.resx",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.resx",
-              "RelativeDocumentMoniker": "Form1.resx",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.resx",
-              "RelativeToolTip": "Form1.resx",
+              "DocumentIndex": 10,
+              "Title": "Resource1.resx",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Resource1.resx",
+              "RelativeDocumentMoniker": "Resource1.resx",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Resource1.resx",
+              "RelativeToolTip": "Resource1.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-28T16:10:26.916Z"
+              "WhenOpened": "2025-05-30T16:48:21.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "db.csproj",
               "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\db.csproj",
               "RelativeDocumentMoniker": "db.csproj",
@@ -194,41 +168,158 @@
               "RelativeToolTip": "db.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-28T15:20:23.032Z"
+              "WhenOpened": "2025-05-30T16:35:53.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "dbo.Student.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_DOCUMENTS_C__DB_STU.MDF/True/SqlTable/dbo.Student.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_DOCUMENTS_C__DB_STU.MDF/True/SqlTable/dbo.Student.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-28T15:16:42.749Z"
+              "DocumentIndex": 12,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-30T16:35:43.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "dbo.Student.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_DOCUMENTS_C__DB_DATABASE1.MDF/True/SqlTable/dbo.Student.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_DOCUMENTS_C__DB_DATABASE1.MDF/True/SqlTable/dbo.Student.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-28T06:11:48.888Z"
+              "DocumentIndex": 15,
+              "Title": "home.png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home.png",
+              "RelativeDocumentMoniker": "Resources\\home.png",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home.png",
+              "RelativeToolTip": "Resources\\home.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-30T16:33:33.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "home-button.png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home-button.png",
+              "RelativeDocumentMoniker": "Resources\\home-button.png",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home-button.png",
+              "RelativeToolTip": "Resources\\home-button.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-30T16:33:31.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "home-button (2).png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home-button (2).png",
+              "RelativeDocumentMoniker": "Resources\\home-button (2).png",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home-button (2).png",
+              "RelativeToolTip": "Resources\\home-button (2).png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-30T16:33:30.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "home-button (1).png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home-button (1).png",
+              "RelativeDocumentMoniker": "Resources\\home-button (1).png",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Resources\\home-button (1).png",
+              "RelativeToolTip": "Resources\\home-button (1).png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-30T16:33:29.669Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "db",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\db.csproj",
+              "RelativeDocumentMoniker": "db.csproj",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\db.csproj",
+              "RelativeToolTip": "db.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-30T16:33:22.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Bitmap1.bmp",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Bitmap1.bmp",
+              "RelativeDocumentMoniker": "Bitmap1.bmp",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Bitmap1.bmp",
+              "RelativeToolTip": "Bitmap1.bmp",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-30T16:31:28.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T16:28:12.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dels.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\dels.cs",
+              "RelativeDocumentMoniker": "dels.cs",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\dels.cs",
+              "RelativeToolTip": "dels.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwGgAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T16:27:33.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DataSet1.xsd",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\DataSet1.xsd",
+              "RelativeDocumentMoniker": "DataSet1.xsd",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\DataSet1.xsd",
+              "RelativeToolTip": "DataSet1.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-05-30T16:27:26.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "that.png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Pictures\\that.png",
+              "RelativeDocumentMoniker": "..\\..\\..\\Pictures\\that.png",
+              "ToolTip": "C:\\Users\\ALI\\Pictures\\that.png",
+              "RelativeToolTip": "..\\..\\..\\Pictures\\that.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-30T16:27:14.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "that.png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Downloads\\that.png",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\that.png",
+              "ToolTip": "C:\\Users\\ALI\\Downloads\\that.png",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\that.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-29T17:57:54.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Form3.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.Designer.cs",
               "RelativeDocumentMoniker": "Form3.Designer.cs",
               "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.Designer.cs",
               "RelativeToolTip": "Form3.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:11:08.362Z"
+              "WhenOpened": "2025-05-29T11:09:26.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Form2.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form2.Designer.cs",
               "RelativeDocumentMoniker": "Form2.Designer.cs",
@@ -236,45 +327,19 @@
               "RelativeToolTip": "Form2.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:10:59.143Z"
+              "WhenOpened": "2025-05-29T10:27:48.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:10:50.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Form4.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form4.cs",
-              "RelativeDocumentMoniker": "Form4.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form4.cs",
-              "RelativeToolTip": "Form4.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAASwC8AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:10:21.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs",
-              "RelativeToolTip": "Form3.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwBkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:10:17.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T10:27:33.577Z"
             },
             {
               "$type": "Document",
@@ -284,197 +349,58 @@
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADgv3kAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAABQBAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:10:13.972Z",
+              "WhenOpened": "2025-05-29T10:17:56.657Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:10:11.032Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:09:38.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Interface1.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Interface1.cs",
-              "RelativeDocumentMoniker": "Interface1.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Interface1.cs",
-              "RelativeToolTip": "Interface1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:09:35.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Windowsform3.csproj",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\WinFormsApp3\\Windowsform3.csproj",
-              "RelativeDocumentMoniker": "..\\WinFormsApp3\\Windowsform3.csproj",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\WinFormsApp3\\Windowsform3.csproj",
-              "RelativeToolTip": "..\\WinFormsApp3\\Windowsform3.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-27T15:55:51.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CommonFieldValidatorFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\9d674de1-5ceb-4741-afbf-26d7d6139d1a_ClubMembershipApplication-master.zip.d1a\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\9d674de1-5ceb-4741-afbf-26d7d6139d1a_ClubMembershipApplication-master.zip.d1a\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\9d674de1-5ceb-4741-afbf-26d7d6139d1a_ClubMembershipApplication-master.zip.d1a\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\9d674de1-5ceb-4741-afbf-26d7d6139d1a_ClubMembershipApplication-master.zip.d1a\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T13:11:31.287Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CommonFieldValidatorFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\d01ba0d1-be80-4b3c-ac02-a75d5d293e42_ClubMembershipApplication-master.zip.e42\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\d01ba0d1-be80-4b3c-ac02-a75d5d293e42_ClubMembershipApplication-master.zip.e42\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\d01ba0d1-be80-4b3c-ac02-a75d5d293e42_ClubMembershipApplication-master.zip.e42\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\d01ba0d1-be80-4b3c-ac02-a75d5d293e42_ClubMembershipApplication-master.zip.e42\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:27:48.592Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CommonFieldValidatorFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\7e67e80b-5e96-4a46-974f-740cc38a97ca_ClubMembershipApplication-master.zip.7ca\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\7e67e80b-5e96-4a46-974f-740cc38a97ca_ClubMembershipApplication-master.zip.7ca\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\7e67e80b-5e96-4a46-974f-740cc38a97ca_ClubMembershipApplication-master.zip.7ca\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\7e67e80b-5e96-4a46-974f-740cc38a97ca_ClubMembershipApplication-master.zip.7ca\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:24:49.045Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CommonFieldValidatorFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\032e2d02-b9d4-4c0c-aabd-ef9820b8a6f3_ClubMembershipApplication-master.zip.6f3\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\032e2d02-b9d4-4c0c-aabd-ef9820b8a6f3_ClubMembershipApplication-master.zip.6f3\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\032e2d02-b9d4-4c0c-aabd-ef9820b8a6f3_ClubMembershipApplication-master.zip.6f3\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\032e2d02-b9d4-4c0c-aabd-ef9820b8a6f3_ClubMembershipApplication-master.zip.6f3\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:10:25.42Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CommonFieldValidatorFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\1ca91c3d-ebd5-4958-a59c-a58f8c7e5c7d_ClubMembershipApplication-master.zip.c7d\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\1ca91c3d-ebd5-4958-a59c-a58f8c7e5c7d_ClubMembershipApplication-master.zip.c7d\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\1ca91c3d-ebd5-4958-a59c-a58f8c7e5c7d_ClubMembershipApplication-master.zip.c7d\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\1ca91c3d-ebd5-4958-a59c-a58f8c7e5c7d_ClubMembershipApplication-master.zip.c7d\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:04:58.862Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Windowsform3.csproj",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\WinFormsApp3\\Windowsform3.csproj",
-              "RelativeDocumentMoniker": "..\\WinFormsApp3\\Windowsform3.csproj",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\WinFormsApp3\\Windowsform3.csproj",
-              "RelativeToolTip": "..\\WinFormsApp3\\Windowsform3.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-27T06:03:17.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CommonFieldValidatorFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\ced98fd5-ad04-472e-a337-a9e7b2d0e15f_ClubMembershipApplication-master.zip.15f\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\ced98fd5-ad04-472e-a337-a9e7b2d0e15f_ClubMembershipApplication-master.zip.15f\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\ced98fd5-ad04-472e-a337-a9e7b2d0e15f_ClubMembershipApplication-master.zip.15f\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\ced98fd5-ad04-472e-a337-a9e7b2d0e15f_ClubMembershipApplication-master.zip.15f\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonFieldValidatorFunctions.cs [Read Only]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:02:11.236Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CommonRegularExpressionValidationPatterns.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\AppData\\Local\\Temp\\3d66f46e-61e9-4087-93bf-fe9ddcb8a067_ClubMembershipApplication-master.zip.067\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\3d66f46e-61e9-4087-93bf-fe9ddcb8a067_ClubMembershipApplication-master.zip.067\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs",
-              "ToolTip": "C:\\Users\\ALI\\AppData\\Local\\Temp\\3d66f46e-61e9-4087-93bf-fe9ddcb8a067_ClubMembershipApplication-master.zip.067\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\3d66f46e-61e9-4087-93bf-fe9ddcb8a067_ClubMembershipApplication-master.zip.067\\ClubMembershipApplication-master\\FieldValidatorAPI\\CommonRegularExpressionValidationPatterns.cs [Read Only]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:02:08.011Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs [Design]*",
-              "RelativeToolTip": "Form3.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:09:30.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form2.cs [Design]",
               "RelativeToolTip": "Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:10:57.007Z"
+              "WhenOpened": "2025-05-29T10:07:57.447Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Properties\\Settings.settings",
+              "RelativeToolTip": "Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-05-30T16:39:49.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form3.cs [Design]",
+              "RelativeToolTip": "Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:19:11.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:09:21.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form4.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\db\\Form4.cs",
-              "RelativeDocumentMoniker": "Form4.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\db\\Form4.cs [Design]",
-              "RelativeToolTip": "Form4.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:31:50.509Z"
+              "WhenOpened": "2025-05-29T11:02:45.067Z"
             }
           ]
         }

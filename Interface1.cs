@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Forms;
 
 namespace WinFormsApp3
 {
@@ -13,6 +15,9 @@ namespace WinFormsApp3
         string firstname { get; set; }
         string lastname { get; set; }
         string phonenumber { get; set; }
-        
+        string birthdate { get; set; }
+        string email { get; set; }
+        string password { get; set; }
+
     }
 }
