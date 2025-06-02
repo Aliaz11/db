@@ -1833,11 +1833,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ALI\\Documents\\c#\\db\\db.csproj",
+      "projectUniqueName": "C:\\Users\\ALI\\Pictures\\second\\db.csproj",
       "projectName": "db",
-      "projectPath": "C:\\Users\\ALI\\Documents\\c#\\db\\db.csproj",
+      "projectPath": "C:\\Users\\ALI\\Pictures\\second\\db.csproj",
       "packagesPath": "C:\\Users\\ALI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ALI\\Documents\\c#\\db\\obj\\",
+      "outputPath": "C:\\Users\\ALI\\Pictures\\second\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

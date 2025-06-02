@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using db;
+using System.Net.Http.Headers;
 
 
 namespace WinFormsApp3
@@ -23,8 +24,11 @@ namespace WinFormsApp3
         private string Email;
         private string Password;
         private string PasswordR;
-        public string lastname { get { return textBox1.Text; } set { Lastname = value; } }
+
+
         public string firstname { get { return textBox2.Text; } set { Firstname = value; } }
+        public string lastname { get { return textBox1.Text; } set { Lastname = value; } }
+
         public string phonenumber { get { return textBox3.Text; } set { Phonenumber = value; } }
         public string birthdate { get { return dateTimePicker1.Value.ToString(); } set { Birhtdate = value; } }
         public string email
@@ -56,13 +60,13 @@ namespace WinFormsApp3
 
 
         }
-        List<String> list1 = new List<String>();
+      
 
         public void insert()
-        {
+        {Form2 f1= new Form2(); 
+            f1.firstname = textBox1.Text;   
             try
             {
-
                 string firstname = this.firstname;
                 string lastname = this.lastname;
                 string phonenumber = this.phonenumber;
@@ -80,85 +84,334 @@ namespace WinFormsApp3
                     command1.Parameters.AddWithValue("@phonenumber", phonenumber);
                     int count = (int)command1.ExecuteScalar();
                     sqlConnection1.Close();
-
-                    if (radioButton1.Checked)
-                    {
-                        gender = "male";
-                    }
-                    else if (radioButton2.Checked)
-                    {
-                        gender = "female";
-                    }
-
-
                     if (count > 0)
                     {
                         MessageBox.Show("This phone number already exists in the database.");
                         textBox3.Text = "";
                         return;
                     }
-                    list1.Add(phonenumber);
 
-                    if (!CommonFieldValidatorFunctions.RequiredFieldValid(firstname))
+                }
+
+
+
+
+
+
+                if (!CommonFieldValidatorFunctions.RequiredFieldValid(textBox1.Text))
+                {
+
+                    Label label_firstname = new Label()
                     {
-                        Label label_1 = new Label()
-                        {
-                            BackColor = Color.Transparent,
-                            ForeColor = Color.Red,
-                            Text = "**the Firstname cannot be empty",
-                            Location = new System.Drawing.Point(274, 80),
+                        Text = "firstname cannot be empty",
+                        Name = "label_firstname",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 80),
+                        AutoSize = true,
 
-                            Size = new System.Drawing.Size(300, 30)
+                    };
+                    this.Controls.Add(label_firstname);
+
+
+                    return;
+                }
+                else
+                {
+                    Control[] a = this.Controls.Find("label_firstname", true);
+                    foreach (Control i in a)
+                    {
+                        if (i.Text == "firstname cannot be empty")
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+                }
+                if (!CommonFieldValidatorFunctions.StringFieldLengthValid(textBox1.Text, 2, 11))
+                {
+                    Label label_firstname = new Label()
+                    {
+                        Text = "first name must be between 2 to 11 letters",
+                        Name = "label_firstname",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 80),
+                        AutoSize = true,
+
+                    };
+                    this.Controls.Add(label_firstname);
+
+                    return;
+                }
+                else
+                {
+                    Control[] a = this.Controls.Find("label_firstname", true);
+                    foreach (Control i in a)
+                    {
+                        if (i.Text == "first name must be between 2 to 11 letters")
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+
+
+                }
+
+
+
+
+
+                if (!CommonFieldValidatorFunctions.RequiredFieldValid(textBox2.Text))
+                {
+                    Label label_lastname = new Label()
+                    {
+                        Name = "label_lastname",
+                        Text = "lastname cannot be empty",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 150),
+                        AutoSize = true,
+
+                    };
+                    this.Controls.Add(label_lastname);
+                    return;
+                }
+                else
+                {
+                    Control[] b = this.Controls.Find("label_lastname", true);
+                    foreach (Control i in b)
+                    {
+                        if (i.Text == "lastname cannot be empty")
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+                }
+                if (!CommonFieldValidatorFunctions.StringFieldLengthValid(textBox2.Text, 2, 11))
+                {
+                    Label label_lastname = new Label()
+                    {
+                        Name = "label_lastname",
+                        Text = "lastname must be between 2 to 11 letters",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 150),
+                        AutoSize = true,
+
+                    };
+                    this.Controls.Add(label_lastname);
+
+                    return;
+                }
+                else
+                {
+                    Control[] b = this.Controls.Find("label_lastname", true);
+                    foreach (Control i in b)
+                    {
+                        if (i.Text == "lastname must be between 2 to 11 letters")
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+
+                }
+
+
+
+                if (textBox == null && String.IsNullOrEmpty(email)&&string.IsNullOrEmpty(phonenumber))
+                {
+                    if (!CommonFieldValidatorFunctions.RequiredFieldValid(phonenumber) &&!CommonFieldValidatorFunctions.RequiredFieldValid(email))
+                    {
+                        Label label_phone = new Label()
+                        {
+                            Name = "label_phone",
+                            Text = "phone number or email",
+                            BackColor = Color.Red,
+                            Location = new Point(300, 220),
+                            AutoSize = true,
 
                         };
-                        this.Controls.Add(label_1);
+                        this.Controls.Add(label_phone);
+                        return;
+                    }
+                   
+                }
+                else
+                {
+                    Control[] c = this.Controls.Find("label_phone", true);
+                    foreach (Control i in c)
+                    {
+                        if (i.Text == "phone number or email")
 
-                        return;
-                    }
-                    else if (!CommonFieldValidatorFunctions.RequiredFieldValid(firstname))
-                    {
-                        MessageBox.Show("lastname cannot be empty.");
-                        return;
-                    }
-                    if (textBox == null || String.IsNullOrEmpty(textBox.Text))
-                    {
-                        if (!CommonFieldValidatorFunctions.RequiredFieldValid(firstname))
-                        {
-                            MessageBox.Show("phonenumber cannot be empty.");
-                            return;
-                        }
-                    }
-                    else if (!CommonFieldValidatorFunctions.StringFieldLengthValid(firstname, 2, 11))
-                    {
-                        MessageBox.Show("firstname must be between 2 to 11 letters");
-                        return;
-                    }
-                    else if (!CommonFieldValidatorFunctions.StringFieldLengthValid(lastname, 2, 11))
-                    {
-                        MessageBox.Show("last name must be between 2 to 11 letters");
-                        return;
-                    }
-                    if (textBox == null || String.IsNullOrEmpty(textBox.Text))
-                    {
-                        if (!CommonFieldValidatorFunctions.StringFieldLengthValid(phonenumber, 10, 11))
-                        {
-                            MessageBox.Show("phone number must have 10 or 11 digits");
-                            return;
-                        }
-                    }
-                    if (!CommonFieldValidatorFunctions.FieldPatternValid(password, regex.Strong_Password_RegEx_Pattern))
-                    {
-                        MessageBox.Show("the pass word isnt strong enough");
-                        return;
-                    }
-                    if (!CommonFieldValidatorFunctions.PatternMatchValidDel(password, passwordR))
-
-                    {
-                        MessageBox.Show("the passwords don't match");
-                        return;
+                            this.Controls.Remove(i);
 
                     }
                 }
+
+
+                if (textBox == null || String.IsNullOrEmpty(email))
+                {
+                    if (!CommonFieldValidatorFunctions.StringFieldLengthValid(phonenumber, 10, 11))
+                    {
+                        Label label_phone = new Label()
+                        {
+                            Name = "label_phone",
+                            Text = "phone number must be 10 or 11 digits",
+                            BackColor = Color.Red,
+                            Location = new Point(300, 220),
+                            AutoSize = true,
+
+                        };
+                        this.Controls.Add(label_phone);
+                        return;
+                    }
+                    else
+                    {
+                        Control[] d = this.Controls.Find("label_phone", true);
+                        foreach (Control i in d)
+                        {
+                            if (i.Text == "phone number must be 10 or 11 digits")
+                            {
+                                this.Controls.Remove(i);
+                            }
+                        }
+                    }
+
+
+                }
+
+
+
+                if (!radioButton1.Checked && !radioButton2.Checked)
+                {
+                    Label label_gender = new Label()
+                    { Name = "label_gender",
+                        Text = "gender must be chosen",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 300),
+                        AutoSize = true,
+
+                    };
+                    this.Controls.Add(label_gender);
+                    return;
+                }
+                else if (radioButton1.Checked)
+                {
+                    gender = "male";
+                    Control[] d = this.Controls.Find("label_gender", true);
+                    foreach (Control i in d)
+                    {
+                        if (i.Text == ("gender must be chosen"))
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+                }
+                else if (radioButton2.Checked)
+                {
+                    gender = "female";
+                    Control[] d = this.Controls.Find("label_gender", true);
+                    foreach (Control i in d)
+                    {
+                        if (i.Text == ("gender must be chosen"))
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+                }
+                if (!CommonFieldValidatorFunctions.RequiredFieldValid(textBox4.Text))
+                {
+                    Label label_password = new Label()
+                    {
+                        Name = "password",
+                        Text = "password must be entered",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 400),
+                        AutoSize = true,
+
+                    };
+                    this.Controls.Add(label_password);
+                    return;
+                }
+                else
+                {
+                    Control[] d = this.Controls.Find("password", true);
+                    foreach (Control i in d)
+                    {
+                        if (i.Text == "password must be entered")
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+
+                }
+                if ((!CommonFieldValidatorFunctions.FieldPatternValid(password, regex.Strong_Password_RegEx_Pattern)))
+                {
+                    Label label_password1 = new Label()
+                    {
+                        Name = "password1",
+                        Text = "the password must have one capital letter one small letter one special character",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 400),
+                        AutoSize = true,
+
+                    };
+                    this.Controls.Add(label_password1);
+
+                    return;
+
+                }
+                else
+                {
+                    Control[] d = this.Controls.Find("password1", true);
+                    foreach (Control i in d)
+                    {
+                        if (i.Text == "the password must have one capital letter one small letter one special character")
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+                }
+
+
+                if (!CommonFieldValidatorFunctions.PatternMatchValidDel(password, passwordR))
+
+                {
+                    Label label_password = new Label()
+                    {
+                        Name = "password",
+                        Text = "password dont match",
+                        BackColor = Color.Red,
+                        Location = new Point(300, 400),
+                        AutoSize = true,
+
+                    };
+                    this.Controls.Add(label_password);
+
+                    return;
+
+                }
+                else
+                {
+                    Control[] d = this.Controls.Find("password", true);
+                    foreach (Control i in d)
+                    {
+                        if (i.Text == "password dont match")
+                        {
+                            this.Controls.Remove(i);
+                        }
+                    }
+                }
+
+
+
+
+
+                    Label sucess = new Label()
+                    {
+                        Name = "sucess",
+                        Text = "sucess",
+                        BackColor = Color.Green,
+                        Location = new Point(300, 530),
+                        AutoSize = true,
+                    };
+                this.Controls.Add(sucess);  
 
 
                 string query = $"INSERT INTO Student(firstname,lastname,phonenumber,Birthdate,Email,Gender,Password)VALUES(@firstname,@lastname,@phonenumber,@birthdate,@email,@gender,@password)";
@@ -219,7 +472,7 @@ namespace WinFormsApp3
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            ;
+            
             {
                 byte[] imageBytes = Resource1.that;
                 using (var ms = new System.IO.MemoryStream(imageBytes))
@@ -234,7 +487,7 @@ namespace WinFormsApp3
 
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
-            listView1.OwnerDraw = true;
+            listView1.View = View.Details;
 
             listView1.Columns.Add("First Name", 100);
             listView1.Columns.Add("Last Name", 100);
@@ -242,8 +495,7 @@ namespace WinFormsApp3
             listView1.Columns.Add("Birth Date", 100);
             listView1.Columns.Add("Email", 150);
             listView1.Columns.Add("Gender", 80);
-
-            ListViewItem item = new ListViewItem(firstname);
+            this.Controls.Add(listView1);
 
 
 
@@ -268,13 +520,13 @@ namespace WinFormsApp3
 
             textBox = new TextBox
             {
-                Location = new System.Drawing.Point(700, 140),
+                Location = new System.Drawing.Point(720, 190),
                 Size = new System.Drawing.Size(200, 30)
 
             };
             Label label = new Label()
             {
-                Location = new System.Drawing.Point(700, 140),
+                Location = new System.Drawing.Point(670, 190),
                 Size = new System.Drawing.Size(200, 30)
 
 
