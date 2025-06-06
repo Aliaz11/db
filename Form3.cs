@@ -13,15 +13,18 @@ using db;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.PortableExecutable;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.VisualBasic.ApplicationServices;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WinFormsApp3
 {
     public partial class Form3 : Form
     {
+        public List<Book> books = new List<Book>();
         public Form3()
         {
             InitializeComponent();
-      
+
             listView1.View = View.Details;
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
@@ -32,9 +35,10 @@ namespace WinFormsApp3
             listView1.Columns.Add("Birth Date", 100);
             listView1.Columns.Add("Email", 150);
             listView1.Columns.Add("Gender", 80);
-            listView1.Columns.Add("password",80);
+            listView1.Columns.Add("password", 80);
         }
 
+  
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -45,10 +49,10 @@ namespace WinFormsApp3
 
             try
             {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Documents\\c#\\db\\Stu.mdf;Integrated Security=True";
+                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
                 SqlConnection sqlConnection = new SqlConnection(connection_string);
                 sqlConnection.Open();
-                string query = "SELECT * FROM Student";
+                string query = "SELECT * FROM Stu1";
                 SqlCommand command = new SqlCommand(query, sqlConnection);
                 SqlDataReader reader = command.ExecuteReader();
                 listView1.Items.Clear();
@@ -85,6 +89,7 @@ namespace WinFormsApp3
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            this.BackgroundImageLayout = ImageLayout.Stretch;
             {
                 byte[] imageBytes = Resource1.that;
                 using (var ms = new System.IO.MemoryStream(imageBytes))
@@ -93,15 +98,15 @@ namespace WinFormsApp3
                     this.BackgroundImage = image;
                 }
 
-                this.BackgroundImageLayout = ImageLayout.Stretch;
+
 
             }
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Documents\\c#\\db\\Stu.mdf;Integrated Security=True";
+            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(connection_string);
             sqlConnection.Open();
-            string query = "SELECT * FROM Student";
+            string query = "SELECT * FROM Stu1";
             SqlCommand command = new SqlCommand(query, sqlConnection);
-          
+
 
 
 
@@ -111,8 +116,8 @@ namespace WinFormsApp3
 
 
         }
-      
-        
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 0)
@@ -123,12 +128,12 @@ namespace WinFormsApp3
             try
             {
 
- string firstname = string.IsNullOrWhiteSpace(textBox1.Text) ? listView1.SelectedItems[0].SubItems[0].Text : textBox1.Text;
+                string firstname = string.IsNullOrWhiteSpace(textBox1.Text) ? listView1.SelectedItems[0].SubItems[0].Text : textBox1.Text;
                 string lastname = string.IsNullOrWhiteSpace(textBox2.Text) ? listView1.SelectedItems[0].SubItems[1].Text : textBox1.Text;
                 string phonenumber = string.IsNullOrWhiteSpace(textBox3.Text) ? listView1.SelectedItems[0].SubItems[2].Text : textBox1.Text;
 
 
-                string phonenumber1=listView1.SelectedItems[0].SubItems[2].Text;
+                string phonenumber1 = listView1.SelectedItems[0].SubItems[2].Text;
                 string gender = "";
                 string Birthdate = dateTimePicker1.Value.ToString();
                 string password = textBox4.Text;
@@ -136,7 +141,8 @@ namespace WinFormsApp3
                 {
                     gender = "male";
                 }
-                else if(radioButton2.Checked){
+                else if (radioButton2.Checked)
+                {
                     gender = "female";
 
                 }
@@ -145,18 +151,16 @@ namespace WinFormsApp3
 
 
 
-                    string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Documents\\c#\\db\\Stu.mdf;Integrated Security=True";
+                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
                 using (SqlConnection sqlConnection = new SqlConnection(connection_string))
                 {
-                   
-                    sqlConnection.Open();
                     foreach (ListViewItem item in listView1.SelectedItems)
                     {
                         string phone = item.SubItems[2].Text;
                         foreach (ListViewItem i in listView1.SelectedItems)
                         {
                             string id = item.SubItems[0].Text;
-                            string query = $"UPDATE Student SET firstname = @firstname, lastname = @lastname, phonenumber = @phonenumber,gender=@gender,Birthdate=@Birthdate,password=@password WHERE ID = {id}";
+                            string query = $"UPDATE Stu1 SET firstname = @firstname, lastname = @lastname, phonenumber = @phonenumber,gender=@gender,Birthdate=@Birthdate,password=@password WHERE ID = {id}";
 
                             using (SqlCommand command = new SqlCommand(query, sqlConnection))
                             {
@@ -172,7 +176,7 @@ namespace WinFormsApp3
 
 
 
-                                textBox1.Text = textBox2.Text = textBox3.Text =textBox4.Text= "";
+                                textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = "";
                                 if (command.ExecuteNonQuery() > 0)
                                 {
                                     refresh();
@@ -214,11 +218,11 @@ namespace WinFormsApp3
 
         private void button3_Click(object sender, EventArgs e)
         {
-    
-     
+
+
             if (listView1.SelectedItems.Count > 0)
             {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Documents\\c#\\db\\Stu.mdf;Integrated Security=True";
+                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
                 SqlConnection sqlConnection = new SqlConnection(connection_string);
                 sqlConnection.Open();
 
@@ -227,7 +231,7 @@ namespace WinFormsApp3
                     string id = item.SubItems[0].Text;
 
 
-                    string query = $"DELETE FROM Student WHERE Id = {id}";
+                    string query = $"DELETE FROM Stu1 WHERE Id = {id}";
                     SqlCommand cmd = new SqlCommand(query, sqlConnection);
 
 
@@ -237,7 +241,7 @@ namespace WinFormsApp3
                     {
                         listView1.Items.Remove(item);
                     }
-   
+
                 }
 
                 sqlConnection.Close();
@@ -251,6 +255,15 @@ namespace WinFormsApp3
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6(books);
+            form6.Location = this.Location;
+            form6.Size = this.Size;
+            form6.StartPosition = FormStartPosition.Manual;
+            form6.Show();   
         }
     }
 }

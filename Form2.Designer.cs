@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             Button button1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -52,7 +53,11 @@
             button4 = new Button();
             checkBox1 = new CheckBox();
             listView1 = new ListView();
+            textBox6 = new TextBox();
+            label10 = new Label();
+            pictureBox1 = new PictureBox();
             button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -60,7 +65,7 @@
             button1.BackColor = Color.Transparent;
             button1.DialogResult = DialogResult.Cancel;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(287, 477);
+            button1.Location = new Point(306, 587);
             button1.Name = "button1";
             button1.Size = new Size(183, 41);
             button1.TabIndex = 0;
@@ -285,18 +290,49 @@
             // listView1
             // 
             listView1.BackColor = Color.White;
-            listView1.Location = new Point(529, 22);
+            listView1.Location = new Point(708, 12);
             listView1.Name = "listView1";
             listView1.Size = new Size(428, 99);
             listView1.TabIndex = 14;
             listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(274, 493);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(237, 27);
+            textBox6.TabIndex = 23;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Location = new Point(121, 500);
+            label10.Name = "label10";
+            label10.Size = new Size(81, 20);
+            label10.TabIndex = 24;
+            label10.Text = "User-name";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(719, 263);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(169, 166);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 25;
+            pictureBox1.TabStop = false;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
-            ClientSize = new Size(969, 569);
+            ClientSize = new Size(1148, 688);
+            Controls.Add(pictureBox1);
+            Controls.Add(label10);
+            Controls.Add(textBox6);
             Controls.Add(checkBox1);
             Controls.Add(button4);
             Controls.Add(label9);
@@ -323,6 +359,7 @@
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -353,5 +390,8 @@
         private Button button4;
         private CheckBox checkBox1;
         private ListView listView1;
+        private TextBox textBox6;
+        private Label label10;
+        private PictureBox pictureBox1;
     }
 }

@@ -53,6 +53,14 @@ namespace WinFormsApp3
 
         }
 
+
+        public byte[] getphoto()
+        {
+            MemoryStream stream = new MemoryStream();
+            pictureBox1.Image.Save(stream, pictureBox1.Image.RawFormat);
+            return stream.GetBuffer();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             insert();
@@ -74,9 +82,10 @@ namespace WinFormsApp3
                 string gender = "";
                 string password = this.password;
                 string Birthdate = this.birthdate;
+                string username = textBox6.Text;
 
-                string conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Documents\\c#\\db\\Stu.mdf;Integrated Security=True";
-                string checkQuery = "SELECT COUNT(*) FROM Student WHERE phonenumber = @phonenumber";
+                string conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+                string checkQuery = "SELECT COUNT(*) FROM Stu1 WHERE phonenumber = @phonenumber";
                 using (SqlConnection sqlConnection1 = new SqlConnection(conection_string))
                 {
                     sqlConnection1.Open();
@@ -411,11 +420,11 @@ namespace WinFormsApp3
                         Location = new Point(300, 530),
                         AutoSize = true,
                     };
-                this.Controls.Add(sucess);  
+                this.Controls.Add(sucess);
+                
 
-
-                string query = $"INSERT INTO Student(firstname,lastname,phonenumber,Birthdate,Email,Gender,Password)VALUES(@firstname,@lastname,@phonenumber,@birthdate,@email,@gender,@password)";
-                conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Documents\\c#\\db\\Stu.mdf;Integrated Security=True";
+                string query = $"INSERT INTO Stu1(firstname,lastname,phonenumber,Birthdate,Email,Gender,Password,username,image)VALUES(@firstname,@lastname,@phonenumber,@birthdate,@email,@gender,@password,@username,@image)";
+                conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
                 using (SqlConnection sqlconnection2 = new SqlConnection(conection_string))
                 {
                     sqlconnection2.Open();
@@ -428,6 +437,8 @@ namespace WinFormsApp3
                     command2.Parameters.AddWithValue("@email", email);
                     command2.Parameters.AddWithValue("@gender", gender);
                     command2.Parameters.AddWithValue("@password", password);
+                    command2.Parameters.AddWithValue("@username", username);
+                    command2.Parameters.AddWithValue("@image", getphoto());
                     command2.ExecuteNonQuery();
                     sqlconnection2.Close();
                     textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = textBox5.Text = "";
@@ -544,16 +555,9 @@ namespace WinFormsApp3
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                PictureBox p1 = new PictureBox
-                {
-                    Image = Image.FromFile(openFileDialog1.FileName),
-                    Location = new Point(600, 330),
-                    SizeMode = PictureBoxSizeMode.StretchImage,
-                    Size = new Size(100, 100),
-                };
+                pictureBox1.Image = new Bitmap(openFileDialog1.FileName);
 
 
-                this.Controls.Add(p1);
 
             }
         }

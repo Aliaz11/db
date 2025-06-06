@@ -150,3 +150,7 @@ C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\refint\db.dll
 C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.pdb
 C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.genruntimeconfig.cache
 C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\ref\db.dll
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form4.resources
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form5.resources
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form6.resources
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form7.resources

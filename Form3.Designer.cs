@@ -50,6 +50,7 @@
             label7 = new Label();
             label8 = new Label();
             label1 = new Label();
+            button5 = new Button();
             SuspendLayout();
             // 
             // label2
@@ -130,9 +131,9 @@
             // 
             // listView1
             // 
-            listView1.Location = new Point(523, 66);
+            listView1.Location = new Point(519, 59);
             listView1.Name = "listView1";
-            listView1.Size = new Size(581, 167);
+            listView1.Size = new Size(722, 167);
             listView1.TabIndex = 18;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
@@ -251,11 +252,22 @@
             label1.TabIndex = 29;
             label1.Text = "Firstname";
             // 
+            // button5
+            // 
+            button5.Location = new Point(751, 308);
+            button5.Name = "button5";
+            button5.Size = new Size(94, 29);
+            button5.TabIndex = 30;
+            button5.Text = "books_edit";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1146, 450);
+            ClientSize = new Size(1264, 450);
+            Controls.Add(button5);
             Controls.Add(label1);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -307,5 +319,6 @@
         private Label label7;
         private Label label8;
         private Label label1;
+        private Button button5;
     }
 }
