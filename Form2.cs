@@ -54,13 +54,9 @@ namespace WinFormsApp3
         }
 
 
-        public byte[] getphoto()
-        {
-            MemoryStream stream = new MemoryStream();
-            pictureBox1.Image.Save(stream, pictureBox1.Image.RawFormat);
-            return stream.GetBuffer();
-        }
+  
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
             insert();
@@ -68,11 +64,20 @@ namespace WinFormsApp3
 
 
         }
-      
+
+        public byte[] getphoto()
+        {
+            MemoryStream stream = new MemoryStream();
+            pictureBox1.Image.Save(stream, pictureBox1.Image.RawFormat);
+            return stream.GetBuffer();
+        }
+
 
         public void insert()
-        {Form2 f1= new Form2(); 
-            f1.firstname = textBox1.Text;   
+        {
+            DataBaseCrud db_in = new DataBaseCrud("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True");
+
+   
             try
             {
                 string firstname = this.firstname;
@@ -83,26 +88,8 @@ namespace WinFormsApp3
                 string password = this.password;
                 string Birthdate = this.birthdate;
                 string username = textBox6.Text;
-
-                string conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                string checkQuery = "SELECT COUNT(*) FROM Stu1 WHERE phonenumber = @phonenumber";
-                using (SqlConnection sqlConnection1 = new SqlConnection(conection_string))
-                {
-                    sqlConnection1.Open();
-                    SqlCommand command1 = new SqlCommand(checkQuery, sqlConnection1);
-                    command1.Parameters.AddWithValue("@phonenumber", phonenumber);
-                    int count = (int)command1.ExecuteScalar();
-                    sqlConnection1.Close();
-                    if (count > 0)
-                    {
-                        MessageBox.Show("This phone number already exists in the database.");
-                        textBox3.Text = "";
-                        return;
-                    }
-
-                }
-
-
+                db_in.insert(firstname, lastname, phonenumber, Birthdate, email, gender, password, username, getphoto);
+          
 
 
 
@@ -252,6 +239,24 @@ namespace WinFormsApp3
 
                     }
                 }
+             /*   string conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+                string checkQuery = "SELECT COUNT(*) FROM Stu1 WHERE phonenumber = @phonenumber";
+                using (SqlConnection sqlConnection1 = new SqlConnection(conection_string))
+                {
+                    sqlConnection1.Open();
+                    SqlCommand command1 = new SqlCommand(checkQuery, sqlConnection1);
+                    command1.Parameters.AddWithValue("@phonenumber", phonenumber);
+                    int count = (int)command1.ExecuteScalar();
+                    sqlConnection1.Close();
+                    if (count > 0)
+                    {
+                        MessageBox.Show("This phone number already exists in the database.");
+                        textBox3.Text = "";
+                        return;
+                    }
+
+                }*/
+
 
 
                 if (textBox == null || String.IsNullOrEmpty(email))
@@ -423,27 +428,9 @@ namespace WinFormsApp3
                 this.Controls.Add(sucess);
                 
 
-                string query = $"INSERT INTO Stu1(firstname,lastname,phonenumber,Birthdate,Email,Gender,Password,username,image)VALUES(@firstname,@lastname,@phonenumber,@birthdate,@email,@gender,@password,@username,@image)";
-                conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                using (SqlConnection sqlconnection2 = new SqlConnection(conection_string))
-                {
-                    sqlconnection2.Open();
+          
 
-                    SqlCommand command2 = new SqlCommand(query, sqlconnection2);
-                    command2.Parameters.AddWithValue("@firstname", firstname);
-                    command2.Parameters.AddWithValue("@lastname", lastname);
-                    command2.Parameters.AddWithValue("@phonenumber", phonenumber);
-                    command2.Parameters.AddWithValue("@birthdate", Birthdate);
-                    command2.Parameters.AddWithValue("@email", email);
-                    command2.Parameters.AddWithValue("@gender", gender);
-                    command2.Parameters.AddWithValue("@password", password);
-                    command2.Parameters.AddWithValue("@username", username);
-                    command2.Parameters.AddWithValue("@image", getphoto());
-                    command2.ExecuteNonQuery();
-                    sqlconnection2.Close();
-                    textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = textBox5.Text = "";
-
-                }
+                
 
                 ListViewItem item = new ListViewItem(firstname);
                 item.SubItems.Add(lastname);
@@ -484,29 +471,14 @@ namespace WinFormsApp3
         private void Form2_Load(object sender, EventArgs e)
         {
             
-            {
-                byte[] imageBytes = Resource1.that;
-                using (var ms = new System.IO.MemoryStream(imageBytes))
-                {
-                    var image = System.Drawing.Image.FromStream(ms);
-                    this.BackgroundImage = image;
-                }
+            
+              
+                BackPhoto.BackSet(this);
+            ListViewCre listViewCre = new ListViewCre();
+            listViewCre.ListViewCre1(listView1,this);
 
-                this.BackgroundImageLayout = ImageLayout.Stretch;
+            
 
-            }
-
-            listView1.FullRowSelect = true;
-            listView1.GridLines = true;
-            listView1.View = View.Details;
-
-            listView1.Columns.Add("First Name", 100);
-            listView1.Columns.Add("Last Name", 100);
-            listView1.Columns.Add("Phone Number", 120);
-            listView1.Columns.Add("Birth Date", 100);
-            listView1.Columns.Add("Email", 150);
-            listView1.Columns.Add("Gender", 80);
-            this.Controls.Add(listView1);
 
 
 

@@ -55,29 +55,14 @@ namespace WinFormsApp3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            byte[] imageBytes = Resource1.that;
-            using (var ms = new System.IO.MemoryStream(imageBytes))
-            {
-                var image = System.Drawing.Image.FromStream(ms);
-                this.BackgroundImage = image;
-            }
 
-            this.BackgroundImageLayout = ImageLayout.Stretch;
-            label2.Text = male_counter();
-            label4.Text = female_counter();   
+           
+
+        
+            BackPhoto.BackSet(this);
 
         }
-        public string male_counter()
-        {
-            string con=Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='male'");
-            return con;
-        }
-        public string female_counter()
-        {
-            string con = Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='female'");
-            return con;
-        }
-
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -89,22 +74,6 @@ namespace WinFormsApp3
             form4.Show();
             
         }
-        public string Counter(string query)
-        {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection sqlConnection = new SqlConnection(connection_string))
-            {
-                
-                sqlConnection.Open();
-                SqlCommand command = new SqlCommand(query, sqlConnection);
-                string count=command.ExecuteScalar().ToString();
-                SqlDataReader reader = command.ExecuteReader();
-                return count;
-                sqlConnection.Close();
-            }
-
-      
-
-        }
+    
     }
 }

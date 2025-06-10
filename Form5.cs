@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic.ApplicationServices;
 using WinFormsApp3;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace db
@@ -25,36 +27,9 @@ namespace db
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            try
-            {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
 
-                using (SqlConnection sqlConnection = new SqlConnection(connection_string))
-                {
-                    sqlConnection.Open();
-
-                    string query = "SELECT * FROM Books";
-
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection))
-                    {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-
-                        dataGridView1.DataSource = dt;
-                        if (dataGridView1.Columns.Contains("image"))
-                        {
-                            DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dataGridView1.Columns["image"];
-                            imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
-                        }
-
-                        dataGridView1.RowTemplate.Height = 100;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            DataBaseCrud db1 = new DataBaseCrud("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf; Integrated Security = True");
+            db1.selector(dataGridView1, this);
 
 
 
@@ -71,7 +46,68 @@ namespace db
         {
             Form4 form4 = new Form4();
             this.Close();
-            form4.Show(); 
+            form4.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var selectedBooks = new List<(string Name, string Author, string Price)>();
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                bool isChecked = Convert.ToBoolean(row.Cells["chk"].Value);
+                if (isChecked)
+                {
+                    string bookName = row.Cells["name"].Value.ToString();
+                    string author = row.Cells["author"].Value.ToString();
+                    string price = row.Cells["price"].Value.ToString();
+
+                    selectedBooks.Add((bookName, author, price));
+                }
+            }
+
+            if (selectedBooks.Count == 0)
+            {
+                MessageBox.Show("No books selected.");
+                return;
+            }
+
+            try
+            {
+                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+
+                using (SqlConnection conn = new SqlConnection(connection_string))
+                {
+                    conn.Open();
+
+                    foreach (var book in selectedBooks)
+                    {
+                        string query = "INSERT INTO saver1 (iduser, bookname, author, price) VALUES (@user, @name, @auth, @price)";
+                        using (SqlCommand cmd = new SqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@user", label1.Text); // label1 must contain current user's name
+                            cmd.Parameters.AddWithValue("@name", book.Name);
+                            cmd.Parameters.AddWithValue("@auth", book.Author);
+                            cmd.Parameters.AddWithValue("@price", book.Price);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+
+                    MessageBox.Show("Books saved successfully to saver1.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
+

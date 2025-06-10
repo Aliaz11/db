@@ -16,7 +16,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace db
 {
-    
+
     public partial class Form6 : Form
     {
         int index;
@@ -37,49 +37,11 @@ namespace db
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            try
-            {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
 
-                using (SqlConnection sqlConnection = new SqlConnection(connection_string))
-                {
-                    sqlConnection.Open();
-
-                    string query = "SELECT * FROM Books";
-
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection))
-                    {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-
-                        dataGridView1.DataSource = dt;
-                        if (dataGridView1.Columns.Contains("image"))
-                        {
-                            DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dataGridView1.Columns["image"];
-                            imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
-                        }
-
-                        dataGridView1.RowTemplate.Height = 100;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
+            DataBaseCrud db = new DataBaseCrud(connection_string);
+            db.selector(dataGridView1,this);
+     
 
 
         }
@@ -98,6 +60,8 @@ namespace db
         {
 
 
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -108,50 +72,54 @@ namespace db
 
         private void button4_Click(object sender, EventArgs e)
         {
-            DataGridViewRow newdata = dataGridView1.Rows[index];
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection sqlConnection = new SqlConnection(connection_string))
+
+
+         /*   if (string.IsNullOrEmpty(id))
             {
-                sqlConnection.Open();
+                MessageBox.Show("Please select a book to delete by clicking on its row in the table.", "No Book Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }*/
 
+            DialogResult confirmResult = MessageBox.Show(
+                "Are you sure you want to delete this book? This action cannot be undone.",
+                "Confirm Deletion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
 
-
-
-
-               
-                string query = $"DELETE FROM Books WHERE Id = {id}";
-
-                using (SqlCommand command = new SqlCommand(query, sqlConnection))
-                {
-
-
-                 
-
-
-
-
-
-
-
-                    command.ExecuteNonQuery();
-                    sqlConnection.Close();
-
-
-                }
+            if (confirmResult == DialogResult.Yes)
+            {
+                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+                DataBaseCrud db= new DataBaseCrud(connection_string);   
+                db.delete(dataGridView1,index,textBox1,textBox2,textBox3);
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            index = e.RowIndex;
-            DataGridViewRow row = dataGridView1.Rows[index];
-            id = row.Cells[0].Value.ToString();
-            textBox1.Text = row.Cells[1].Value.ToString();
-            textBox2.Text = row.Cells[2].Value.ToString();
-            textBox3.Text = row.Cells[3].Value.ToString();
+            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
+            {
+                index = e.RowIndex;
 
+            
+                DataBaseCrud db = new DataBaseCrud(connection_string);
+                
+            }
+            
+            
+            
+            else
+            {
 
+                id = string.Empty;
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+            }
         }
+
+
+
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -160,48 +128,38 @@ namespace db
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            DataGridViewRow newdata = dataGridView1.Rows[index];
-            newdata.Cells[1].Value = textBox1.Text;
-            newdata.Cells[2].Value = textBox2.Text;
-            newdata.Cells[3].Value = textBox3.Text;
+
+            if (string.IsNullOrEmpty(id))
+            {
+                MessageBox.Show("Please select a book to edit by clicking on its row in the table.", "No Book Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+
             string name = textBox1.Text;
             string author = textBox2.Text;
             string price = textBox3.Text;
-            DataGridViewRow row = dataGridView1.Rows[index];
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection sqlConnection = new SqlConnection(connection_string))
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(author) || string.IsNullOrWhiteSpace(price))
             {
-                sqlConnection.Open();
-          
-
-
-
-
-                 id = row.Cells[0].Value.ToString();
-                string query = $"UPDATE Books SET name =@name, author =@author,price=@price WHERE ID = {id}";
-
-                using (SqlCommand command = new SqlCommand(query, sqlConnection))
-                {
-
-
-                    command.Parameters.AddWithValue("@name", name);
-                    command.Parameters.AddWithValue("@author", author);
-
-                    command.Parameters.AddWithValue("@price", price);
-
-
-
-
-
-
-
-
-                    command.ExecuteNonQuery();
-                    sqlConnection.Close();
-
-
-                }
+                MessageBox.Show("Please fill in all book details (Name, Author, Price).", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
+
+            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+
+           
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
+    
+

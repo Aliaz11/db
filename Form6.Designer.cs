@@ -45,10 +45,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(46, 110);
+            dataGridView1.Location = new Point(291, 110);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(719, 328);
+            dataGridView1.Size = new Size(780, 391);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
@@ -65,14 +65,14 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(123, 59);
+            textBox1.Location = new Point(98, 173);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(152, 27);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(326, 57);
+            textBox2.Location = new Point(98, 252);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(161, 27);
             textBox2.TabIndex = 3;
@@ -80,14 +80,15 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(570, 59);
+            textBox3.Location = new Point(98, 321);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
+            textBox3.Size = new Size(152, 27);
             textBox3.TabIndex = 4;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // button3
             // 
-            button3.Location = new Point(32, 469);
+            button3.Location = new Point(327, 59);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 6;
@@ -97,7 +98,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(316, 469);
+            button4.Location = new Point(958, 59);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 7;
@@ -108,33 +109,34 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(168, 9);
+            label1.Location = new Point(12, 176);
             label1.Name = "label1";
-            label1.Size = new Size(24, 20);
+            label1.Size = new Size(49, 20);
             label1.TabIndex = 8;
-            label1.Text = "ID";
+            label1.Text = "Name";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(361, 9);
+            label2.Location = new Point(0, 255);
             label2.Name = "label2";
-            label2.Size = new Size(49, 20);
+            label2.Size = new Size(54, 20);
             label2.TabIndex = 9;
-            label2.Text = "Name";
+            label2.Text = "Author";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(610, 9);
+            label3.Location = new Point(0, 328);
             label3.Name = "label3";
-            label3.Size = new Size(54, 20);
+            label3.Size = new Size(42, 20);
             label3.TabIndex = 10;
-            label3.Text = "Author";
+            label3.Text = "price";
             // 
             // button2
             // 
-            button2.Location = new Point(12, 57);
+            button2.Location = new Point(112, 417);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 11;
@@ -146,7 +148,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 582);
+            ClientSize = new Size(1131, 582);
             Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(label2);

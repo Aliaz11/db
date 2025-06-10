@@ -44,73 +44,48 @@ namespace WinFormsApp3
 
         }
         List<string> list = new List<string>();
-        void refresh()
+
+        public string Counter(string query)
         {
-
-            try
+            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+            using (SqlConnection sqlConnection = new SqlConnection(connection_string))
             {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                SqlConnection sqlConnection = new SqlConnection(connection_string);
+
                 sqlConnection.Open();
-                string query = "SELECT * FROM Stu1";
                 SqlCommand command = new SqlCommand(query, sqlConnection);
+                string count = command.ExecuteScalar().ToString();
                 SqlDataReader reader = command.ExecuteReader();
-                listView1.Items.Clear();
-
-                while (reader.Read())
-                {
-
-                    ListViewItem item = new ListViewItem(reader["Id"].ToString());
-
-                    item.SubItems.Add(reader["firstname"].ToString());
-
-                    item.SubItems.Add(reader["lastname"].ToString());
-                    item.SubItems.Add(reader["phonenumber"].ToString());
-                    item.SubItems.Add(reader["birthdate"].ToString());
-                    item.SubItems.Add(reader["email"].ToString());
-                    item.SubItems.Add(reader["gender"].ToString());
-                    item.SubItems.Add(reader["password"].ToString());
-
-
-
-
-
-                    listView1.Items.Add(item);
-                }
-
+                return count;
+                sqlConnection.Close();
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+
+
+
         }
 
-
+        public string male_counter()
+        {
+            string con = Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='male'");
+            return con;
+        }
+        public string female_counter()
+        {
+            string con = Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='female'");
+            return con;
+        }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            this.BackgroundImageLayout = ImageLayout.Stretch;
-            {
-                byte[] imageBytes = Resource1.that;
-                using (var ms = new System.IO.MemoryStream(imageBytes))
-                {
-                    var image = System.Drawing.Image.FromStream(ms);
-                    this.BackgroundImage = image;
-                }
+                BackPhoto.BackSet(this);
 
 
-
-            }
+            
             string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            SqlConnection sqlConnection = new SqlConnection(connection_string);
-            sqlConnection.Open();
-            string query = "SELECT * FROM Stu1";
-            SqlCommand command = new SqlCommand(query, sqlConnection);
 
 
-
-
-            refresh();
+       
+            DataBaseCrud dbc = new DataBaseCrud(connection_string);
+            dbc.selector(listView1);
 
 
 
@@ -152,41 +127,8 @@ namespace WinFormsApp3
 
 
                 string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                using (SqlConnection sqlConnection = new SqlConnection(connection_string))
-                {
-                    foreach (ListViewItem item in listView1.SelectedItems)
-                    {
-                        string phone = item.SubItems[2].Text;
-                        foreach (ListViewItem i in listView1.SelectedItems)
-                        {
-                            string id = item.SubItems[0].Text;
-                            string query = $"UPDATE Stu1 SET firstname = @firstname, lastname = @lastname, phonenumber = @phonenumber,gender=@gender,Birthdate=@Birthdate,password=@password WHERE ID = {id}";
-
-                            using (SqlCommand command = new SqlCommand(query, sqlConnection))
-                            {
-
-
-                                command.Parameters.AddWithValue("@firstname", firstname);
-                                command.Parameters.AddWithValue("@gender", gender);
-
-                                command.Parameters.AddWithValue("@lastname", lastname);
-                                command.Parameters.AddWithValue("@phonenumber", phonenumber1);
-                                command.Parameters.AddWithValue("@Birthdate", Birthdate);
-                                command.Parameters.AddWithValue("@password", password);
-
-
-
-                                textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = "";
-                                if (command.ExecuteNonQuery() > 0)
-                                {
-                                    refresh();
-                                }
-                            }
-                        }
-                        sqlConnection.Close();
-
-                    }
-                }
+               
+                
             }
             catch (Exception ex)
             {
@@ -218,34 +160,15 @@ namespace WinFormsApp3
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
 
             if (listView1.SelectedItems.Count > 0)
             {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                SqlConnection sqlConnection = new SqlConnection(connection_string);
-                sqlConnection.Open();
-
-                foreach (ListViewItem item in listView1.SelectedItems)
-                {
-                    string id = item.SubItems[0].Text;
-
-
-                    string query = $"DELETE FROM Stu1 WHERE Id = {id}";
-                    SqlCommand cmd = new SqlCommand(query, sqlConnection);
-
-
-                    int rows = cmd.ExecuteNonQuery();
-
-                    if (rows > 0)
-                    {
-                        listView1.Items.Remove(item);
-                    }
-
-                }
-
-                sqlConnection.Close();
+                DataBaseCrud b1 = new DataBaseCrud(connection_string);
+              
+                b1.delete(listView1);
             }
+
             else
             {
                 MessageBox.Show("Please select a row to remove.");
