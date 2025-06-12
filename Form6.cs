@@ -22,7 +22,7 @@ namespace db
         int index;
         string id;
 
-
+        string connection = DbHelper.GetConnectionString();
         public Form6(List<Book> books)
         {
             InitializeComponent();
@@ -31,16 +31,12 @@ namespace db
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+          
 
-            DataBaseCrud db = new DataBaseCrud(connection_string);
+            DataBaseCrud db = new DataBaseCrud(connection);
             db.selector(dataGridView1,this);
      
 
@@ -57,13 +53,6 @@ namespace db
             form1.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-
-
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -89,21 +78,21 @@ namespace db
 
             if (confirmResult == DialogResult.Yes)
             {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                DataBaseCrud db= new DataBaseCrud(connection_string);   
+              
+                DataBaseCrud db= new DataBaseCrud(connection);   
                 db.delete(dataGridView1,index,textBox1,textBox2,textBox3);
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+          
             if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
                 index = e.RowIndex;
 
             
-                DataBaseCrud db = new DataBaseCrud(connection_string);
+                DataBaseCrud db = new DataBaseCrud(connection);
                 
             }
             
@@ -122,10 +111,6 @@ namespace db
 
 
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -146,20 +131,12 @@ namespace db
                 return;
             }
 
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+         
 
            
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+  
     }
 }
     

@@ -93,7 +93,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(178, 27);
             textBox1.TabIndex = 5;
-            textBox1.TextChanged += textBox1_TextChanged;
+  
             // 
             // textBox2
             // 
@@ -256,7 +256,7 @@
             label1.Size = new Size(73, 20);
             label1.TabIndex = 29;
             label1.Text = "Firstname";
-            label1.Click += label1_Click_1;
+    
             // 
             // button5
             // 
@@ -289,7 +289,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(108, 130);
             panel1.TabIndex = 32;
-            panel1.Paint += panel1_Paint;
+
             // 
             // Form3
             // 

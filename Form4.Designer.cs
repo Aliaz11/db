@@ -92,7 +92,7 @@
             label3.Size = new Size(215, 50);
             label3.TabIndex = 5;
             label3.Text = "Log in page";
-            label3.Click += label3_Click;
+      
             // 
             // button2
             // 

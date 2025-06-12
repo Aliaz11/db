@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,11 +13,15 @@ namespace db
 {
     public partial class Form9 : Form
     {
+
+
+        string connection1 = DbHelper.GetConnectionString();
         string idu;
         public Form9(string ids)
         {
             InitializeComponent();
             this.idu = ids;
+
         }
         public Form9()
         {
@@ -29,8 +33,8 @@ namespace db
 
         private void Form9_Load(object sender, EventArgs e)
         {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(connection_string))
+            
+            using (SqlConnection connection = new SqlConnection(connection1))
             {
                 DataTable table = new DataTable();
                 table.Columns.Add("book's name");

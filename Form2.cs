@@ -24,6 +24,7 @@ namespace WinFormsApp3
         private string Email;
         private string Password;
         private string PasswordR;
+        string connection =DbHelper.GetConnectionString();
 
 
         public string firstname { get { return textBox2.Text; } set { Firstname = value; } }
@@ -75,7 +76,7 @@ namespace WinFormsApp3
 
         public void insert()
         {
-            DataBaseCrud db_in = new DataBaseCrud("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True");
+            DataBaseCrud db_in = new DataBaseCrud(connection);
 
    
             try
@@ -534,9 +535,7 @@ namespace WinFormsApp3
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-        }
+    
 
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)

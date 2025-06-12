@@ -77,7 +77,7 @@
             label3.Size = new Size(42, 20);
             label3.TabIndex = 2;
             label3.Text = "price";
-            label3.Click += label3_Click;
+     
             // 
             // button1
             // 
@@ -186,7 +186,6 @@
             label6.Size = new Size(246, 50);
             label6.TabIndex = 0;
             label6.Text = "Books adding";
-            label6.Click += label6_Click;
             // 
             // Form7
             // 

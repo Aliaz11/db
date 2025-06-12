@@ -40,17 +40,9 @@ namespace db
             DataBaseCrud db1 = new DataBaseCrud("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf; Integrated Security = True");
             db1.selector(dataGridView1, this);
 
-
-
-
-
-
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void button1_Click(object sender, EventArgs e)
         {

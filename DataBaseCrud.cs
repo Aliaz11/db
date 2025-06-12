@@ -16,6 +16,7 @@ namespace db
 {
     public class DataBaseCrud
     {
+        string connection = DbHelper.GetConnectionString();
         public byte[] getphoto(PictureBox picturebox)
         {
             MemoryStream stream = new MemoryStream();
@@ -40,7 +41,7 @@ namespace db
                 textBox1.Text = row.Cells[1].Value.ToString();
                 textBox2.Text = row.Cells[2].Value.ToString();
                 textBox3.Text = row.Cells[3].Value.ToString();
-                using (SqlConnection sqlConnection = new SqlConnection(conection_string))
+                using (SqlConnection sqlConnection = new SqlConnection(connection))
                 {
                     sqlConnection.Open();
 
@@ -88,7 +89,7 @@ namespace db
         
         public void selector(DataGridView dataGridView1,Form form)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(conection_string))
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
           
                 sqlConnection.Open();
@@ -121,8 +122,8 @@ namespace db
         {
             try
             {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                SqlConnection sqlConnection = new SqlConnection(connection_string);
+                string connection_string = connection;
+                SqlConnection sqlConnection = new SqlConnection(connection);
                 sqlConnection.Open();
                 string query = "SELECT * FROM Stu1";
                 SqlCommand command = new SqlCommand(query, sqlConnection);
@@ -161,7 +162,7 @@ namespace db
         }
         public void update(ListView listView1, string firstname, string lastname, string phonenumber1, string gender, string Birthdate, string password)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(conection_string))
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
                 foreach (ListViewItem item in listView1.SelectedItems)
                 {
@@ -199,8 +200,8 @@ namespace db
         }
         public void delete(ListView listView1)
         {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            SqlConnection sqlConnection = new SqlConnection(connection_string);
+            string connection_string = connection;
+            SqlConnection sqlConnection = new SqlConnection(connection);
             sqlConnection.Open();
 
             foreach (ListViewItem item in listView1.SelectedItems)
@@ -240,8 +241,8 @@ namespace db
              Func<byte[]> getphoto)
         {
             string query = $"INSERT INTO Stu1(firstname,lastname,phonenumber,Birthdate,Email,Gender,Password,username,image)VALUES(@firstname,@lastname,@phonenumber,@birthdate,@email,@gender,@password,@username,@image)";
-            conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection sqlconnection2 = new SqlConnection(conection_string))
+
+            using (SqlConnection sqlconnection2 = new SqlConnection(connection))
             {
                 sqlconnection2.Open();
 

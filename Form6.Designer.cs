@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             dataGridView1 = new DataGridView();
             button1 = new Button();
             textBox1 = new TextBox();
@@ -51,15 +52,19 @@
             dataGridView1.Size = new Size(780, 391);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+ 
             // 
             // button1
             // 
-            button1.Location = new Point(0, 1);
+            button1.Cursor = Cursors.IBeam;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.TopCenter;
+            button1.Location = new Point(-3, 1);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(69, 79);
             button1.TabIndex = 1;
             button1.Text = "Back";
+            button1.TextAlign = ContentAlignment.BottomCenter;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -76,7 +81,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(161, 27);
             textBox2.TabIndex = 3;
-            textBox2.TextChanged += textBox2_TextChanged;
+          
             // 
             // textBox3
             // 
@@ -84,7 +89,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(161, 27);
             textBox3.TabIndex = 4;
-            textBox3.TextChanged += textBox3_TextChanged;
+
             // 
             // button3
             // 
@@ -114,7 +119,7 @@
             label1.Size = new Size(49, 20);
             label1.TabIndex = 8;
             label1.Text = "Name";
-            label1.Click += label1_Click;
+          
             // 
             // label2
             // 

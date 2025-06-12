@@ -20,6 +20,7 @@ namespace WinFormsApp3
 {
     public partial class Form3 : Form
     {
+        string connection = DbHelper.GetConnectionString();
         public List<Book> books = new List<Book>();
         public Form3()
         {
@@ -48,8 +49,8 @@ namespace WinFormsApp3
 
         public string Counter(string query)
         {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection sqlConnection = new SqlConnection(connection_string))
+     
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
 
                 sqlConnection.Open();
@@ -81,11 +82,11 @@ namespace WinFormsApp3
 
 
 
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+           
 
 
 
-            DataBaseCrud dbc = new DataBaseCrud(connection_string);
+            DataBaseCrud dbc = new DataBaseCrud(connection);
             dbc.selector(listView1);
 
 
@@ -127,7 +128,7 @@ namespace WinFormsApp3
 
 
 
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+               
 
 
             }
@@ -137,21 +138,7 @@ namespace WinFormsApp3
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+    
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -161,11 +148,11 @@ namespace WinFormsApp3
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+          
 
             if (listView1.SelectedItems.Count > 0)
             {
-                DataBaseCrud b1 = new DataBaseCrud(connection_string);
+                DataBaseCrud b1 = new DataBaseCrud(connection);
 
                 b1.delete(listView1);
             }
@@ -201,19 +188,6 @@ namespace WinFormsApp3
             form10.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 }

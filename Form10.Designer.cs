@@ -37,9 +37,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(298, 9);
+            label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(343, 9);
             label1.Name = "label1";
-            label1.Size = new Size(71, 20);
+            label1.Size = new Size(180, 50);
             label1.TabIndex = 0;
             label1.Text = "Payments";
             // 
@@ -54,11 +55,12 @@
             // 
             // button1
             // 
-            button1.Location = new Point(-1, -2);
+            button1.Location = new Point(-7, 9);
             button1.Name = "button1";
-            button1.Size = new Size(113, 42);
+            button1.Size = new Size(107, 42);
             button1.TabIndex = 2;
             button1.Text = "Back";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 

@@ -17,6 +17,7 @@ namespace db
     {
         int pricer = 0;
         int bookcounter = 0;
+        string connection = DbHelper.GetConnectionString();
         public Form10()
         {
             InitializeComponent();
@@ -26,10 +27,9 @@ namespace db
 
         private void Form10_Load(object sender, EventArgs e)
         {
-            string curruser = null;
+            string curruser = "";
 
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connection))
             {
 
                 DataTable tb = new DataTable();

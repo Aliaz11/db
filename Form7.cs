@@ -16,15 +16,11 @@ namespace db
 {
     public partial class Form7 : Form
     {
+        string connection = DbHelper.GetConnectionString();
         public Form7()
         {
             InitializeComponent();
             BackPhoto.BackSet(this);
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
         public byte[] getphoto()
         {
@@ -50,8 +46,7 @@ namespace db
             }
 
             string query = $"INSERT INTO Books(name,author,price,image)VALUES(@name,@author,@price,@image)";
-            string conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-            using (SqlConnection sqlconnection2 = new SqlConnection(conection_string))
+            using (SqlConnection sqlconnection2 = new SqlConnection(connection))
             {
                 sqlconnection2.Open();
 
@@ -85,9 +80,6 @@ namespace db
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

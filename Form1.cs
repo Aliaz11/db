@@ -18,6 +18,9 @@ namespace WinFormsApp3
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+           
+
+           
 
         }
 
