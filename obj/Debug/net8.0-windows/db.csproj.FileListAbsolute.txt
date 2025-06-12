@@ -154,3 +154,10 @@ C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form4.resources
 C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form5.resources
 C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form6.resources
 C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form7.resources
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form8.resources
+C:\Users\ALI\Pictures\second\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\ALI\Pictures\second\bin\Debug\net8.0-windows\MailKit.dll
+C:\Users\ALI\Pictures\second\bin\Debug\net8.0-windows\MimeKit.dll
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Passchg.resources
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form9.resources
+C:\Users\ALI\Pictures\second\obj\Debug\net8.0-windows\db.Form10.resources

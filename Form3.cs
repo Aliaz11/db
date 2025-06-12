@@ -33,12 +33,13 @@ namespace WinFormsApp3
             listView1.Columns.Add("Last Name", 100);
             listView1.Columns.Add("Phone Number", 120);
             listView1.Columns.Add("Birth Date", 100);
-            listView1.Columns.Add("Email", 150);
+            listView1.Columns.Add("Email", 100);
             listView1.Columns.Add("Gender", 80);
-            listView1.Columns.Add("password", 80);
+            listView1.Columns.Add("password", 120);
+            listView1.Columns.Add("UserName", 100);
         }
 
-  
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -76,14 +77,14 @@ namespace WinFormsApp3
 
         private void Form3_Load(object sender, EventArgs e)
         {
-                BackPhoto.BackSet(this);
+            BackPhoto.BackSet(this);
 
 
-            
+
             string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
 
 
-       
+
             DataBaseCrud dbc = new DataBaseCrud(connection_string);
             dbc.selector(listView1);
 
@@ -127,8 +128,8 @@ namespace WinFormsApp3
 
 
                 string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-               
-                
+
+
             }
             catch (Exception ex)
             {
@@ -165,7 +166,7 @@ namespace WinFormsApp3
             if (listView1.SelectedItems.Count > 0)
             {
                 DataBaseCrud b1 = new DataBaseCrud(connection_string);
-              
+
                 b1.delete(listView1);
             }
 
@@ -186,7 +187,33 @@ namespace WinFormsApp3
             form6.Location = this.Location;
             form6.Size = this.Size;
             form6.StartPosition = FormStartPosition.Manual;
-            form6.Show();   
+            this.Close();
+            form6.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form10 form10=new Form10();
+            form10.Location = this.Location;
+            form10.Size = this.Size;
+            form10.StartPosition = FormStartPosition.Manual;
+            form10.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

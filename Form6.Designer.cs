@@ -45,7 +45,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(291, 110);
+            dataGridView1.Location = new Point(277, 104);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(780, 391);
@@ -55,7 +55,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(0, 0);
+            button1.Location = new Point(0, 1);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             textBox1.Location = new Point(98, 173);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(152, 27);
+            textBox1.Size = new Size(161, 27);
             textBox1.TabIndex = 2;
             // 
             // textBox2
@@ -82,23 +82,23 @@
             // 
             textBox3.Location = new Point(98, 321);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(152, 27);
+            textBox3.Size = new Size(161, 27);
             textBox3.TabIndex = 4;
             textBox3.TextChanged += textBox3_TextChanged;
             // 
             // button3
             // 
-            button3.Location = new Point(327, 59);
+            button3.Location = new Point(162, 1);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(109, 29);
             button3.TabIndex = 6;
-            button3.Text = "Add";
+            button3.Text = "Add page";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(958, 59);
+            button4.Location = new Point(165, 435);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 7;
@@ -119,7 +119,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(0, 255);
+            label2.Location = new Point(12, 255);
             label2.Name = "label2";
             label2.Size = new Size(54, 20);
             label2.TabIndex = 9;
@@ -128,7 +128,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(0, 328);
+            label3.Location = new Point(12, 328);
             label3.Name = "label3";
             label3.Size = new Size(42, 20);
             label3.TabIndex = 10;
@@ -136,7 +136,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(112, 417);
+            button2.Location = new Point(12, 435);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 11;

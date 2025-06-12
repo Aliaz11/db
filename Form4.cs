@@ -22,25 +22,25 @@ namespace db
             InitializeComponent();
         }
 
-          
-        
-        
-        
 
-                
-                
+
+
+
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-         
-         
+
+
             try
             {
-                byte[] images=null;
+                byte[] images = null;
                 string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
                 SqlConnection sqlConnection = new SqlConnection(connection_string);
                 sqlConnection.Open();
-                string username=textBox1.Text; 
-                
+                string username = textBox1.Text;
+
 
                 string query = $"SELECT username,password,image FROM Stu1 where username='{username}'";
 
@@ -54,40 +54,34 @@ namespace db
                 {
                     ali.Add(reader["username"].ToString());
                     ali.Add(reader["password"].ToString());
-                     images = (byte[])reader["image"];
+              
+                       // images = (byte[])reader["image"];
+                    
+              
 
                 }
-                if (username=="admin") {
+                if (username == "admin")
+                {
                     if (ali[1] == textBox2.Text)
                     {
-               
+
                         Form3 form3 = new Form3();
-           
+
                         this.Hide();
                         form3.Show();
-               
+
 
 
                     }
                 }
                 else if (ali[0] == username && ali[1] == textBox2.Text)
                 {
-                    Form5 form5 = new Form5();
-                  
-                    using (MemoryStream ms = new MemoryStream(images))
-                    {
-                        form5.pictureBox1.Image = Image.FromStream(ms);
-                    }
-               
-                    this.Hide();
-                    
-                    form5.label1.Text = "hello " + username;
-                    
-                    form5.label1.Size = new Size(30, 30);
-             
-                    form5.dataGridView1.DataSource = books;
+                    Form9 form9 = new Form9(username);
 
-                    form5.Show();
+
+                    this.Hide();
+
+                    form9.Show();
                 }
 
 
@@ -98,17 +92,17 @@ namespace db
                 {
                     MessageBox.Show("the password or the user name was wrong");
                 }
-        
+
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-       
+
 
         }
-      
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -132,11 +126,17 @@ namespace db
             }
 
             this.BackgroundImageLayout = ImageLayout.Stretch;
-    
+
 
 
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Form8 form8= new Form8();
+            form8.Show();
+            this.Close();
+        }
     }
 }
 

@@ -19,6 +19,7 @@ namespace db
         public Form7()
         {
             InitializeComponent();
+            BackPhoto.BackSet(this);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -29,14 +30,14 @@ namespace db
         {
             MemoryStream stream = new MemoryStream();
             pictureBox1.Image.Save(stream, pictureBox1.Image.RawFormat);
-            return stream.GetBuffer();  
+            return stream.GetBuffer();
         }
         private void button1_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
             string author = textBox2.Text;
             string price = textBox3.Text;
-     ;
+            ;
 
             byte[] imageBytes = null;
             if (pictureBox1.Image != null)
@@ -49,23 +50,23 @@ namespace db
             }
 
             string query = $"INSERT INTO Books(name,author,price,image)VALUES(@name,@author,@price,@image)";
-                string conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
-                using (SqlConnection sqlconnection2 = new SqlConnection(conection_string))
-                {
-                    sqlconnection2.Open();
+            string conection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+            using (SqlConnection sqlconnection2 = new SqlConnection(conection_string))
+            {
+                sqlconnection2.Open();
 
-                    SqlCommand command2 = new SqlCommand(query, sqlconnection2);
-                    command2.Parameters.AddWithValue("@name", name);
-                    command2.Parameters.AddWithValue("@author", author);
-                    command2.Parameters.AddWithValue("@price", price);
+                SqlCommand command2 = new SqlCommand(query, sqlconnection2);
+                command2.Parameters.AddWithValue("@name", name);
+                command2.Parameters.AddWithValue("@author", author);
+                command2.Parameters.AddWithValue("@price", price);
                 command2.Parameters.AddWithValue("@image", getphoto());
 
                 command2.ExecuteNonQuery();
-                    sqlconnection2.Close();
+                sqlconnection2.Close();
 
 
-                }
-                textBox1.Text = textBox2.Text = textBox3.Text = "";
+            }
+            textBox1.Text = textBox2.Text = textBox3.Text = "";
             pictureBox1.Image = null;
         }
 
@@ -74,14 +75,19 @@ namespace db
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox1.Image=new Bitmap(openFileDialog1.FileName); 
-  
-             
+                pictureBox1.Image = new Bitmap(openFileDialog1.FileName);
+
+
 
             }
-  
 
 
-        } 
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

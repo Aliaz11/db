@@ -35,6 +35,7 @@
             textBox2 = new TextBox();
             label3 = new Label();
             button2 = new Button();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -59,7 +60,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(314, 309);
+            button1.Location = new Point(319, 356);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 2;
@@ -103,11 +104,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(294, 285);
+            label4.Name = "label4";
+            label4.Size = new Size(119, 20);
+            label4.TabIndex = 7;
+            label4.Text = "Forget password";
+            label4.Click += label4_Click;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
             Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(textBox2);
@@ -131,5 +143,6 @@
         private TextBox textBox2;
         private Label label3;
         private Button button2;
+        private Label label4;
     }
 }

@@ -14,7 +14,7 @@ namespace WinFormsApp3
             InitializeComponent();
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(550, 200);
-            this.Size = new Size(1100, 700);
+            this.Size = new Size(1300, 800);
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -28,7 +28,7 @@ namespace WinFormsApp3
             this.Hide();
             var form2 = new Form2();
             form2.Location = this.Location;
-            form2.Size=this.Size;
+            form2.Size = this.Size;
             form2.StartPosition = FormStartPosition.Manual;
             form2.Show();
         }
@@ -39,6 +39,8 @@ namespace WinFormsApp3
             Form3 form3 = new Form3();
             form3.Location = this.Location;
             form3.Size = this.Size;
+            form3.StartPosition = FormStartPosition.Manual;
+
             form3.StartPosition = FormStartPosition.Manual;
             form3.Show();
         }
@@ -56,24 +58,28 @@ namespace WinFormsApp3
         private void Form1_Load(object sender, EventArgs e)
         {
 
-           
 
-        
+
+
             BackPhoto.BackSet(this);
 
         }
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form4 form4 = new Form4();
-            form4.Location=this.Location;
+            form4.Location = this.Location;
             form4.Size = this.Size;
             form4.StartPosition = FormStartPosition.Manual;
             form4.Show();
-            
+
         }
-    
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

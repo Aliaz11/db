@@ -26,6 +26,7 @@ namespace db
         public Form6(List<Book> books)
         {
             InitializeComponent();
+            BackPhoto.BackSet(this);
 
 
         }

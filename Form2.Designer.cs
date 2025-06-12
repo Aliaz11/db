@@ -259,7 +259,7 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
-            label9.Location = new Point(117, 328);
+            label9.Location = new Point(625, 478);
             label9.Name = "label9";
             label9.Size = new Size(166, 20);
             label9.TabIndex = 20;
@@ -267,7 +267,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(342, 324);
+            button4.Location = new Point(821, 469);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 21;
@@ -290,7 +290,7 @@
             // listView1
             // 
             listView1.BackColor = Color.White;
-            listView1.Location = new Point(708, 12);
+            listView1.Location = new Point(594, 12);
             listView1.Name = "listView1";
             listView1.Size = new Size(428, 99);
             listView1.TabIndex = 14;
@@ -317,7 +317,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(719, 263);
+            pictureBox1.Location = new Point(787, 259);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(169, 166);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;

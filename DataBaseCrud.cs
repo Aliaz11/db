@@ -142,6 +142,7 @@ namespace db
                     item.SubItems.Add(reader["email"].ToString());
                     item.SubItems.Add(reader["gender"].ToString());
                     item.SubItems.Add(reader["password"].ToString());
+                    item.SubItems.Add(reader["username"].ToString());
 
 
 
