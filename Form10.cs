@@ -17,13 +17,12 @@ namespace db
     {
         int pricer = 0;
         int bookcounter = 0;
-        string connection = DbHelper.GetConnectionString();
+        string connection = Locator.GetConnectionString();
         public Form10()
         {
             InitializeComponent();
             BackPhoto.BackSet(this);
         }
-
 
         private void Form10_Load(object sender, EventArgs e)
         {
@@ -61,12 +60,6 @@ namespace db
                     pricer += Convert.ToInt32(reader["price"]);
                     bookcounter++;
 
-
-
-
-
-
-
                 }
                 tb.Rows.Add("total", bookcounter, pricer);
                 dataGridView1.DataSource = tb;
@@ -75,13 +68,7 @@ namespace db
 
                 dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
 
-
-
-
-
                 conn.Close();
-
-
             }
 
         }

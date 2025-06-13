@@ -11,7 +11,7 @@ namespace db
        public void ListViewCre1(ListView listView1,Form form)
         {
 
-     
+
 
             listView1.View = View.Details;
             listView1.FullRowSelect = true;
@@ -21,9 +21,10 @@ namespace db
             listView1.Columns.Add("Last Name", 100);
             listView1.Columns.Add("Phone Number", 120);
             listView1.Columns.Add("Birth Date", 100);
-            listView1.Columns.Add("Email", 150);
+            listView1.Columns.Add("Email", 100);
             listView1.Columns.Add("Gender", 80);
-            listView1.Columns.Add("password", 80);
+            listView1.Columns.Add("password", 120);
+            listView1.Columns.Add("UserName", 100);
             form.Controls.Add(listView1);
         }
 

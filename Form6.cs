@@ -22,7 +22,7 @@ namespace db
         int index;
         string id;
 
-        string connection = DbHelper.GetConnectionString();
+        string connection = Locator.GetConnectionString();
         public Form6(List<Book> books)
         {
             InitializeComponent();

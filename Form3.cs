@@ -20,121 +20,106 @@ namespace WinFormsApp3
 {
     public partial class Form3 : Form
     {
-        string connection = DbHelper.GetConnectionString();
-        public List<Book> books = new List<Book>();
+        string connection = Locator.GetConnectionString();
+        List<Book> Book = new List<Book>();
+
         public Form3()
         {
             InitializeComponent();
+            BackPhoto.BackSet(this);
+            ListViewCre listViewCre = new ListViewCre();
+            listViewCre.ListViewCre1(listView1, this);
 
-            listView1.View = View.Details;
-            listView1.FullRowSelect = true;
-            listView1.GridLines = true;
-            listView1.Columns.Add("ID", 100);
-            listView1.Columns.Add("First Name", 100);
-            listView1.Columns.Add("Last Name", 100);
-            listView1.Columns.Add("Phone Number", 120);
-            listView1.Columns.Add("Birth Date", 100);
-            listView1.Columns.Add("Email", 100);
-            listView1.Columns.Add("Gender", 80);
-            listView1.Columns.Add("password", 120);
-            listView1.Columns.Add("UserName", 100);
+
         }
-
-
         private void label2_Click(object sender, EventArgs e)
         {
 
         }
-        List<string> list = new List<string>();
-
-        public string Counter(string query)
-        {
-     
-            using (SqlConnection sqlConnection = new SqlConnection(connection))
-            {
-
-                sqlConnection.Open();
-                SqlCommand command = new SqlCommand(query, sqlConnection);
-                string count = command.ExecuteScalar().ToString();
-                SqlDataReader reader = command.ExecuteReader();
-                return count;
-                sqlConnection.Close();
-            }
 
 
+        /*public string Counter(string query)
+         {
 
-        }
+             using (SqlConnection sqlConnection = new SqlConnection(connection))
+             {
 
-        public string male_counter()
-        {
-            string con = Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='male'");
-            return con;
-        }
-        public string female_counter()
-        {
-            string con = Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='female'");
-            return con;
-        }
+                 sqlConnection.Open();
+                 SqlCommand command = new SqlCommand(query, sqlConnection);
+                 string count = command.ExecuteScalar().ToString();
+                 SqlDataReader reader = command.ExecuteReader();
+                 return count;
+                 sqlConnection.Close();
+             }
+            public string male_counter()
+         {
+             string con = Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='male'");
+             return con;
+         }
+         public string female_counter()
+         {
+             string con = Counter("SELECT COUNT(*) FROM Stu1 WHERE Gender='female'");
+             return con;
+         }
+        */
+
+
+
+
+
+
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            BackPhoto.BackSet(this);
-
-
-
-           
-
-
-
+        
             DataBaseCrud dbc = new DataBaseCrud(connection);
             dbc.selector(listView1);
-
-
-
 
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count == 0)
+            if (listView1.SelectedItems.Count > 0)
             {
-                MessageBox.Show("select a row .");
+              
+
+                try
+                {
+
+                    string firstname = string.IsNullOrWhiteSpace(textBox1.Text) ? listView1.SelectedItems[0].SubItems[0].Text : textBox1.Text;
+                    string lastname = string.IsNullOrWhiteSpace(textBox2.Text) ? listView1.SelectedItems[0].SubItems[1].Text : textBox1.Text;
+                    string phonenumber = string.IsNullOrWhiteSpace(textBox3.Text) ? listView1.SelectedItems[0].SubItems[2].Text : textBox1.Text;
+
+
+                    string phonenumber1 = listView1.SelectedItems[0].SubItems[2].Text;
+                    string gender = "";
+                    string Birthdate = dateTimePicker1.Value.ToString();
+                    string password = textBox4.Text;
+                    if (radioButton1.Checked)
+                    {
+                        gender = "male";
+                    }
+                    else if (radioButton2.Checked)
+                    {
+                        gender = "female";
+
+                    }
+                    DataBaseCrud dupdate = new DataBaseCrud(connection);
+                    dupdate.update(listView1, firstname, lastname, phonenumber, gender, Birthdate, password);
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("select a row ");
                 return;
-            }
-            try
-            {
 
-                string firstname = string.IsNullOrWhiteSpace(textBox1.Text) ? listView1.SelectedItems[0].SubItems[0].Text : textBox1.Text;
-                string lastname = string.IsNullOrWhiteSpace(textBox2.Text) ? listView1.SelectedItems[0].SubItems[1].Text : textBox1.Text;
-                string phonenumber = string.IsNullOrWhiteSpace(textBox3.Text) ? listView1.SelectedItems[0].SubItems[2].Text : textBox1.Text;
-
-
-                string phonenumber1 = listView1.SelectedItems[0].SubItems[2].Text;
-                string gender = "";
-                string Birthdate = dateTimePicker1.Value.ToString();
-                string password = textBox4.Text;
-                if (radioButton1.Checked)
-                {
-                    gender = "male";
-                }
-                else if (radioButton2.Checked)
-                {
-                    gender = "female";
-
-                }
-
-
-
-
-
-               
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -159,7 +144,7 @@ namespace WinFormsApp3
 
             else
             {
-                MessageBox.Show("Please select a row to remove.");
+                MessageBox.Show("Please select a row to remove");
             }
         }
 
@@ -170,7 +155,7 @@ namespace WinFormsApp3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6(books);
+            Form6 form6 = new Form6(Book);
             form6.Location = this.Location;
             form6.Size = this.Size;
             form6.StartPosition = FormStartPosition.Manual;

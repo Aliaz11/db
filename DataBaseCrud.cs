@@ -16,7 +16,7 @@ namespace db
 {
     public class DataBaseCrud
     {
-        string connection = DbHelper.GetConnectionString();
+        string connection = Locator.GetConnectionString();
         public byte[] getphoto(PictureBox picturebox)
         {
             MemoryStream stream = new MemoryStream();
@@ -164,14 +164,14 @@ namespace db
         {
             using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
-                foreach (ListViewItem item in listView1.SelectedItems)
-                {
-                    string phone = item.SubItems[2].Text;
-                    foreach (ListViewItem i in listView1.SelectedItems)
+                sqlConnection.Open();   
+         
+         
+                    foreach (ListViewItem item in listView1.SelectedItems)
                     {
-                        string id = listView1.Items[0].ToString();
+                    string id = item.SubItems[0].Text;
 
-                        string query = $"UPDATE Stu1 SET firstname = @firstname, lastname = @lastname, phonenumber = @phonenumber,gender=@gender,Birthdate=@Birthdate,password=@password WHERE ID = {id}";
+                    string query = $"UPDATE Stu1 SET firstname = @firstname, lastname = @lastname, phonenumber = @phonenumber,gender=@gender,Birthdate=@Birthdate,password=@password WHERE ID = '{id}'";
 
                         using (SqlCommand command = new SqlCommand(query, sqlConnection))
                         {
@@ -179,12 +179,10 @@ namespace db
 
                             command.Parameters.AddWithValue("@firstname", firstname);
                             command.Parameters.AddWithValue("@gender", gender);
-
                             command.Parameters.AddWithValue("@lastname", lastname);
                             command.Parameters.AddWithValue("@phonenumber", phonenumber1);
                             command.Parameters.AddWithValue("@Birthdate", Birthdate);
                             command.Parameters.AddWithValue("@password", password);
-
 
 
                             if (command.ExecuteNonQuery() > 0)
@@ -197,7 +195,7 @@ namespace db
 
                 }
             }
-        }
+        
         public void delete(ListView listView1)
         {
             string connection_string = connection;

@@ -15,7 +15,7 @@ namespace db
     {
 
 
-        string connection1 = DbHelper.GetConnectionString();
+        string connection1 = Locator.GetConnectionString();
         string idu;
         public Form9(string ids)
         {

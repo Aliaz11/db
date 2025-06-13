@@ -38,35 +38,36 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(345, 9);
+            label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(303, 9);
             label1.Name = "label1";
-            label1.Size = new Size(70, 20);
+            label1.Size = new Size(177, 50);
             label1.TabIndex = 0;
             label1.Text = "Inventory";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(106, 110);
+            dataGridView1.Location = new Point(40, 107);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(607, 254);
+            dataGridView1.Size = new Size(729, 254);
             dataGridView1.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(299, 399);
+            button1.Location = new Point(303, 380);
             button1.Name = "button1";
-            button1.Size = new Size(181, 29);
+            button1.Size = new Size(181, 58);
             button1.TabIndex = 2;
             button1.Text = "Sumbit the changes";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(635, 12);
+            button2.Location = new Point(644, 9);
             button2.Name = "button2";
-            button2.Size = new Size(153, 29);
+            button2.Size = new Size(153, 48);
             button2.TabIndex = 5;
             button2.Text = "select new books";
             button2.UseVisualStyleBackColor = true;

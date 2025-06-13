@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace db
 {
-    public class regex
+    public class Regex
     {
     
         

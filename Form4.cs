@@ -25,10 +25,6 @@ namespace db
 
 
 
-
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -36,7 +32,7 @@ namespace db
             try
             {
                 byte[] images = null;
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
+                string connection_string = Locator.GetConnectionString();
                 SqlConnection sqlConnection = new SqlConnection(connection_string);
                 sqlConnection.Open();
                 string username = textBox1.Text;

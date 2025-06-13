@@ -9,8 +9,8 @@ namespace db
     public class Book
     {
       public  string Name {  get; set; } 
-      public  string Genre {  get; set; } 
-      public Image Image { get; set; }
+      public  string author {  get; set; } 
+      public string price { get; set; }
         
 
     }

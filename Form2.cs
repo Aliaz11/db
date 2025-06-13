@@ -15,7 +15,7 @@ using System.Net.Http.Headers;
 
 namespace WinFormsApp3
 {
-    public partial class Form2 : Form, Interface1
+    public partial class Form2 : Form
     {
         private string Firstname;
         private string Lastname;
@@ -24,7 +24,7 @@ namespace WinFormsApp3
         private string Email;
         private string Password;
         private string PasswordR;
-        string connection =DbHelper.GetConnectionString();
+        string connection =Locator.GetConnectionString();
 
 
         public string firstname { get { return textBox2.Text; } set { Firstname = value; } }
@@ -356,7 +356,7 @@ namespace WinFormsApp3
                     }
 
                 }
-                if ((!CommonFieldValidatorFunctions.FieldPatternValid(password, regex.Strong_Password_RegEx_Pattern)))
+                if ((!CommonFieldValidatorFunctions.FieldPatternValid(password, Regex.Strong_Password_RegEx_Pattern)))
                 {
                     Label label_password1 = new Label()
                     {

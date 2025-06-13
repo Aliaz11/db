@@ -16,7 +16,7 @@ namespace db
 {
     public partial class Form7 : Form
     {
-        string connection = DbHelper.GetConnectionString();
+        string connection = Locator.GetConnectionString();
         public Form7()
         {
             InitializeComponent();

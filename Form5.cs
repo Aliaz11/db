@@ -18,8 +18,9 @@ namespace db
   
     public partial class Form5 : Form
     {
-        int price1=0;
+
         string ids;
+        string connection1=Locator.GetConnectionString();   
 
         public Form5()
         {
@@ -37,7 +38,7 @@ namespace db
         private void Form5_Load(object sender, EventArgs e)
         {
 
-            DataBaseCrud db1 = new DataBaseCrud("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf; Integrated Security = True");
+            DataBaseCrud db1 = new DataBaseCrud(connection1);
             db1.selector(dataGridView1, this);
 
         }
@@ -53,55 +54,14 @@ namespace db
 
         private void button2_Click(object sender, EventArgs e)
         {
+            DbCrudBook tester = new DbCrudBook(ids);
+            tester.inserter(dataGridView1);
 
-            var selectedBooks = new List<(string Name, string Author, string Price)>();
-
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (row.IsNewRow) continue;
-
-                bool isChecked = Convert.ToBoolean(row.Cells["chk"].Value);
-                if (isChecked)
-                {
-                    string bookName = row.Cells["name"].Value.ToString();
-                    string author = row.Cells["author"].Value.ToString();
-                    string price = row.Cells["price"].Value.ToString();
-                     price1+= Convert.ToInt32(price);
-
-                    selectedBooks.Add((bookName, author, price));
-                }
-            }
-            MessageBox.Show("the price to pay: " + price1);
-
-            if (selectedBooks.Count == 0)
-            {
-                MessageBox.Show("No books selected.");
-                return;
-            }
 
             try
             {
-                string connection_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ALI\\Pictures\\second\\Stu2.mdf;Integrated Security=True";
 
-                using (SqlConnection conn = new SqlConnection(connection_string))
-                {
-                    conn.Open();
 
-                    foreach (var book in selectedBooks)
-                    {
-                        string query = "INSERT INTO saver1 (iduser, bookname, author, price) VALUES (@user, @name, @auth, @price)";
-                        using (SqlCommand cmd = new SqlCommand(query, conn))
-                        {
-                            cmd.Parameters.AddWithValue("@user", ids);
-                            cmd.Parameters.AddWithValue("@name", book.Name);
-                            cmd.Parameters.AddWithValue("@auth", book.Author);
-                            cmd.Parameters.AddWithValue("@price", book.Price);
-                            cmd.ExecuteNonQuery();
-                        }
-                    }
-
-                    MessageBox.Show("saved");
-                }
             }
             catch (Exception ex)
             {
