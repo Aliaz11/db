@@ -1,7 +1,3 @@
-
-using System.Data.SqlTypes;
-using System.Diagnostics.Metrics;
-using Microsoft.Data.SqlClient;
 using db;
 
 namespace WinFormsApp3
@@ -18,9 +14,9 @@ namespace WinFormsApp3
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-           
 
-           
+
+
 
         }
 
@@ -58,15 +54,17 @@ namespace WinFormsApp3
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
 
 
+            BackPhoto bc = new BackPhoto();
 
+            bc.BackSet(this);
 
-            BackPhoto.BackSet(this);
 
         }
+
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,6 +79,11 @@ namespace WinFormsApp3
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }

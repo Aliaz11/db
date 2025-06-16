@@ -1,65 +1,34 @@
-﻿using System;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MailKit;
-
-using MimeKit;
-using static Org.BouncyCastle.Asn1.Cmp.Challenge;
-using static Org.BouncyCastle.Crypto.Engines.SM2Engine;
-
-namespace db
+﻿namespace db
 {
     public partial class Form8 : Form
     {
+        Emailverifycs em1 = new Emailverifycs();
+
         int random;
         public Form8()
         {
             InitializeComponent();
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
         }
-        Random rand = new Random();
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-             random = rand.Next(100000, 999000);
-            try
+            button1.Enabled = false;
+
+            em1.EmailSender(textBox1.Text);
+            MessageBox.Show("try again in 1 minutes");
+            button1.Enabled = false;
+            for (int i = 60; i >= 0; i--)
             {
-                MailMessage mail = new MailMessage();
-                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
+                label3.Text = i.ToString();
+                await Task.Delay(1000);
 
-
-                mail.From = new MailAddress("alitry679@gmail.com");
-
-
-                mail.To.Add(textBox1.Text);
-
-                mail.Subject = "Email Verification";
-                mail.Body = "Your verification code is: " + random;
-
-
-                smtpClient.Port = 587;
-                smtpClient.UseDefaultCredentials = false;
-
-
-                smtpClient.Credentials = new NetworkCredential("alitry679@gmail.com", "xoki izwv ddpp lyku");
-                smtpClient.EnableSsl = true;
-
-
-                smtpClient.Send(mail);
-
-                Console.WriteLine("Verification email sent.");
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error sending verification email: " + ex.Message);
-            }
+
+            button1.Enabled = true;
+
+
 
 
         }
@@ -72,15 +41,13 @@ namespace db
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text.ToString() == random.ToString())
-            {
-                MessageBox.Show("right");
+            Passchg pass1 = new Passchg(textBox1.Text);
+            em1.adapt(textBox2, pass1, this);
+        }
 
-            }
-            else
-            {
-                MessageBox.Show("the password was wrong");
-            }
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

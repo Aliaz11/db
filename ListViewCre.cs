@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace db
+﻿namespace db
 {
-    public class ListViewCre
+    public class ListViewCre: IListViewCre
     {
-       public void ListViewCre1(ListView listView1,Form form)
+        public void ListViewCre1(ListView listView1, Form form)
         {
 
 
@@ -28,6 +22,6 @@ namespace db
             form.Controls.Add(listView1);
         }
 
- 
+
     }
 }

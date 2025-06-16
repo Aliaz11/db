@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using WinFormsApp3;
 
 
@@ -48,12 +38,14 @@ namespace db
 
                 while (reader.Read())
                 {
-                    ali.Add(reader["username"].ToString());
-                    ali.Add(reader["password"].ToString());
-              
-                       // images = (byte[])reader["image"];
-                    
-              
+
+                    ali.Add(Convert.ToString(reader["username"]) ?? "");
+                    ali.Add(Convert.ToString(reader["Password"]) ?? "");
+
+
+                    images = (byte[])reader["image"];
+
+
 
                 }
                 if (username == "admin")
@@ -72,11 +64,14 @@ namespace db
                 }
                 else if (ali[0] == username && ali[1] == textBox2.Text)
                 {
-                    Form9 form9 = new Form9(username);
+                    Form9 form9 = new Form9(username, images);
 
 
                     this.Hide();
 
+                    form9.Location = this.Location;
+                    form9.Size = this.Size;
+                    form9.StartPosition = FormStartPosition.Manual;
                     form9.Show();
                 }
 
@@ -100,7 +95,7 @@ namespace db
         }
 
 
-   
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -126,9 +121,13 @@ namespace db
 
         private void label4_Click(object sender, EventArgs e)
         {
-            Form8 form8= new Form8();
+            Form8 form8 = new Form8();
+            this.Hide();
+
+            form8.Location = this.Location;
+            form8.Size = this.Size;
+            form8.StartPosition = FormStartPosition.Manual;
             form8.Show();
-            this.Close();
         }
     }
 }

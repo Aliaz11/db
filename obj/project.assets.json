@@ -2022,11 +2022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ALI\\Pictures\\second\\db.csproj",
+      "projectUniqueName": "C:\\Users\\ALI\\Documents\\c#\\second\\db.csproj",
       "projectName": "db",
-      "projectPath": "C:\\Users\\ALI\\Pictures\\second\\db.csproj",
+      "projectPath": "C:\\Users\\ALI\\Documents\\c#\\second\\db.csproj",
       "packagesPath": "C:\\Users\\ALI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ALI\\Pictures\\second\\obj\\",
+      "outputPath": "C:\\Users\\ALI\\Documents\\c#\\second\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

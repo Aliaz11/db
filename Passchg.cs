@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Microsoft.Data.SqlClient;
+using WinFormsApp3;
 
 namespace db
 {
     public partial class Passchg : Form
     {
-        public Passchg()
+        string email;
+        string connection = Locator.GetConnectionString();
+        string password;
+        public Passchg(string email)
         {
             InitializeComponent();
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
+            this.email = email;
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,7 +32,8 @@ namespace db
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            PasswordUpdator passer = new PasswordUpdator(email, this);
+            passer.updator(textBox1,textBox2);
         }
     }
 }

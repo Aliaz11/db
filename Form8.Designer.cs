@@ -34,6 +34,7 @@
             button1 = new Button();
             label1 = new Label();
             button2 = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label2
@@ -81,19 +82,29 @@
             // 
             // button2
             // 
-            button2.Location = new Point(169, 379);
+            button2.Location = new Point(149, 372);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 5;
-            button2.Text = "button2";
+            button2.Text = "Verify";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(369, 279);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 6;
+            label3.Text = "label3";
             // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox2);
@@ -102,6 +113,7 @@
             Controls.Add(label1);
             Name = "Form8";
             Text = "Form8";
+            Load += Form8_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,5 +125,6 @@
         private Button button1;
         private Label label1;
         private Button button2;
+        private Label label3;
     }
 }

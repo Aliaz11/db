@@ -1,37 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
-using Microsoft.VisualBasic.ApplicationServices;
-using WinFormsApp3;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-namespace db
+﻿namespace db
 {
-  
+
     public partial class Form5 : Form
     {
 
         string ids;
-        string connection1=Locator.GetConnectionString();   
+        string connection1 = Locator.GetConnectionString();
+        byte[] images;
 
         public Form5()
         {
             InitializeComponent();
-            BackPhoto.BackSet(this);
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
+
         }
-        public Form5(string ids)
+        public Form5(string ids, byte[] images)
         {
             InitializeComponent();
-            BackPhoto.BackSet(this);
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
             this.ids = ids;
+            this.images=images;
+
+            dataGridView1.BackgroundColor = Color.White;
+
         }
 
 
@@ -40,10 +35,14 @@ namespace db
 
             DataBaseCrud db1 = new DataBaseCrud(connection1);
             db1.selector(dataGridView1, this);
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                row.Height = 100;
+            }
 
         }
 
-  
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -77,7 +76,7 @@ namespace db
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form9 form9 = new Form9();
+            Form9 form9 = new Form9(ids,images);
             form9.ShowDialog();
         }
     }

@@ -53,6 +53,10 @@
             button5 = new Button();
             button6 = new Button();
             panel1 = new Panel();
+            label9 = new Label();
+            label10 = new Label();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,7 +83,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(207, 368);
+            button1.Location = new Point(273, 467);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 3;
@@ -93,7 +97,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(178, 27);
             textBox1.TabIndex = 5;
-  
             // 
             // textBox2
             // 
@@ -126,7 +129,7 @@
             // button3
             // 
             button3.BackColor = Color.Transparent;
-            button3.Location = new Point(748, 270);
+            button3.Location = new Point(750, 239);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 17;
@@ -189,7 +192,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(207, 267);
+            textBox4.Location = new Point(237, 263);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(178, 27);
             textBox4.TabIndex = 23;
@@ -206,7 +209,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(207, 313);
+            button4.Location = new Point(273, 313);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 25;
@@ -256,27 +259,32 @@
             label1.Size = new Size(73, 20);
             label1.TabIndex = 29;
             label1.Text = "Firstname";
-    
             // 
             // button5
             // 
             button5.Dock = DockStyle.Bottom;
-            button5.Location = new Point(0, 87);
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.Location = new Point(0, 88);
             button5.Name = "button5";
-            button5.Size = new Size(108, 43);
+            button5.Size = new Size(108, 42);
             button5.TabIndex = 30;
             button5.Text = "books_edit";
+            button5.TextAlign = ContentAlignment.MiddleRight;
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
             // button6
             // 
             button6.Dock = DockStyle.Bottom;
-            button6.Location = new Point(0, 43);
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(0, 45);
             button6.Name = "button6";
-            button6.Size = new Size(108, 44);
+            button6.Size = new Size(108, 43);
             button6.TabIndex = 31;
             button6.Text = "financial";
+            button6.TextAlign = ContentAlignment.MiddleRight;
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
@@ -289,13 +297,48 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(108, 130);
             panel1.TabIndex = 32;
-
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(133, 368);
+            label9.Name = "label9";
+            label9.Size = new Size(46, 20);
+            label9.TabIndex = 33;
+            label9.Text = "Email";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(125, 417);
+            label10.Name = "label10";
+            label10.Size = new Size(75, 20);
+            label10.TabIndex = 34;
+            label10.Text = "Username";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(237, 365);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(178, 27);
+            textBox5.TabIndex = 35;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(237, 414);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(177, 27);
+            textBox6.TabIndex = 36;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 450);
+            ClientSize = new Size(1264, 537);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(label10);
+            Controls.Add(label9);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(label8);
@@ -351,5 +394,9 @@
         private Button button5;
         private Button button6;
         private Panel panel1;
+        private Label label9;
+        private Label label10;
+        private TextBox textBox5;
+        private TextBox textBox6;
     }
 }

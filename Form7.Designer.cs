@@ -77,7 +77,6 @@
             label3.Size = new Size(42, 20);
             label3.TabIndex = 2;
             label3.Text = "price";
-     
             // 
             // button1
             // 

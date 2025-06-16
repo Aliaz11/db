@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace db
+﻿namespace db
 {
-    public static class BackPhoto
+    public class BackPhoto : IBackphoto
     {
-        
-        public static void BackSet(Form form)
+
+        public void BackSet(Form form)
         {
             byte[] imageBytes = Resource1.that;
             using (var ms = new System.IO.MemoryStream(imageBytes))

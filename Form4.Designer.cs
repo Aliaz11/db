@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
@@ -60,11 +61,14 @@
             // 
             // button1
             // 
-            button1.Location = new Point(319, 356);
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleRight;
+            button1.Location = new Point(303, 347);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(119, 45);
             button1.TabIndex = 2;
             button1.Text = "Log in";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -87,20 +91,22 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(267, 9);
+            label3.Location = new Point(246, 0);
             label3.Name = "label3";
             label3.Size = new Size(215, 50);
             label3.TabIndex = 5;
             label3.Text = "Log in page";
-      
             // 
             // button2
             // 
-            button2.Location = new Point(2, 12);
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleRight;
+            button2.Location = new Point(3, 0);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(126, 47);
             button2.TabIndex = 6;
             button2.Text = "Home";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 

@@ -30,11 +30,13 @@ namespace WinFormsApp3
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             button1 = new Button();
             button4 = new Button();
             button3 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -104,6 +106,11 @@ namespace WinFormsApp3
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click_1;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -124,5 +131,6 @@ namespace WinFormsApp3
         private Button button3;
         private Label label1;
         private Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

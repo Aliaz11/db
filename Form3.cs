@@ -1,20 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using Microsoft.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading.Tasks.Dataflow;
-using System.Windows.Forms;
-using db;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Reflection.PortableExecutable;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.VisualBasic.ApplicationServices;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using db;
 
 namespace WinFormsApp3
 {
@@ -26,7 +10,9 @@ namespace WinFormsApp3
         public Form3()
         {
             InitializeComponent();
-            BackPhoto.BackSet(this);
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
             ListViewCre listViewCre = new ListViewCre();
             listViewCre.ListViewCre1(listView1, this);
 
@@ -71,7 +57,7 @@ namespace WinFormsApp3
 
         private void Form3_Load(object sender, EventArgs e)
         {
-        
+
             DataBaseCrud dbc = new DataBaseCrud(connection);
             dbc.selector(listView1);
 
@@ -82,31 +68,31 @@ namespace WinFormsApp3
         {
             if (listView1.SelectedItems.Count > 0)
             {
-              
+
 
                 try
                 {
 
-                    string firstname = string.IsNullOrWhiteSpace(textBox1.Text) ? listView1.SelectedItems[0].SubItems[0].Text : textBox1.Text;
-                    string lastname = string.IsNullOrWhiteSpace(textBox2.Text) ? listView1.SelectedItems[0].SubItems[1].Text : textBox1.Text;
-                    string phonenumber = string.IsNullOrWhiteSpace(textBox3.Text) ? listView1.SelectedItems[0].SubItems[2].Text : textBox1.Text;
+                    string firstname = string.IsNullOrWhiteSpace(textBox1.Text) ? listView1.SelectedItems[0].SubItems[1].Text : textBox1.Text;
+
+                    string lastname = string.IsNullOrWhiteSpace(textBox2.Text) ? listView1.SelectedItems[0].SubItems[2].Text : textBox2.Text;
+
+                    string phonenumber = string.IsNullOrWhiteSpace(textBox3.Text) ? listView1.SelectedItems[0].SubItems[3].Text : textBox3.Text;
+                    string Email = string.IsNullOrWhiteSpace(textBox5.Text) ? listView1.SelectedItems[0].SubItems[5].Text : textBox5.Text;
+                    string Username = string.IsNullOrWhiteSpace(textBox6.Text) ? listView1.SelectedItems[0].SubItems[8].Text : textBox6.Text;
 
 
-                    string phonenumber1 = listView1.SelectedItems[0].SubItems[2].Text;
-                    string gender = "";
-                    string Birthdate = dateTimePicker1.Value.ToString();
-                    string password = textBox4.Text;
-                    if (radioButton1.Checked)
-                    {
-                        gender = "male";
-                    }
-                    else if (radioButton2.Checked)
-                    {
-                        gender = "female";
+                    string gender = radioButton1.Checked ? "Male" : radioButton2.Checked ? "Female" : listView1.SelectedItems[0].SubItems[6].Text;
 
-                    }
+
+                    string Birthdate = (dateTimePicker1.Value.ToString("yyyy-MM-dd") == listView1.SelectedItems[0].SubItems[4].Text) ? listView1.SelectedItems[0].SubItems[4].Text
+                        : dateTimePicker1.Value.ToString("yyyy-MM-dd");
+
+
+                    string password = string.IsNullOrWhiteSpace(textBox4.Text) ? listView1.SelectedItems[0].SubItems[7].Text : textBox4.Text;
+
                     DataBaseCrud dupdate = new DataBaseCrud(connection);
-                    dupdate.update(listView1, firstname, lastname, phonenumber, gender, Birthdate, password);
+                    dupdate.update(listView1, firstname, lastname, phonenumber, gender, Birthdate, password, Email, Username);
 
 
                 }
@@ -123,7 +109,7 @@ namespace WinFormsApp3
             }
         }
 
-    
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -133,7 +119,7 @@ namespace WinFormsApp3
 
         private void button3_Click(object sender, EventArgs e)
         {
-          
+
 
             if (listView1.SelectedItems.Count > 0)
             {
@@ -166,13 +152,13 @@ namespace WinFormsApp3
         private void button6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form10 form10=new Form10();
+            Form10 form10 = new Form10();
             form10.Location = this.Location;
             form10.Size = this.Size;
             form10.StartPosition = FormStartPosition.Manual;
             form10.Show();
         }
 
- 
+
     }
 }

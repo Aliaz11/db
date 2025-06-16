@@ -1,18 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
-using WinFormsApp3;
-using static System.Reflection.Metadata.BlobBuilder;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+﻿using WinFormsApp3;
 
 namespace db
 {
@@ -26,7 +12,14 @@ namespace db
         public Form6(List<Book> books)
         {
             InitializeComponent();
-            BackPhoto.BackSet(this);
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.CellClick += dataGridView1_CellClick;
+
 
 
         }
@@ -34,11 +27,22 @@ namespace db
 
         private void Form6_Load(object sender, EventArgs e)
         {
-          
+            
+
+
+
 
             DataBaseCrud db = new DataBaseCrud(connection);
-            db.selector(dataGridView1,this);
-     
+            db.selector(dataGridView1, this);
+      
+
+            dataGridView1.RowTemplate.Height = 100;
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                row.Height = 100;
+            }
+
 
 
         }
@@ -64,11 +68,11 @@ namespace db
         {
 
 
-         /*   if (string.IsNullOrEmpty(id))
-            {
-                MessageBox.Show("Please select a book to delete by clicking on its row in the table.", "No Book Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }*/
+            /*   if (string.IsNullOrEmpty(id))
+               {
+                   MessageBox.Show("Please select a book to delete by clicking on its row in the table.", "No Book Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   return;
+               }*/
 
             DialogResult confirmResult = MessageBox.Show(
                 "Are you sure you want to delete this book? This action cannot be undone.",
@@ -78,34 +82,29 @@ namespace db
 
             if (confirmResult == DialogResult.Yes)
             {
-              
-                DataBaseCrud db= new DataBaseCrud(connection);   
-                db.delete(dataGridView1,index,textBox1,textBox2,textBox3);
+
+                DataBaseCrud db = new DataBaseCrud(connection);
+                db.delete(dataGridView1, index);
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-          
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
-            {
-                index = e.RowIndex;
 
-            
-                DataBaseCrud db = new DataBaseCrud(connection);
-                
-            }
-            
-            
-            
-            else
-            {
+            if (e.RowIndex < 0)
 
-                id = string.Empty;
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox3.Clear();
-            }
+            { return; }
+
+
+            index = e.RowIndex;
+            DataBaseCrud db1 = new DataBaseCrud(connection);
+            db1.update(dataGridView1, index, textBox1, textBox2, textBox3,numericUpDown1,dateTimePicker1);
+
+ 
+
+
+
+   
         }
 
 
@@ -115,12 +114,9 @@ namespace db
         private void button2_Click_1(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrEmpty(id))
-            {
-                MessageBox.Show("Please select a book to edit by clicking on its row in the table.", "No Book Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
+            DataBaseCrud db = new DataBaseCrud(connection);
+            db.updateBase(dataGridView1, index, textBox1, textBox2, textBox3, numericUpDown1, dateTimePicker1);
+    
 
             string name = textBox1.Text;
             string author = textBox2.Text;
@@ -131,13 +127,16 @@ namespace db
                 return;
             }
 
-         
+            DataBaseCrud db5 = new DataBaseCrud(connection);
+            db5.selector(dataGridView1, this);
 
-           
+
+
+
         }
 
-  
+
     }
 }
-    
+
 

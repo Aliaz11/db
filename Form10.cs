@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Data;
 using Microsoft.Data.SqlClient;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using WinFormsApp3;
 
 namespace db
@@ -21,7 +12,13 @@ namespace db
         public Form10()
         {
             InitializeComponent();
-            BackPhoto.BackSet(this);
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
+
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void Form10_Load(object sender, EventArgs e)
@@ -45,7 +42,7 @@ namespace db
 
                     if (curruser != null && curruser != reader["iduser"].ToString())
                     {
-                        tb.Rows.Add("total", bookcounter, pricer);
+                        tb.Rows.Add("total", "total books: "+bookcounter, "total payment: "+pricer);
 
 
                         pricer = 0;
@@ -61,12 +58,8 @@ namespace db
                     bookcounter++;
 
                 }
-                tb.Rows.Add("total", bookcounter, pricer);
+                tb.Rows.Add("total","total books: " + bookcounter, "total payment: " + pricer);
                 dataGridView1.DataSource = tb;
-
-                dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 10, FontStyle.Bold);
-
-                dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
 
                 conn.Close();
             }
@@ -81,7 +74,7 @@ namespace db
             form3.Size = this.Size;
             form3.StartPosition = FormStartPosition.Manual;
             form3.Show();
-       
+
         }
     }
 }

@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace db
 {
@@ -20,7 +9,9 @@ namespace db
         public Form7()
         {
             InitializeComponent();
-            BackPhoto.BackSet(this);
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
         }
         public byte[] getphoto()
         {
@@ -28,11 +19,20 @@ namespace db
             pictureBox1.Image.Save(stream, pictureBox1.Image.RawFormat);
             return stream.GetBuffer();
         }
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            string name = textBox1.Text;
-            string author = textBox2.Text;
-            string price = textBox3.Text;
+            Book book = new Book
+            {
+                Name = textBox1.Text,
+                author = textBox2.Text,
+                price = textBox3.Text,
+                quantity = numericUpDown1.Value,
+                Date = dateTimePicker1.Value.ToString(),
+                image = getphoto()
+
+            };
+ 
             ;
 
             byte[] imageBytes = null;
@@ -44,24 +44,11 @@ namespace db
                     imageBytes = ms.ToArray();
                 }
             }
+            DbCrudBook db = new DbCrudBook(connection);
+            db.insert(book);
 
-            string query = $"INSERT INTO Books(name,author,price,image)VALUES(@name,@author,@price,@image)";
-            using (SqlConnection sqlconnection2 = new SqlConnection(connection))
-            {
-                sqlconnection2.Open();
-
-                SqlCommand command2 = new SqlCommand(query, sqlconnection2);
-                command2.Parameters.AddWithValue("@name", name);
-                command2.Parameters.AddWithValue("@author", author);
-                command2.Parameters.AddWithValue("@price", price);
-                command2.Parameters.AddWithValue("@image", getphoto());
-
-                command2.ExecuteNonQuery();
-                sqlconnection2.Close();
-
-
-            }
             textBox1.Text = textBox2.Text = textBox3.Text = "";
+            numericUpDown1.Value = 0;
             pictureBox1.Image = null;
         }
 

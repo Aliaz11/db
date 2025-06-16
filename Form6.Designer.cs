@@ -40,7 +40,12 @@
             label2 = new Label();
             label3 = new Label();
             button2 = new Button();
+            numericUpDown1 = new NumericUpDown();
+            label5 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
@@ -52,7 +57,6 @@
             dataGridView1.Size = new Size(780, 391);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
- 
             // 
             // button1
             // 
@@ -61,7 +65,7 @@
             button1.ImageAlign = ContentAlignment.TopCenter;
             button1.Location = new Point(-3, 1);
             button1.Name = "button1";
-            button1.Size = new Size(69, 79);
+            button1.Size = new Size(69, 74);
             button1.TabIndex = 1;
             button1.Text = "Back";
             button1.TextAlign = ContentAlignment.BottomCenter;
@@ -70,26 +74,24 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(98, 173);
+            textBox1.Location = new Point(98, 104);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(161, 27);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(98, 252);
+            textBox2.Location = new Point(98, 185);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(161, 27);
             textBox2.TabIndex = 3;
-          
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(98, 321);
+            textBox3.Location = new Point(98, 253);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(161, 27);
             textBox3.TabIndex = 4;
-
             // 
             // button3
             // 
@@ -103,7 +105,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(165, 435);
+            button4.Location = new Point(165, 483);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 7;
@@ -114,17 +116,16 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 176);
+            label1.Location = new Point(12, 111);
             label1.Name = "label1";
             label1.Size = new Size(49, 20);
             label1.TabIndex = 8;
             label1.Text = "Name";
-          
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 255);
+            label2.Location = new Point(12, 192);
             label2.Name = "label2";
             label2.Size = new Size(54, 20);
             label2.TabIndex = 9;
@@ -133,7 +134,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 328);
+            label3.Location = new Point(19, 260);
             label3.Name = "label3";
             label3.Size = new Size(42, 20);
             label3.TabIndex = 10;
@@ -141,7 +142,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(12, 435);
+            button2.Location = new Point(25, 483);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 11;
@@ -149,11 +150,47 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
             // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(98, 328);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(150, 27);
+            numericUpDown1.TabIndex = 12;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(25, 396);
+            label5.Name = "label5";
+            label5.Size = new Size(41, 20);
+            label5.TabIndex = 14;
+            label5.Text = "Date";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(98, 391);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(173, 27);
+            dateTimePicker1.TabIndex = 15;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(19, 330);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 20);
+            label4.TabIndex = 13;
+            label4.Text = "quantity";
+            // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1131, 582);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(numericUpDown1);
             Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -169,6 +206,7 @@
             Text = "Form6";
             Load += Form6_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -185,5 +223,9 @@
         private Label label2;
         private Label label3;
         private Button button2;
+        private NumericUpDown numericUpDown1;
+        private Label label5;
+        private DateTimePicker dateTimePicker1;
+        private Label label4;
     }
 }
