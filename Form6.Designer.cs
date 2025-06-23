@@ -121,6 +121,7 @@
             label1.Size = new Size(49, 20);
             label1.TabIndex = 8;
             label1.Text = "Name";
+            label1.BackColor = Color.Transparent;
             // 
             // label2
             // 
@@ -130,6 +131,7 @@
             label2.Size = new Size(54, 20);
             label2.TabIndex = 9;
             label2.Text = "Author";
+            label2.BackColor = Color.Transparent;
             // 
             // label3
             // 
@@ -139,6 +141,7 @@
             label3.Size = new Size(42, 20);
             label3.TabIndex = 10;
             label3.Text = "price";
+            label3.BackColor = Color.Transparent;
             // 
             // button2
             // 
@@ -165,6 +168,7 @@
             label5.Size = new Size(41, 20);
             label5.TabIndex = 14;
             label5.Text = "Date";
+            label5.BackColor = Color.Transparent;
             // 
             // dateTimePicker1
             // 
@@ -181,6 +185,7 @@
             label4.Size = new Size(63, 20);
             label4.TabIndex = 13;
             label4.Text = "quantity";
+            label4.BackColor = Color.Transparent;
             // 
             // Form6
             // 

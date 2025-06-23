@@ -38,8 +38,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(320, 17);
+            label1.Location = new Point(532, 9);
             label1.Name = "label1";
             label1.Size = new Size(180, 50);
             label1.TabIndex = 0;
@@ -48,17 +49,17 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(73, 110);
+            dataGridView1.Location = new Point(139, 121);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(780, 307);
+            dataGridView1.Size = new Size(1022, 307);
             dataGridView1.TabIndex = 1;
             // 
             // button1
             // 
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(-7, 9);
+            button1.Location = new Point(-7, 2);
             button1.Name = "button1";
             button1.Size = new Size(71, 81);
             button1.TabIndex = 2;
@@ -71,7 +72,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(865, 450);
+            ClientSize = new Size(1173, 450);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Controls.Add(label1);

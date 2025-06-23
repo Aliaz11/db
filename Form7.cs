@@ -19,7 +19,7 @@ namespace db
             pictureBox1.Image.Save(stream, pictureBox1.Image.RawFormat);
             return stream.GetBuffer();
         }
-       
+
         private void button1_Click(object sender, EventArgs e)
         {
             Book book = new Book
@@ -32,7 +32,7 @@ namespace db
                 image = getphoto()
 
             };
- 
+
             ;
 
             byte[] imageBytes = null;
@@ -67,6 +67,13 @@ namespace db
 
         }
 
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form6 form6 = new Form6();
+            form6.StartPosition = FormStartPosition.CenterScreen;
+            form6.Size=this.Size;
+            form6.Show();
+        }
     }
 }

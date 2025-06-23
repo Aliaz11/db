@@ -1,240 +1,240 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ALI\\Documents\\c#\\second\\",
+  "WorkspaceRootPath": "C:\\Users\\ALI\\Videos\\db\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\databasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:databasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\idatabasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:idatabasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\dbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:dbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\ipasswordchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:ipasswordchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\listviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:listviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\idbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:idbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\ilabelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:ilabelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\labelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:labelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\locator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:locator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\passwordupdator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:passwordupdator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\resource1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resource1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\ilistviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:ilistviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\emailverifycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:emailverifycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\iemailveri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:iemailveri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\dels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:dels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\idels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:idels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\backphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\databasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:databasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\idatabasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:idatabasecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\dbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:dbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\ipasswordchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:ipasswordchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\listviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:listviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\idbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:idbcrudbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\ilabelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:ilabelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\labelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:labelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\locator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:locator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\passwordupdator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:passwordupdator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\resource1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resource1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\ilistviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:ilistviewcre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\emailverifycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:emailverifycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\iemailveri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:iemailveri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\dels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:dels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\idels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:idels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:passchg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\backphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:backphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\ibackphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\ibackphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:ibackphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\assemblyinfo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\assemblyinfo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:assemblyinfo1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_PICTURES_SECOND_BIN_DEBUG_NET8.0_WINDOWS_STU2.MDF/True/SqlTable/dbo.Stu1.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form8.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form8.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form8.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form9.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form9.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form9.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\passchg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\passchg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:passchg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -244,45 +244,45 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_PICTURES_SECOND_STU2.MDF/True/SqlTable/dbo.Stu1.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form5.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form5.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form5.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form6.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form6.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form6.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\form2.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\form2.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:form2.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_PICTURES_SECOND_STU.MDF/True/SqlTable/dbo.Table.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\db.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\db.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:db.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_PICTURES_SECOND_STU.MDF/True/SqlTable/dbo.Student.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Documents\\c#\\second\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|C:\\Users\\ALI\\Videos\\db\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\resources\\home-button.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\resources\\home-button.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home-button.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\resources\\home.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\resources\\home.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\resources\\home-button (2).png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\resources\\home-button (2).png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home-button (2).png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\documents\\c#\\second\\resources\\home-button (1).png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|c:\\users\\ali\\videos\\db\\resources\\home-button (1).png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{F37D94DC-711B-647E-CC03-55233352191D}|db.csproj|solutionrelative:resources\\home-button (1).png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
@@ -299,7 +299,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 31,
+          "SelectedChildIndex": 37,
           "Children": [
             {
               "$type": "Bookmark",
@@ -318,12 +318,24 @@
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "ILabelValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\ILabelValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\ILabelValidator.cs",
               "RelativeDocumentMoniker": "ILabelValidator.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\ILabelValidator.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\ILabelValidator.cs",
               "RelativeToolTip": "ILabelValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -331,11 +343,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "IPasswordchange.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\IPasswordchange.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\IPasswordchange.cs",
               "RelativeDocumentMoniker": "IPasswordchange.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\IPasswordchange.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\IPasswordchange.cs",
               "RelativeToolTip": "IPasswordchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -343,11 +355,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "IListViewCre.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\IListViewCre.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\IListViewCre.cs",
               "RelativeDocumentMoniker": "IListViewCre.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\IListViewCre.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\IListViewCre.cs",
               "RelativeToolTip": "IListViewCre.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -355,11 +367,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "Idels.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Idels.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Idels.cs",
               "RelativeDocumentMoniker": "Idels.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Idels.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Idels.cs",
               "RelativeToolTip": "Idels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -367,11 +379,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "IDbCrudBook.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\IDbCrudBook.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\IDbCrudBook.cs",
               "RelativeDocumentMoniker": "IDbCrudBook.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\IDbCrudBook.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\IDbCrudBook.cs",
               "RelativeToolTip": "IDbCrudBook.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -379,11 +391,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "IDataBaseCrud.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\IDataBaseCrud.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\IDataBaseCrud.cs",
               "RelativeDocumentMoniker": "IDataBaseCrud.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\IDataBaseCrud.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\IDataBaseCrud.cs",
               "RelativeToolTip": "IDataBaseCrud.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -391,11 +403,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "IBackphoto.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\IBackphoto.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\IBackphoto.cs",
               "RelativeDocumentMoniker": "IBackphoto.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\IBackphoto.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\IBackphoto.cs",
               "RelativeToolTip": "IBackphoto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -403,11 +415,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "PasswordUpdator.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\PasswordUpdator.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\PasswordUpdator.cs",
               "RelativeDocumentMoniker": "PasswordUpdator.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\PasswordUpdator.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\PasswordUpdator.cs",
               "RelativeToolTip": "PasswordUpdator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -415,11 +427,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "LabelValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\LabelValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\LabelValidator.cs",
               "RelativeDocumentMoniker": "LabelValidator.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\LabelValidator.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\LabelValidator.cs",
               "RelativeToolTip": "LabelValidator.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAswIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -427,11 +439,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "IUser.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\IUser.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\IUser.cs",
               "RelativeDocumentMoniker": "IUser.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\IUser.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\IUser.cs",
               "RelativeToolTip": "IUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -439,11 +451,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Emailverifycs.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Emailverifycs.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Emailverifycs.cs",
               "RelativeDocumentMoniker": "Emailverifycs.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Emailverifycs.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Emailverifycs.cs",
               "RelativeToolTip": "Emailverifycs.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAYwAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -451,11 +463,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "IEmailveri.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\IEmailveri.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\IEmailveri.cs",
               "RelativeDocumentMoniker": "IEmailveri.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\IEmailveri.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\IEmailveri.cs",
               "RelativeToolTip": "IEmailveri.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -463,11 +475,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "DbCrudBook.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\DbCrudBook.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\DbCrudBook.cs",
               "RelativeDocumentMoniker": "DbCrudBook.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\DbCrudBook.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\DbCrudBook.cs",
               "RelativeToolTip": "DbCrudBook.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAYwAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -475,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "dbo.Stu1.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_PICTURES_SECOND_BIN_DEBUG_NET8.0_WINDOWS_STU2.MDF/True/SqlTable/dbo.Stu1.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ALI_PICTURES_SECOND_BIN_DEBUG_NET8.0_WINDOWS_STU2.MDF/True/SqlTable/dbo.Stu1.sql",
@@ -484,13 +496,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 9,
               "Title": "Form7.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form7.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form7.Designer.cs",
               "RelativeDocumentMoniker": "Form7.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form7.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form7.Designer.cs",
               "RelativeToolTip": "Form7.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAYwMwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T19:53:25.508Z"
             },
@@ -498,9 +510,9 @@
               "$type": "Document",
               "DocumentIndex": 55,
               "Title": "Form9.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form9.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form9.Designer.cs",
               "RelativeDocumentMoniker": "Form9.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form9.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form9.Designer.cs",
               "RelativeToolTip": "Form9.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -508,11 +520,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Locator.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Locator.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Locator.cs",
               "RelativeDocumentMoniker": "Locator.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Locator.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Locator.cs",
               "RelativeToolTip": "Locator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -520,11 +532,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "Form10.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form10.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form10.cs",
               "RelativeDocumentMoniker": "Form10.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form10.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form10.cs",
               "RelativeToolTip": "Form10.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwDYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -535,9 +547,9 @@
               "$type": "Document",
               "DocumentIndex": 57,
               "Title": "Passchg.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Passchg.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Passchg.Designer.cs",
               "RelativeDocumentMoniker": "Passchg.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Passchg.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Passchg.Designer.cs",
               "RelativeToolTip": "Passchg.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -545,11 +557,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Form9.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form9.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form9.cs",
               "RelativeDocumentMoniker": "Form9.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form9.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form9.cs",
               "RelativeToolTip": "Form9.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAgwBgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -558,11 +570,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Passchg.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Passchg.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Passchg.cs",
               "RelativeDocumentMoniker": "Passchg.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Passchg.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Passchg.cs",
               "RelativeToolTip": "Passchg.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -573,9 +585,9 @@
               "$type": "Document",
               "DocumentIndex": 54,
               "Title": "Form8.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form8.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form8.Designer.cs",
               "RelativeDocumentMoniker": "Form8.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form8.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form8.Designer.cs",
               "RelativeToolTip": "Form8.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -583,11 +595,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "Form8.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form8.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form8.cs",
               "RelativeDocumentMoniker": "Form8.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form8.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form8.cs",
               "RelativeToolTip": "Form8.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -614,11 +626,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "ListViewCre.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\ListViewCre.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\ListViewCre.cs",
               "RelativeDocumentMoniker": "ListViewCre.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\ListViewCre.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\ListViewCre.cs",
               "RelativeToolTip": "ListViewCre.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -626,11 +638,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\App.config",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\App.config",
               "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\App.config",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\App.config",
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -638,24 +650,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "DataBaseCrud.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\DataBaseCrud.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\DataBaseCrud.cs",
               "RelativeDocumentMoniker": "DataBaseCrud.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\DataBaseCrud.cs*",
-              "RelativeToolTip": "DataBaseCrud.cs*",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAwwE4AAAB9AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\DataBaseCrud.cs",
+              "RelativeToolTip": "DataBaseCrud.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwFcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T21:38:57.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T21:38:57.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "BackPhoto.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\BackPhoto.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\BackPhoto.cs",
               "RelativeDocumentMoniker": "BackPhoto.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\BackPhoto.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\BackPhoto.cs",
               "RelativeToolTip": "BackPhoto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -663,47 +674,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 4,
               "Title": "Form7.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form7.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form7.cs",
               "RelativeDocumentMoniker": "Form7.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form7.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form7.cs",
               "RelativeToolTip": "Form7.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAADgvzUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T11:59:30.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 0,
               "Title": "Form6.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form6.Designer.cs",
               "RelativeDocumentMoniker": "Form6.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.Designer.cs",
-              "RelativeToolTip": "Form6.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form6.Designer.cs*",
+              "RelativeToolTip": "Form6.Designer.cs*",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAYwLsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:04:28.248Z"
+              "WhenOpened": "2025-06-03T16:04:28.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 61,
               "Title": "Form5.resx",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.resx",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form5.resx",
               "RelativeDocumentMoniker": "Form5.resx",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.resx",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form5.resx",
               "RelativeToolTip": "Form5.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-03T16:04:28.899Z"
+              "WhenOpened": "2025-06-03T16:04:28.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Program.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -713,20 +726,21 @@
               "$type": "Document",
               "DocumentIndex": 62,
               "Title": "Form6.resx",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.resx",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form6.resx",
               "RelativeDocumentMoniker": "Form6.resx",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.resx",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form6.resx",
               "RelativeToolTip": "Form6.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-03T15:42:33.417Z"
+              "WhenOpened": "2025-06-03T15:42:33.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Book.cs",
               "RelativeDocumentMoniker": "Book.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Book.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Book.cs",
               "RelativeToolTip": "Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -734,24 +748,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form6.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form6.cs",
               "RelativeDocumentMoniker": "Form6.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form6.cs",
               "RelativeToolTip": "Form6.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAowHUAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAArwE4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T15:09:29.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "AssemblyInfo1.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\AssemblyInfo1.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\AssemblyInfo1.cs",
               "RelativeDocumentMoniker": "AssemblyInfo1.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\AssemblyInfo1.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\AssemblyInfo1.cs",
               "RelativeToolTip": "AssemblyInfo1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -759,11 +773,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Form5.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form5.cs",
               "RelativeDocumentMoniker": "Form5.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form5.cs",
               "RelativeToolTip": "Form5.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -772,23 +786,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "Form5.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form5.Designer.cs",
               "RelativeDocumentMoniker": "Form5.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form5.Designer.cs",
               "RelativeToolTip": "Form5.Designer.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAYwDEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:04:55.646Z"
+              "WhenOpened": "2025-06-02T11:04:55.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "Form4.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form4.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form4.Designer.cs",
               "RelativeDocumentMoniker": "Form4.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form4.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form4.Designer.cs",
               "RelativeToolTip": "Form4.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -796,11 +811,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Form4.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form4.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form4.cs",
               "RelativeDocumentMoniker": "Form4.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form4.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form4.cs",
               "RelativeToolTip": "Form4.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAgwC0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -829,32 +844,32 @@
               "$type": "Document",
               "DocumentIndex": 63,
               "Title": "Form2.resx",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.resx",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form2.resx",
               "RelativeDocumentMoniker": "Form2.resx",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.resx",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form2.resx",
               "RelativeToolTip": "Form2.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-06-01T11:01:26.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Regex.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Regex.cs",
-              "RelativeDocumentMoniker": "Regex.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Regex.cs",
-              "RelativeToolTip": "Regex.cs",
+              "DocumentIndex": 30,
+              "Title": "regex.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\regex.cs",
+              "RelativeDocumentMoniker": "regex.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\regex.cs",
+              "RelativeToolTip": "regex.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T17:20:22.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "db.csproj",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\db.csproj",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\db.csproj",
               "RelativeDocumentMoniker": "db.csproj",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\db.csproj",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\db.csproj",
               "RelativeToolTip": "db.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -862,11 +877,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form3.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form3.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form3.cs",
               "RelativeToolTip": "Form3.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -875,22 +890,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "Resource1.resx",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Resource1.resx",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Resource1.resx",
               "RelativeDocumentMoniker": "Resource1.resx",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Resource1.resx",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Resource1.resx",
               "RelativeToolTip": "Resource1.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-05-30T16:48:21.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Properties\\Resources.resx",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Properties\\Resources.resx",
               "RelativeToolTip": "Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-05-30T16:35:43.962Z"
@@ -899,9 +914,9 @@
               "$type": "Document",
               "DocumentIndex": 69,
               "Title": "home.png",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home.png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Resources\\home.png",
               "RelativeDocumentMoniker": "Resources\\home.png",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home.png",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Resources\\home.png",
               "RelativeToolTip": "Resources\\home.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-05-30T16:33:33.395Z"
@@ -910,9 +925,9 @@
               "$type": "Document",
               "DocumentIndex": 68,
               "Title": "home-button.png",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home-button.png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Resources\\home-button.png",
               "RelativeDocumentMoniker": "Resources\\home-button.png",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home-button.png",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Resources\\home-button.png",
               "RelativeToolTip": "Resources\\home-button.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-05-30T16:33:31.638Z"
@@ -921,9 +936,9 @@
               "$type": "Document",
               "DocumentIndex": 70,
               "Title": "home-button (2).png",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home-button (2).png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Resources\\home-button (2).png",
               "RelativeDocumentMoniker": "Resources\\home-button (2).png",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home-button (2).png",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Resources\\home-button (2).png",
               "RelativeToolTip": "Resources\\home-button (2).png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-05-30T16:33:30.535Z"
@@ -932,9 +947,9 @@
               "$type": "Document",
               "DocumentIndex": 71,
               "Title": "home-button (1).png",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home-button (1).png",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Resources\\home-button (1).png",
               "RelativeDocumentMoniker": "Resources\\home-button (1).png",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Resources\\home-button (1).png",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Resources\\home-button (1).png",
               "RelativeToolTip": "Resources\\home-button (1).png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-05-30T16:33:29.669Z"
@@ -943,33 +958,33 @@
               "$type": "Document",
               "DocumentIndex": 65,
               "Title": "db",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\db.csproj",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\db.csproj",
               "RelativeDocumentMoniker": "db.csproj",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\db.csproj",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\db.csproj",
               "RelativeToolTip": "db.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-30T16:33:22.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 10,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form1.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwDwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T16:28:12.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "dels.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\dels.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\dels.cs",
               "RelativeDocumentMoniker": "dels.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\dels.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\dels.cs",
               "RelativeToolTip": "dels.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAswAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -980,9 +995,9 @@
               "DocumentIndex": 72,
               "Title": "that.png",
               "DocumentMoniker": "C:\\Users\\ALI\\Pictures\\that.png",
-              "RelativeDocumentMoniker": "..\\..\\..\\Pictures\\that.png",
+              "RelativeDocumentMoniker": "..\\..\\Pictures\\that.png",
               "ToolTip": "C:\\Users\\ALI\\Pictures\\that.png",
-              "RelativeToolTip": "..\\..\\..\\Pictures\\that.png",
+              "RelativeToolTip": "..\\..\\Pictures\\that.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-05-30T16:27:14.106Z"
             },
@@ -991,19 +1006,19 @@
               "DocumentIndex": 73,
               "Title": "that.png",
               "DocumentMoniker": "C:\\Users\\ALI\\Downloads\\that.png",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\that.png",
+              "RelativeDocumentMoniker": "..\\..\\Downloads\\that.png",
               "ToolTip": "C:\\Users\\ALI\\Downloads\\that.png",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\that.png",
+              "RelativeToolTip": "..\\..\\Downloads\\that.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-05-29T17:57:54.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "Form3.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form3.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form3.Designer.cs",
               "RelativeDocumentMoniker": "Form3.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form3.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form3.Designer.cs",
               "RelativeToolTip": "Form3.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1013,9 +1028,9 @@
               "$type": "Document",
               "DocumentIndex": 58,
               "Title": "Form2.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form2.Designer.cs",
               "RelativeDocumentMoniker": "Form2.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form2.Designer.cs",
               "RelativeToolTip": "Form2.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1025,9 +1040,9 @@
               "$type": "Document",
               "DocumentIndex": 56,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1035,11 +1050,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAgwG8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1047,134 +1062,124 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form6.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.cs",
-              "RelativeDocumentMoniker": "Form6.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form6.cs [Design]",
-              "RelativeToolTip": "Form6.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:08:41.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form5.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.cs",
-              "RelativeDocumentMoniker": "Form5.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form5.cs [Design]",
-              "RelativeToolTip": "Form5.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:57:08.806Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Form4.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form4.cs",
-              "RelativeDocumentMoniker": "Form4.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form4.cs [Design]",
-              "RelativeToolTip": "Form4.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:16:29.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Form7.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form7.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form7.cs",
               "RelativeDocumentMoniker": "Form7.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form7.cs [Design]",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form7.cs [Design]",
               "RelativeToolTip": "Form7.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T11:59:29.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form3.cs [Design]",
-              "RelativeToolTip": "Form3.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:19:11.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:07:57.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Form9.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form9.cs",
-              "RelativeDocumentMoniker": "Form9.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form9.cs [Design]",
-              "RelativeToolTip": "Form9.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T08:49:45.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Passchg.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Passchg.cs",
-              "RelativeDocumentMoniker": "Passchg.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Passchg.cs [Design]",
-              "RelativeToolTip": "Passchg.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T22:48:39.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:02:45.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Form10.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form10.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form10.cs",
               "RelativeDocumentMoniker": "Form10.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form10.cs [Design]",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form10.cs [Design]",
               "RelativeToolTip": "Form10.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T11:18:56.648Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form6.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form6.cs",
+              "RelativeDocumentMoniker": "Form6.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form6.cs [Design]",
+              "RelativeToolTip": "Form6.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:08:41.855Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form5.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form5.cs",
+              "RelativeDocumentMoniker": "Form5.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form5.cs [Design]",
+              "RelativeToolTip": "Form5.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T10:57:08.806Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form4.cs [Design]",
+              "RelativeToolTip": "Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T10:16:29.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form3.cs [Design]",
+              "RelativeToolTip": "..\\..\\Documents\\c#\\second\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:19:11.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form2.cs [Design]",
+              "RelativeToolTip": "Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T10:07:57.447Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Form9.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form9.cs",
+              "RelativeDocumentMoniker": "Form9.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form9.cs [Design]",
+              "RelativeToolTip": "Form9.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:49:45.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Passchg.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Passchg.cs",
+              "RelativeDocumentMoniker": "Passchg.cs",
+              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Passchg.cs [Design]",
+              "RelativeToolTip": "..\\..\\Documents\\c#\\second\\Passchg.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T22:48:39.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T11:02:45.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form8.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Form8.cs",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Form8.cs",
               "RelativeDocumentMoniker": "Form8.cs",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Form8.cs [Design]",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Form8.cs [Design]",
               "RelativeToolTip": "Form8.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T22:08:38.291Z"
@@ -1183,9 +1188,9 @@
               "$type": "Document",
               "DocumentIndex": 67,
               "Title": "Settings.settings",
-              "DocumentMoniker": "C:\\Users\\ALI\\Documents\\c#\\second\\Properties\\Settings.settings",
+              "DocumentMoniker": "C:\\Users\\ALI\\Videos\\db\\Properties\\Settings.settings",
               "RelativeDocumentMoniker": "Properties\\Settings.settings",
-              "ToolTip": "C:\\Users\\ALI\\Documents\\c#\\second\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\ALI\\Videos\\db\\Properties\\Settings.settings",
               "RelativeToolTip": "Properties\\Settings.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
               "WhenOpened": "2025-05-30T16:39:49.348Z"

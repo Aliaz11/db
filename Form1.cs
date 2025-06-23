@@ -8,8 +8,7 @@ namespace WinFormsApp3
         {
 
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = new Point(550, 200);
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Size = new Size(1300, 800);
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;

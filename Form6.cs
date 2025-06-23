@@ -23,6 +23,20 @@ namespace db
 
 
         }
+        public Form6()
+        {
+            InitializeComponent();
+            BackPhoto bc = new BackPhoto();
+
+            bc.BackSet(this);
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.CellClick += dataGridView1_CellClick;
+
+
+
+        }
 
 
         private void Form6_Load(object sender, EventArgs e)
@@ -61,6 +75,9 @@ namespace db
         private void button3_Click(object sender, EventArgs e)
         {
             Form7 form7 = new Form7();
+            this.Close();   
+            form7.Location = this.Location; 
+            form7.Size = this.Size; 
             form7.Show();
         }
 
