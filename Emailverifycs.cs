@@ -37,7 +37,7 @@ namespace db
                 smtpClient.UseDefaultCredentials = false;
 
 
-                smtpClient.Credentials = new NetworkCredential("alitry679@gmail.com", "xoki izwv ddpp lyku");
+                smtpClient.Credentials = new NetworkCredential("the email to send", "SMTP‐authentication password  needs to be entered");
                 smtpClient.EnableSsl = true;
 
 

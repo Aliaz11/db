@@ -35,6 +35,8 @@
             label1 = new Label();
             button2 = new Button();
             label3 = new Label();
+            label4 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label2
@@ -99,11 +101,32 @@
             label3.TabIndex = 6;
             label3.Text = "label3";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(131, 9);
+            label4.Name = "label4";
+            label4.Size = new Size(521, 20);
+            label4.TabIndex = 7;
+            label4.Text = "SMTP‐authentication password  is needed form you in order to send the code";
+            // 
+            // button3
+            // 
+            button3.Location = new Point(649, 70);
+            button3.Name = "button3";
+            button3.Size = new Size(123, 56);
+            button3.TabIndex = 8;
+            button3.Text = "Log in page";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -126,5 +149,7 @@
         private Label label1;
         private Button button2;
         private Label label3;
+        private Label label4;
+        private Button button3;
     }
 }

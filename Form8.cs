@@ -49,5 +49,15 @@
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Size = this.Size;
+            form4.StartPosition = FormStartPosition.CenterScreen;
+            this.Close();
+            form4.Show();
+
+        }
     }
 }

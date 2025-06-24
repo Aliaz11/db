@@ -63,9 +63,9 @@
             button1.Cursor = Cursors.IBeam;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(-3, 1);
+            button1.Location = new Point(-8, 1);
             button1.Name = "button1";
-            button1.Size = new Size(69, 74);
+            button1.Size = new Size(69, 86);
             button1.TabIndex = 1;
             button1.Text = "Back";
             button1.TextAlign = ContentAlignment.BottomCenter;
@@ -95,11 +95,14 @@
             // 
             // button3
             // 
-            button3.Location = new Point(162, 1);
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.TopCenter;
+            button3.Location = new Point(53, 1);
             button3.Name = "button3";
-            button3.Size = new Size(109, 29);
+            button3.Size = new Size(66, 86);
             button3.TabIndex = 6;
-            button3.Text = "Add page";
+            button3.Text = "Adding";
+            button3.TextAlign = ContentAlignment.BottomCenter;
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -116,32 +119,32 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(12, 111);
             label1.Name = "label1";
             label1.Size = new Size(49, 20);
             label1.TabIndex = 8;
             label1.Text = "Name";
-            label1.BackColor = Color.Transparent;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Location = new Point(12, 192);
             label2.Name = "label2";
             label2.Size = new Size(54, 20);
             label2.TabIndex = 9;
             label2.Text = "Author";
-            label2.BackColor = Color.Transparent;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Location = new Point(19, 260);
             label3.Name = "label3";
             label3.Size = new Size(42, 20);
             label3.TabIndex = 10;
             label3.Text = "price";
-            label3.BackColor = Color.Transparent;
             // 
             // button2
             // 
@@ -163,12 +166,12 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Location = new Point(25, 396);
             label5.Name = "label5";
             label5.Size = new Size(41, 20);
             label5.TabIndex = 14;
             label5.Text = "Date";
-            label5.BackColor = Color.Transparent;
             // 
             // dateTimePicker1
             // 
@@ -180,12 +183,12 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Location = new Point(19, 330);
             label4.Name = "label4";
             label4.Size = new Size(63, 20);
             label4.TabIndex = 13;
             label4.Text = "quantity";
-            label4.BackColor = Color.Transparent;
             // 
             // Form6
             // 

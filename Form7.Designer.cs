@@ -44,8 +44,8 @@
             dateTimePicker1 = new DateTimePicker();
             label5 = new Label();
             panel1 = new Panel();
-            label6 = new Label();
             button3 = new Button();
+            label6 = new Label();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -85,9 +85,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(369, 409);
+            button1.Location = new Point(199, 399);
             button1.Name = "button1";
-            button1.Size = new Size(121, 29);
+            button1.Size = new Size(121, 41);
             button1.TabIndex = 3;
             button1.Text = "Add the book";
             button1.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(602, 108);
+            pictureBox1.Location = new Point(771, 115);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(172, 172);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -130,9 +130,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(628, 308);
+            button2.Location = new Point(791, 399);
             button2.Name = "button2";
-            button2.Size = new Size(122, 34);
+            button2.Size = new Size(122, 36);
             button2.TabIndex = 8;
             button2.Text = "Select Cover";
             button2.UseVisualStyleBackColor = true;
@@ -181,8 +181,18 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 76);
+            panel1.Size = new Size(1194, 76);
             panel1.TabIndex = 13;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(1052, 10);
+            button3.Name = "button3";
+            button3.Size = new Size(114, 49);
+            button3.TabIndex = 14;
+            button3.Text = "editing ";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label6
             // 
@@ -195,21 +205,11 @@
             label6.TabIndex = 0;
             label6.Text = "Books adding";
             // 
-            // button3
-            // 
-            button3.Location = new Point(677, 11);
-            button3.Name = "button3";
-            button3.Size = new Size(110, 39);
-            button3.TabIndex = 14;
-            button3.Text = "editing ";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
             // Form7
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1194, 450);
             Controls.Add(panel1);
             Controls.Add(label5);
             Controls.Add(dateTimePicker1);

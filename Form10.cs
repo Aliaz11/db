@@ -9,6 +9,7 @@ namespace db
         int pricer = 0;
         int bookcounter = 0;
         string connection = Locator.GetConnectionString();
+        int full_income = 0;
         public Form10()
         {
             InitializeComponent();
@@ -39,6 +40,8 @@ namespace db
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
+                   
+                    full_income += Convert.ToInt32(reader["price"]);
 
                     if (curruser != null && curruser != reader["iduser"].ToString())
                     {
@@ -59,7 +62,9 @@ namespace db
 
                 }
                 tb.Rows.Add("total","total books: " + bookcounter, "total payment: " + pricer);
+                tb.Rows.Add("the total income is" , full_income);
                 dataGridView1.DataSource = tb;
+                
 
                 conn.Close();
             }
