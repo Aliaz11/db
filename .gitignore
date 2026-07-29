@@ -1,0 +1,133 @@
+# ---------------------------------------------------------------------------
+# .NET / Visual Studio
+# ---------------------------------------------------------------------------
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+build/
+bld/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+[Pp]ublish[Oo]utput/
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual Studio / Rider / VS Code local state
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.sln.docstates
+*.sln.iml
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.VisualState.xml
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.ncrunch*
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# Test results / coverage
+[Tt]est[Rr]esult*/
+TestResults/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+*.trx
+coverage*.json
+coverage*.xml
+coverage*.info
+BenchmarkDotNet.Artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+
+# ---------------------------------------------------------------------------
+# Local SQL Server / LocalDB database files
+# The schema lives in sql/schema.sql -- rebuild the database from that script,
+# do not commit the attached data files.
+# ---------------------------------------------------------------------------
+*.mdf
+*.ldf
+*.ndf
+*.bak
+
+# ---------------------------------------------------------------------------
+# Local configuration and secrets
+# SMTP credentials come from environment variables (see README.md).
+# ---------------------------------------------------------------------------
+appsettings.*.local.json
+appsettings.Development.json
+*.local.config
+App.config.local
+secrets.json
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# OS noise
+# ---------------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*~
