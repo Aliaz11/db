@@ -98,6 +98,19 @@ If you would rather keep the database somewhere stable, create it wherever you
 like and point `DB_CONNECTION` at the attached catalog instead — see the next
 section.
 
+> **Upgrading an existing database?** If your `Stu2.mdf` predates password
+> hashing, `Stu1.Password` is `NVARCHAR(50)` — too narrow for the 83-character
+> PBKDF2 record. Registration and password reset fail with
+> `Msg 2628: String or binary data would be truncated`, and the automatic
+> re-hash of legacy rows fails silently. Run this once:
+>
+> ```powershell
+> sqlcmd -S "(localdb)\MSSQLLocalDB" -d Stu2 -i sql\migrations\001_widen_password_for_hashes.sql
+> ```
+>
+> It is idempotent, leaves existing passwords untouched, and does nothing to a
+> database created from `sql/schema.sql`, which already uses `NVARCHAR(200)`.
+
 `sql/schema.sql` is idempotent — re-running it is safe. `sql/seed.sql` creates
 the `admin` account and a few sample books; **it does not set a password**,
 because password hashes can only be produced by the app. Set the admin password
