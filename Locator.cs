@@ -1,11 +1,10 @@
-﻿namespace db
+using db.Configuration;
+
+namespace db
 {
     public static class Locator
     {
-        public static string GetConnectionString()
-        {
-            string path = System.AppDomain.CurrentDomain.BaseDirectory;
-            return $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={path}Stu2.mdf;Integrated Security=True;";
-        }
+        /// <summary>Effective database connection string; delegates to <see cref="AppSettings.ConnectionString"/>.</summary>
+        public static string GetConnectionString() => AppSettings.ConnectionString;
     }
 }

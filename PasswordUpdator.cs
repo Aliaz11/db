@@ -1,70 +1,65 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 using Microsoft.Data.SqlClient;
 using WinFormsApp3;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using db.Configuration;
+using db.Security;
 
 namespace db
 {
-    public class PasswordUpdator: IPasswordchange
+    public class PasswordUpdator : IPasswordchange
     {
-        string connection=Locator.GetConnectionString();
-        string email;
-        public PasswordUpdator(string email,Form form)
+        private readonly string connection = AppSettings.ConnectionString;
+        private readonly string email;
+
+        public PasswordUpdator(string email, Form form)
         {
             this.email = email;
-
         }
-        public void updator(TextBox textBox1,TextBox textBox2)
+
+        /// <summary>
+        /// Validates and stores a new (hashed) password for the account this instance was created for.
+        /// Returns true only when a row was actually updated; navigation is left to the caller.
+        /// </summary>
+        public bool updator(TextBox newPassword, TextBox confirmPassword)
         {
-            if ((!CommonFieldValidatorFunctions.FieldPatternValid(textBox1.Text, Regex.Strong_Password_RegEx_Pattern)))
+            if (!CommonFieldValidatorFunctions.FieldPatternValid(newPassword.Text, Regex.Strong_Password_RegEx_Pattern))
             {
                 MessageBox.Show("the password isnt strong enough");
-                return;
-
+                return false;
             }
-            else if (!CommonFieldValidatorFunctions.PatternMatchValidDel(textBox1.Text, textBox2.Text))
 
+            if (!CommonFieldValidatorFunctions.FieldsCompareValidDel(newPassword.Text, confirmPassword.Text))
             {
                 MessageBox.Show("password dont match");
-
-                return;
+                return false;
             }
-            else
+
+            if (string.IsNullOrWhiteSpace(email))
             {
-                using (SqlConnection sqlConnection = new SqlConnection(connection))
+                MessageBox.Show("No account is associated with this request.");
+                return false;
+            }
+
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
+            {
+                sqlConnection.Open();
+
+                const string query = "UPDATE Stu1 SET Password = @password WHERE Email = @email";
+
+                using (SqlCommand command = new SqlCommand(query, sqlConnection))
                 {
-                    sqlConnection.Open();
+                    command.Parameters.AddWithValue("@password", PasswordHasher.Hash(newPassword.Text));
+                    command.Parameters.Add("@email", SqlDbType.NVarChar, 200).Value = email;
 
-
-
-
-                    string query = $"UPDATE Stu1 SET password=@password WHERE Email = '{email}'";
-
-                    using (SqlCommand command = new SqlCommand(query, sqlConnection))
+                    if (command.ExecuteNonQuery() <= 0)
                     {
-
-
-
-                        command.Parameters.AddWithValue("@email", email);
-                        command.Parameters.AddWithValue("@password", textBox2.Text);
-                        command.ExecuteNonQuery();
-
-
-
-
-
+                        MessageBox.Show("No account was found for this email address.");
+                        return false;
                     }
-                    sqlConnection.Close();
-                    Form4 form = new Form4();
-                    form.Close();
-                    form.Show();
                 }
             }
 
+            return true;
         }
     }
 }
