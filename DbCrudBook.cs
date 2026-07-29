@@ -157,7 +157,6 @@ namespace db
                             if (index >= 0 && index < dataGridView1.Rows.Count)
                             {
                                 dataGridView1.Rows.RemoveAt(index);
-                                MessageBox.Show("deleted");
                             }
                         }
                         else

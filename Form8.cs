@@ -12,6 +12,7 @@ namespace db
             BackPhoto bc = new BackPhoto();
 
             bc.BackSet(this);
+            ModernTheme.Apply(this);
         }
 
         private async void button1_Click(object? sender, EventArgs e)

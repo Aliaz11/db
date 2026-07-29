@@ -141,11 +141,18 @@ namespace db
             {
                 Name = name,
                 Text = message,
-                BackColor = Color.Red,
+                BackColor = Color.Transparent,
+                ForeColor = ModernTheme.Danger,
+                Font = new Font("Segoe UI", 8.5F, FontStyle.Bold),
                 Location = pos,
-                AutoSize = true
+                Size = new Size(Math.Max(180, form.ClientSize.Width - pos.X - 24), 24),
+                AutoSize = false,
+                AutoEllipsis = false,
+                UseCompatibleTextRendering = false
             };
             form.Controls.Add(lbl);
+            lbl.BringToFront();
+            ModernTheme.Refresh(form);
         }
     }
 }

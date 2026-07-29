@@ -16,6 +16,8 @@ namespace db
             bc.BackSet(this);
 
             dataGridView1.BackgroundColor = Color.White;
+            ModernTheme.Apply(this);
+            AppFeatures.EnableGridTools(this, dataGridView1, GridToolMode.Catalogue);
         }
 
         public Form5(string ids, byte[] images)
@@ -28,16 +30,16 @@ namespace db
             this.images = images ?? Array.Empty<byte>();
 
             dataGridView1.BackgroundColor = Color.White;
+            ModernTheme.Apply(this);
+            AppFeatures.EnableGridTools(this, dataGridView1, GridToolMode.Catalogue);
         }
 
         private void Form5_Load(object? sender, EventArgs e)
         {
             DataBaseCrud db1 = new DataBaseCrud(connection1);
             db1.selector(dataGridView1, this);
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                row.Height = 100;
-            }
+
+            AppFeatures.RefreshGridTools(this, dataGridView1, GridToolMode.Catalogue);
         }
 
         private void button1_Click(object? sender, EventArgs e)

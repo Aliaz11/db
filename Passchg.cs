@@ -11,6 +11,8 @@ namespace db
 
             bc.BackSet(this);
             this.email = email;
+            ModernTheme.Apply(this);
+            AppFeatures.EnablePasswordToggle(this, "modernShowNewPasswords", textBox1, textBox2);
         }
 
         private void label1_Click(object? sender, EventArgs e)

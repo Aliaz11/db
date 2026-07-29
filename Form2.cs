@@ -14,12 +14,14 @@ namespace WinFormsApp3
         /// </summary>
         public TextBox textBox = new TextBox
         {
+            Name = "emailTextBox",
             Location = new System.Drawing.Point(720, 190),
             Size = new System.Drawing.Size(200, 30)
         };
 
         private readonly Label emailLabel = new Label
         {
+            Name = "emailLabel",
             Location = new System.Drawing.Point(670, 190),
             Size = new System.Drawing.Size(200, 30),
             Text = "email",
@@ -29,6 +31,9 @@ namespace WinFormsApp3
         public Form2()
         {
             InitializeComponent();
+            Controls.Add(textBox);
+            Controls.Add(emailLabel);
+            ModernTheme.Apply(this);
         }
 
         private void button1_Click(object? sender, EventArgs e)

@@ -8,6 +8,7 @@ namespace db
             BackPhoto bc = new BackPhoto();
 
             bc.BackSet(this);
+            ModernTheme.Apply(this);
         }
 
         /// <summary>Cover image bytes, or an empty array when no image was chosen.</summary>

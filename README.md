@@ -2,7 +2,7 @@
 
 A small Windows desktop application: users register, sign in, browse a book
 catalogue and keep a basket of saved books; an administrator manages the user
-list, the catalogue and a simple sales report.
+list, the catalogue and a visual sales-analysis dashboard.
 
 It is a .NET 8 WinForms app talking directly to a SQL Server LocalDB database.
 
@@ -21,8 +21,10 @@ It is a .NET 8 WinForms app talking directly to a SQL Server LocalDB database.
 | Admin: list, edit and delete users | `Form3` |
 | Admin: list, edit and delete books; add a new book with a cover image | `Form6`, `Form7` |
 | Browse the catalogue and save/buy selected books | `Form5` |
-| Per-user basket of saved books, with removal | `Form9` |
-| Admin: per-user purchase report with per-user and overall totals | `Form10` |
+| Download an available PDF only after the book is saved to the personal shelf | `Form9` |
+| Cover-first per-user shelf, with PDF download and removal actions | `Form9` |
+| Persistent light/dark appearance switch available on every screen | `ModernTheme` |
+| Admin: sales KPIs, revenue-by-title and sales-mix diagrams, customer analysis and transaction export | `Form10`, `SalesDashboard` |
 
 Passwords are stored as PBKDF2-SHA256 hashes (`PBKDF2$<iterations>$<salt>$<hash>`).
 Rows left over from an earlier plaintext version are detected on sign-in and
@@ -193,12 +195,12 @@ then closes and disposes the current one. See
 | `Form2.cs` | `WinFormsApp3` | Sign-up: validates the fields, checks username/email are free, inserts into `Stu1` | `Form1` |
 | `Form3.cs` | `WinFormsApp3` | **Admin** user management: `ListView` over `Stu1`, edit and delete rows | `Form1`, `Form6`, `Form10` |
 | `Form4.cs` | `db` | Sign-in. `admin` → `Form3`, anyone else → `Form9` | `Form3`, `Form9`, `Form8`, `Form1` |
-| `Form5.cs` | `db` | Catalogue browser: grid over `Books` with a checkbox column; saves the ticked rows into `saver1` | `Form4`, `Form9` |
+| `Form5.cs` | `db` | Catalogue browser: grid over `Books` and saves selected rows into `saver1` | `Form4`, `Form9` |
 | `Form6.cs` | `db` | **Admin** book management: grid over `Books`, edit and delete | `Form3`, `Form7` |
 | `Form7.cs` | `db` | **Admin** add a book (name, author, price, quantity, date, cover image) | `Form6` |
 | `Form8.cs` | `db` | Forgot password: email address in, verification code out, 60-second resend cooldown | `Passchg`, `Form4` |
-| `Form9.cs` | `db` | The signed-in user's saved books, with per-row delete | `Form5`, `Form1` |
-| `Form10.cs` | `db` | **Admin** sales report: every `saver1` row grouped by user, with per-user and total takings | `Form3` |
+| `Form9.cs` | `db` | Cover-first saved-book shelf, with per-book PDF download and removal | `Form5`, `Form1` |
+| `Form10.cs` | `db` | **Admin** sales dashboard: KPIs, title/customer analysis, diagrams and searchable/exportable transactions | `Form3` |
 | `Passchg.cs` | `db` | Choose a new password after the code was verified | `Form4` |
 
 ### Supporting types
@@ -213,6 +215,7 @@ then closes and disposes the current one. See
 | `tests/db.Tests/` | xUnit tests for `PasswordHasher` and the validation patterns |
 | `DataBaseCrud.cs` | CRUD for `Stu1`, plus the `Books` grid load/update/delete used by `Form6` |
 | `DbCrudBook.cs` | `Books` insert and the `saver1` basket insert/delete |
+| `BookPdfService.cs` | On-demand PDF metadata lookup and asynchronous streaming download |
 | `LabelValidator.cs` | Field validation rules and the red inline error labels; also the username/email uniqueness pre-check |
 | `dels.cs`, `Idels.cs` | `CommonFieldValidatorFunctions` and the validator delegate types |
 | `regex.cs` | Validation patterns, including `Strong_Password_RegEx_Pattern` |

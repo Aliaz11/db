@@ -148,6 +148,11 @@ BEGIN
         -- DataGridViewImageColumn, so this must stay VARBINARY.
         [image]     VARBINARY(MAX)  NULL,
 
+        -- Downloadable source document. Catalogue list queries intentionally exclude
+        -- PdfData and fetch it with SequentialAccess only after a user chooses a save path.
+        PdfFileName NVARCHAR(260)   NULL,
+        PdfData     VARBINARY(MAX)  NULL,
+
         CONSTRAINT PK_Books PRIMARY KEY CLUSTERED (ID)
     );
 END;

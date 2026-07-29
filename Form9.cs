@@ -28,11 +28,17 @@ namespace db
             label3.Text = this.idu;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            ModernTheme.Apply(this);
+            AppFeatures.EnableGridTools(this, dataGridView1, GridToolMode.Shelf);
+            ShelfExperience.Attach(this, dataGridView1, RemoveBookFromShelf, DownloadPdf);
         }
 
         public Form9()
         {
             InitializeComponent();
+            ModernTheme.Apply(this);
+            AppFeatures.EnableGridTools(this, dataGridView1, GridToolMode.Shelf);
+            ShelfExperience.Attach(this, dataGridView1, RemoveBookFromShelf, DownloadPdf);
         }
 
         /// <summary>Loads the profile photo, tolerating a missing or unreadable image.</summary>
@@ -64,15 +70,44 @@ namespace db
             using (SqlConnection connection = new SqlConnection(connection1))
             {
                 DataTable table = new DataTable();
-                table.Columns.Add("id");
-                table.Columns.Add("book's name");
-                table.Columns.Add("author");
-                table.Columns.Add("price");
-                table.Columns.Add("imges");
+                table.Columns.Add("id", typeof(int));
+                table.Columns.Add("book's name", typeof(string));
+                table.Columns.Add("author", typeof(string));
+                table.Columns.Add("price", typeof(string));
+                table.Columns.Add("imges", typeof(byte[]));
+                table.Columns.Add("BookId", typeof(int));
+                table.Columns.Add("HasPdf", typeof(bool));
 
                 connection.Open();
 
-                const string query = "SELECT * FROM saver1 WHERE iduser = @iduser";
+                const string query = """
+                    SELECT
+                        saved.Id,
+                        saved.bookname,
+                        saved.author,
+                        saved.price,
+                        CASE
+                            WHEN DATALENGTH(saved.[image]) > 0 THEN saved.[image]
+                            ELSE catalogue.[image]
+                        END AS [image],
+                        catalogue.Id AS BookId,
+                        CAST(CASE
+                            WHEN catalogue.PdfData IS NULL
+                                OR DATALENGTH(catalogue.PdfData) = 0 THEN 0
+                            ELSE 1
+                        END AS bit) AS HasPdf
+                    FROM dbo.saver1 AS saved
+                    OUTER APPLY
+                    (
+                        SELECT TOP (1) book.Id, book.[image], book.PdfData
+                        FROM dbo.Books AS book
+                        WHERE book.[name] = saved.bookname
+                          AND book.author = saved.author
+                        ORDER BY book.Id
+                    ) AS catalogue
+                    WHERE saved.iduser = @iduser
+                    ORDER BY saved.Id
+                    """;
 
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
@@ -83,11 +118,13 @@ namespace db
                         while (reader.Read())
                         {
                             table.Rows.Add(
-                                reader["Id"].ToString(),
-                                reader["bookname"].ToString(),
-                                reader["author"].ToString(),
-                                reader["price"].ToString(),
-                                reader["image"]
+                                Convert.ToInt32(reader["Id"]),
+                                reader["bookname"] as string ?? "",
+                                reader["author"] as string ?? "",
+                                reader["price"]?.ToString() ?? "",
+                                reader["image"] is byte[] cover ? cover : Array.Empty<byte>(),
+                                reader["BookId"] == DBNull.Value ? DBNull.Value : reader["BookId"],
+                                reader["HasPdf"] != DBNull.Value && Convert.ToBoolean(reader["HasPdf"])
                             );
                         }
                     }
@@ -99,6 +136,81 @@ namespace db
                 {
                     row.Height = 100;
                 }
+            }
+
+            AppFeatures.RefreshGridTools(this, dataGridView1, GridToolMode.Shelf);
+            ShelfExperience.Refresh(this, dataGridView1);
+        }
+
+        private async void DownloadPdf(int bookId)
+        {
+            BookPdfInfo? pdf;
+            try
+            {
+                pdf = BookPdfService.GetInfo(bookId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    this,
+                    $"The PDF information could not be loaded: {ex.Message}",
+                    "Download Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
+
+            if (pdf == null)
+            {
+                MessageBox.Show(
+                    this,
+                    "This shelved book does not have a downloadable PDF.",
+                    "PDF Not Available",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                return;
+            }
+
+            using SaveFileDialog dialog = new SaveFileDialog
+            {
+                Title = $"Download {pdf.Title}",
+                FileName = pdf.FileName,
+                Filter = "PDF document (*.pdf)|*.pdf",
+                DefaultExt = "pdf",
+                AddExtension = true,
+                OverwritePrompt = true,
+                RestoreDirectory = true
+            };
+
+            if (dialog.ShowDialog(this) != DialogResult.OK)
+            {
+                return;
+            }
+
+            Cursor previousCursor = Cursor;
+            Cursor = Cursors.WaitCursor;
+            try
+            {
+                await BookPdfService.SavePdfAsync(bookId, dialog.FileName);
+                MessageBox.Show(
+                    this,
+                    $"Saved {pdf.FileName} successfully.",
+                    "Download Complete",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    this,
+                    $"The PDF could not be downloaded: {ex.Message}",
+                    "Download Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Cursor = previousCursor;
             }
         }
 
@@ -119,10 +231,35 @@ namespace db
                 return;
             }
 
+            RemoveBookFromShelf(index);
+        }
+
+        private void RemoveBookFromShelf(int rowIndex)
+        {
+            if (rowIndex < 0 || rowIndex >= dataGridView1.Rows.Count)
+            {
+                return;
+            }
+
+            string title = dataGridView1.Rows[rowIndex].Cells.Count > 1
+                ? dataGridView1.Rows[rowIndex].Cells[1].Value?.ToString() ?? "this book"
+                : "this book";
+            DialogResult confirmation = MessageBox.Show(
+                $"Remove “{title}” from your shelf?",
+                "Remove saved book",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            if (confirmation != DialogResult.Yes)
+            {
+                return;
+            }
+
             // The constructor parameter is the user id, not a connection string.
             DbCrudBook dbb = new DbCrudBook(idu);
-            dbb.delete(dataGridView1, index);
+            dbb.delete(dataGridView1, rowIndex);
             index = -1;
+            AppFeatures.RefreshGridTools(this, dataGridView1, GridToolMode.Shelf);
+            ShelfExperience.Refresh(this, dataGridView1);
         }
 
         private void dataGridView1_CellClick(object? sender, DataGridViewCellEventArgs e)

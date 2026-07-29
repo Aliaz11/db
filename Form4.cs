@@ -12,6 +12,8 @@ namespace db
         public Form4()
         {
             InitializeComponent();
+            ModernTheme.Apply(this);
+            AppFeatures.EnablePasswordToggle(this, "modernShowSignInPassword", textBox2);
         }
 
         private void button1_Click(object? sender, EventArgs e)
@@ -73,14 +75,7 @@ namespace db
 
         private void Form4_Load(object? sender, EventArgs e)
         {
-            byte[] imageBytes = Resource1.that;
-            using (var ms = new System.IO.MemoryStream(imageBytes))
-            {
-                // Copied into a new Bitmap so the background survives the stream being disposed.
-                this.BackgroundImage = new Bitmap(System.Drawing.Image.FromStream(ms));
-            }
-
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+            ModernTheme.ApplyBackdrop(this);
         }
 
         private void label4_Click(object? sender, EventArgs e)

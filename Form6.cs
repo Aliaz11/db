@@ -23,6 +23,8 @@ namespace db
 
             // CellClick is already wired up in Form6.Designer.cs - subscribing here as well ran the
             // handler twice for every click.
+            ModernTheme.Apply(this);
+            AppFeatures.EnableGridTools(this, dataGridView1, GridToolMode.AdminBooks);
         }
 
         private void Form6_Load(object? sender, EventArgs e)
@@ -37,12 +39,7 @@ namespace db
             DataBaseCrud db = new DataBaseCrud(connection);
             db.selector(dataGridView1, this);
 
-            dataGridView1.RowTemplate.Height = 100;
-
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                row.Height = 100;
-            }
+            AppFeatures.RefreshGridTools(this, dataGridView1, GridToolMode.AdminBooks);
         }
 
         private void button1_Click(object? sender, EventArgs e)

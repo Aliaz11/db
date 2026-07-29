@@ -8,14 +8,19 @@ namespace db
 {
     public partial class Form10 : Form
     {
-        decimal pricer = 0m;
-        int bookcounter = 0;
-        string connection = Locator.GetConnectionString();
-        decimal full_income = 0m;
+        private readonly string connection = Locator.GetConnectionString();
+        private readonly SalesDashboard salesDashboard;
 
         public Form10()
         {
             InitializeComponent();
+            salesDashboard = new SalesDashboard
+            {
+                Name = "modernSalesDashboard",
+                TabStop = true
+            };
+            Controls.Add(salesDashboard);
+
             BackPhoto bc = new BackPhoto();
 
             bc.BackSet(this);
@@ -23,6 +28,8 @@ namespace db
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            ModernTheme.Apply(this);
+            AppFeatures.EnableGridTools(this, dataGridView1, GridToolMode.Payments);
         }
 
         private void Form10_Load(object? sender, EventArgs e)
@@ -34,64 +41,49 @@ namespace db
                 return;
             }
 
-            // null (not "") means "no user seen yet", so no subtotal row is emitted before the first block.
-            string? curruser = null;
-
             using (SqlConnection conn = new SqlConnection(connection))
             {
                 DataTable tb = new DataTable();
-                tb.Columns.Add("user");
-                tb.Columns.Add("name of the book");
-                tb.Columns.Add("price of the book");
+                tb.Columns.Add("Customer", typeof(string));
+                tb.Columns.Add("Book", typeof(string));
+                tb.Columns.Add("Author", typeof(string));
+                tb.Columns.Add("Price", typeof(decimal));
+                List<SaleRecord> sales = new List<SaleRecord>();
 
-                const string querry = "SELECT iduser,bookname,price FROM saver1 ORDER BY iduser";
+                const string query = """
+                    SELECT iduser, bookname, author, price
+                    FROM dbo.saver1
+                    ORDER BY iduser, bookname
+                    """;
 
                 conn.Open();
 
-                using (SqlCommand cmd = new SqlCommand(querry, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        string user = reader["iduser"].ToString() ?? "";
-
-                        if (curruser != null && curruser != user)
-                        {
-                            AddSubtotalRow(tb);
-                        }
-
-                        curruser = user;
-
+                        string user = reader["iduser"]?.ToString()?.Trim() ?? "";
+                        string book = reader["bookname"]?.ToString()?.Trim() ?? "";
+                        string author = reader["author"]?.ToString()?.Trim() ?? "";
                         decimal price = ParsePrice(reader["price"]);
 
-                        tb.Rows.Add(
-                            user,
-                            reader["bookname"].ToString(),
-                            reader["price"].ToString());
-
-                        pricer += price;
-                        full_income += price;
-                        bookcounter++;
+                        tb.Rows.Add(user, book, author, price);
+                        sales.Add(new SaleRecord(user, book, author, price));
                     }
                 }
 
-                // Closes the last user's block; skipped entirely when there were no rows at all.
-                if (curruser != null)
+                dataGridView1.DataSource = tb;
+                if (dataGridView1.Columns["Price"] is { } priceColumn)
                 {
-                    AddSubtotalRow(tb);
+                    priceColumn.DefaultCellStyle.Format = "C2";
+                    priceColumn.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 }
 
-                tb.Rows.Add("", "the total income is", full_income.ToString(CultureInfo.CurrentCulture));
-
-                dataGridView1.DataSource = tb;
+                salesDashboard.SetSales(sales);
             }
-        }
 
-        private void AddSubtotalRow(DataTable tb)
-        {
-            tb.Rows.Add("total", "total books: " + bookcounter, "total payment: " + pricer);
-            pricer = 0m;
-            bookcounter = 0;
+            AppFeatures.RefreshGridTools(this, dataGridView1, GridToolMode.Payments);
         }
 
         /// <summary>Prices are stored as text, so a decimal or an empty value must not throw.</summary>

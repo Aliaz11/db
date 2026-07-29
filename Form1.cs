@@ -8,11 +8,7 @@ namespace WinFormsApp3
         public Form1()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.Size = new Size(1300, 800);
-
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
+            ModernTheme.Apply(this);
         }
 
         private void button4_Click(object? sender, EventArgs e)

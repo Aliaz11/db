@@ -10,6 +10,9 @@ namespace db
         /// <summary>Placeholder shown instead of the stored password hash in the user list view.</summary>
         public const string MaskedPassword = "********";
 
+        private const int BookCoverColumnWidth = 124;
+        private const int BookRowHeight = 144;
+
         private readonly string connection;
 
         public DataBaseCrud() : this(AppSettings.ConnectionString)
@@ -158,7 +161,22 @@ namespace db
             {
                 sqlConnection.Open();
 
-                string query = "SELECT * FROM Books";
+                const string query = """
+                    SELECT
+                        Id,
+                        [name],
+                        author,
+                        price,
+                        [image],
+                        quantity,
+                        [Date],
+                        CAST(CASE
+                            WHEN PdfData IS NULL OR DATALENGTH(PdfData) = 0 THEN 0
+                            ELSE 1
+                        END AS bit) AS HasPdf
+                    FROM dbo.Books
+                    ORDER BY Id
+                    """;
 
                 using (SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection))
                 {
@@ -170,8 +188,33 @@ namespace db
                     if (dataGridView1.Columns.Contains("image"))
                     {
                         DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dataGridView1.Columns["image"]!;
-                        imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
+                        imageColumn.HeaderText = "Cover";
+                        imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                        imageColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        imageColumn.Width = BookCoverColumnWidth;
+                        imageColumn.MinimumWidth = BookCoverColumnWidth;
+                        imageColumn.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        imageColumn.DefaultCellStyle.Padding = new Padding(10);
+                        imageColumn.DefaultCellStyle.NullValue = null;
                     }
+
+                    if (dataGridView1.Columns.Contains("HasPdf"))
+                    {
+                        DataGridViewColumn pdfColumn = dataGridView1.Columns["HasPdf"]!;
+                        pdfColumn.HeaderText = "PDF";
+                        pdfColumn.ReadOnly = true;
+                        pdfColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        pdfColumn.Width = 64;
+                        pdfColumn.MinimumWidth = 64;
+                        pdfColumn.Visible = form is Form6;
+                    }
+
+                    dataGridView1.RowTemplate.Height = BookRowHeight;
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        row.Height = BookRowHeight;
+                    }
+
                     DataGridViewCheckBoxColumn chk = new DataGridViewCheckBoxColumn();
                     chk.HeaderText = "Select";
                     chk.Name = "chk";

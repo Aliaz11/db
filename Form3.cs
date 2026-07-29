@@ -15,6 +15,8 @@ namespace WinFormsApp3
             bc.BackSet(this);
             ListViewCre listViewCre = new ListViewCre();
             listViewCre.ListViewCre1(listView1, this);
+            ModernTheme.Apply(this);
+            AppFeatures.EnableMemberTools(this, listView1);
         }
 
         private void label2_Click(object? sender, EventArgs e)
@@ -33,6 +35,7 @@ namespace WinFormsApp3
 
             DataBaseCrud dbc = new DataBaseCrud(connection);
             dbc.selector(listView1);
+            AppFeatures.RefreshMemberTools(this, listView1);
         }
 
         private void button1_Click(object? sender, EventArgs e)
