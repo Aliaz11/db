@@ -374,8 +374,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private PictureBox pictureBox1;
-        private TableLayoutPanel tableLayoutPanel1;
         private Button button2;
         private Button button3;
         private ListView listView1;

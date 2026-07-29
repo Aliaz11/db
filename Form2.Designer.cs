@@ -366,7 +366,6 @@
 
         #endregion
 
-        private Button button1;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;

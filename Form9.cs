@@ -1,4 +1,4 @@
-﻿using System.Data;
+using System.Data;
 using Microsoft.Data.SqlClient;
 using WinFormsApp3;
 
@@ -7,41 +7,60 @@ namespace db
 
     public partial class Form9 : Form
     {
-        int index;
+        /// <summary>Row selected in the grid; -1 until the user clicks one.</summary>
+        int index = -1;
 
         string connection1 = Locator.GetConnectionString();
-        string idu;
-        byte[] images;
+        string idu = "";
+        byte[] images = Array.Empty<byte>();
+
         public Form9(string ids, byte[] images)
         {
             InitializeComponent();
             BackPhoto bc = new BackPhoto();
 
             bc.BackSet(this);
-            string connection = Locator.GetConnectionString();
-            this.idu = ids;
-            this.images = images;
-            using (MemoryStream ms = new MemoryStream(images))
-            {
-                pictureBox1.Image = Image.FromStream(ms);
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-            label3.Text = ids;
+            this.idu = ids ?? "";
+            this.images = images ?? Array.Empty<byte>();
+
+            ShowProfilePhoto();
+
+            label3.Text = this.idu;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
         }
+
         public Form9()
         {
             InitializeComponent();
-
         }
 
-
-
-        private void Form9_Load(object sender, EventArgs e)
+        /// <summary>Loads the profile photo, tolerating a missing or unreadable image.</summary>
+        private void ShowProfilePhoto()
         {
+            if (images.Length == 0)
+            {
+                return;
+            }
 
+            try
+            {
+                using (MemoryStream ms = new MemoryStream(images))
+                {
+                    // Copied into a new Bitmap so the image stays valid after the stream is disposed.
+                    pictureBox1.Image = new Bitmap(Image.FromStream(ms));
+                }
+
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch (ArgumentException)
+            {
+                // The stored bytes are not a readable image; leave the picture box empty.
+            }
+        }
+
+        private void Form9_Load(object? sender, EventArgs e)
+        {
             using (SqlConnection connection = new SqlConnection(connection1))
             {
                 DataTable table = new DataTable();
@@ -51,31 +70,31 @@ namespace db
                 table.Columns.Add("price");
                 table.Columns.Add("imges");
 
-
-
                 connection.Open();
-                string query = $"SELECT * FROM saver1 WHERE iduser='{idu}'";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+
+                const string query = "SELECT * FROM saver1 WHERE iduser = @iduser";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
-      
+                    cmd.Parameters.Add("@iduser", SqlDbType.NVarChar, 200).Value = idu;
 
-                    table.Rows.Add(
-       reader["Id"].ToString(),
-       reader["bookname"].ToString(),
-       reader["author"].ToString(),
-       reader["price"].ToString(),
-       reader["image"]
-   );
-
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            table.Rows.Add(
+                                reader["Id"].ToString(),
+                                reader["bookname"].ToString(),
+                                reader["author"].ToString(),
+                                reader["price"].ToString(),
+                                reader["image"]
+                            );
+                        }
+                    }
                 }
 
-
-
-
                 dataGridView1.DataSource = table;
-                DataBaseCrud db = new DataBaseCrud(connection1);
+
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
                     row.Height = 100;
@@ -83,57 +102,45 @@ namespace db
             }
         }
 
-
-
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object? sender, EventArgs e)
         {
-            this.Close();
-            Form5 form5 = new Form5(idu,images);
-
-
-            form5.Location = this.Location;
-            form5.Size = this.Size;
-            form5.StartPosition = FormStartPosition.Manual;
-            form5.Show();
+            Navigation.GoTo(this, new Form5(idu, images));
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object? sender, EventArgs e)
         {
+            if (index < 0)
+            {
+                MessageBox.Show(
+                    "Please select the book you want to remove.",
+                    "No Book Selected",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                return;
+            }
 
-            DbCrudBook dbb = new DbCrudBook(connection1);
+            // The constructor parameter is the user id, not a connection string.
+            DbCrudBook dbb = new DbCrudBook(idu);
             dbb.delete(dataGridView1, index);
+            index = -1;
         }
 
-
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object? sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
                 index = e.RowIndex;
-
-
-
             }
-
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label3_Click(object? sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object? sender, EventArgs e)
         {
-            this.Close();
-            Form1 form = new Form1();
-            form.Show();
-
-
-
-
+            Navigation.GoTo(this, new Form1());
         }
     }
 }

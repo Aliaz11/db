@@ -1,15 +1,18 @@
-﻿using System.Data;
+using System.Data;
+using System.Globalization;
 using Microsoft.Data.SqlClient;
 using WinFormsApp3;
+using db.Security;
 
 namespace db
 {
     public partial class Form10 : Form
     {
-        int pricer = 0;
+        decimal pricer = 0m;
         int bookcounter = 0;
         string connection = Locator.GetConnectionString();
-        int full_income = 0;
+        decimal full_income = 0m;
+
         public Form10()
         {
             InitializeComponent();
@@ -22,64 +25,102 @@ namespace db
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
-        private void Form10_Load(object sender, EventArgs e)
+        private void Form10_Load(object? sender, EventArgs e)
         {
-            string curruser = "";
+            if (Session.DenyIfNotAdmin())
+            {
+                // Deferred: closing a form from inside its own Load event is not safe.
+                BeginInvoke(new Action(() => Navigation.GoTo(this, new Form4())));
+                return;
+            }
+
+            // null (not "") means "no user seen yet", so no subtotal row is emitted before the first block.
+            string? curruser = null;
 
             using (SqlConnection conn = new SqlConnection(connection))
             {
-
                 DataTable tb = new DataTable();
                 tb.Columns.Add("user");
                 tb.Columns.Add("name of the book");
                 tb.Columns.Add("price of the book");
 
-                string querry = $"SELECT iduser,bookname,price FROM saver1 ORDER BY iduser ";
-                SqlCommand cmd = new SqlCommand(querry, conn);
+                const string querry = "SELECT iduser,bookname,price FROM saver1 ORDER BY iduser";
+
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+
+                using (SqlCommand cmd = new SqlCommand(querry, conn))
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                   
-                    full_income += Convert.ToInt32(reader["price"]);
-
-                    if (curruser != null && curruser != reader["iduser"].ToString())
+                    while (reader.Read())
                     {
-                        tb.Rows.Add("total", "total books: "+bookcounter, "total payment: "+pricer);
+                        string user = reader["iduser"].ToString() ?? "";
 
+                        if (curruser != null && curruser != user)
+                        {
+                            AddSubtotalRow(tb);
+                        }
 
-                        pricer = 0;
-                        bookcounter = 0;
+                        curruser = user;
+
+                        decimal price = ParsePrice(reader["price"]);
+
+                        tb.Rows.Add(
+                            user,
+                            reader["bookname"].ToString(),
+                            reader["price"].ToString());
+
+                        pricer += price;
+                        full_income += price;
+                        bookcounter++;
                     }
-                    curruser = reader["iduser"].ToString();
-                    tb.Rows.Add(
-                       reader["iduser"],
-                        reader["bookname"],
-                        reader["price"]
-                        );
-                    pricer += Convert.ToInt32(reader["price"]);
-                    bookcounter++;
-
                 }
-                tb.Rows.Add("total","total books: " + bookcounter, "total payment: " + pricer);
-                tb.Rows.Add("the total income is" , full_income);
+
+                // Closes the last user's block; skipped entirely when there were no rows at all.
+                if (curruser != null)
+                {
+                    AddSubtotalRow(tb);
+                }
+
+                tb.Rows.Add("", "the total income is", full_income.ToString(CultureInfo.CurrentCulture));
+
                 dataGridView1.DataSource = tb;
-                
-
-                conn.Close();
             }
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddSubtotalRow(DataTable tb)
         {
-            this.Close();
-            Form3 form3 = new Form3();
-            form3.Location = this.Location;
-            form3.Size = this.Size;
-            form3.StartPosition = FormStartPosition.Manual;
-            form3.Show();
+            tb.Rows.Add("total", "total books: " + bookcounter, "total payment: " + pricer);
+            pricer = 0m;
+            bookcounter = 0;
+        }
 
+        /// <summary>Prices are stored as text, so a decimal or an empty value must not throw.</summary>
+        private static decimal ParsePrice(object? value)
+        {
+            string raw = (value?.ToString() ?? "").Trim();
+            if (raw.Length == 0)
+            {
+                return 0m;
+            }
+
+            const NumberStyles styles = NumberStyles.Number | NumberStyles.AllowCurrencySymbol;
+
+            if (decimal.TryParse(raw, styles, CultureInfo.InvariantCulture, out decimal invariant))
+            {
+                return invariant;
+            }
+
+            if (decimal.TryParse(raw, styles, CultureInfo.CurrentCulture, out decimal current))
+            {
+                return current;
+            }
+
+            return 0m;
+        }
+
+        private void button1_Click(object? sender, EventArgs e)
+        {
+            Navigation.GoTo(this, new Form3());
         }
     }
 }
