@@ -1,134 +1,91 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
+using db.Data;
+using db.Security;
 using WinFormsApp3;
-
 
 namespace db
 {
     public partial class Form4 : Form
     {
-        public List<Book> books = new List<Book>();
+        private readonly IAuthService authService = new AuthService();
+
         public Form4()
         {
             InitializeComponent();
         }
 
-
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object? sender, EventArgs e)
         {
+            string userName = textBox1.Text.Trim();
+            string password = textBox2.Text;
 
+            if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show(
+                    "Please enter both a username and a password.",
+                    "Sign in",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                return;
+            }
 
             try
             {
-                byte[] images = null;
-                string connection_string = Locator.GetConnectionString();
-                SqlConnection sqlConnection = new SqlConnection(connection_string);
-                sqlConnection.Open();
-                string username = textBox1.Text;
+                AuthenticatedUser? user = authService.Authenticate(userName, password);
 
-
-                string query = $"SELECT username,password,image FROM Stu1 where username='{username}'";
-
-
-                SqlCommand command = new SqlCommand(query, sqlConnection);
-                SqlDataReader reader = command.ExecuteReader();
-                List<string> ali = new List<string>();
-
-
-                while (reader.Read())
+                if (user == null)
                 {
-
-                    ali.Add(Convert.ToString(reader["username"]) ?? "");
-                    ali.Add(Convert.ToString(reader["Password"]) ?? "");
-
-
-                    images = (byte[])reader["image"];
-
-
-
-                }
-                if (username == "admin")
-                {
-                    if (ali[1] == textBox2.Text)
-                    {
-
-                        Form3 form3 = new Form3();
-
-                        this.Hide();
-                        form3.Show();
-
-
-
-                    }
-                }
-                else if (ali[0] == username && ali[1] == textBox2.Text)
-                {
-                    Form9 form9 = new Form9(username, images);
-
-
-                    this.Hide();
-
-                    form9.Location = this.Location;
-                    form9.Size = this.Size;
-                    form9.StartPosition = FormStartPosition.Manual;
-                    form9.Show();
+                    // Deliberately one message for both cases: telling the user which half was wrong
+                    // lets an attacker enumerate valid usernames.
+                    MessageBox.Show(
+                        "The username or password is incorrect.",
+                        "Sign in",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    return;
                 }
 
+                Session.SignIn(user);
 
-
-
-
+                if (user.IsAdmin)
+                {
+                    Navigation.GoTo(this, new Form3());
+                }
                 else
                 {
-                    MessageBox.Show("the password or the user name was wrong");
+                    Navigation.GoTo(this, new Form9(user.UserName, user.Photo));
                 }
-
-
             }
-            catch (Exception ex)
+            catch (SqlException)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(
+                    "Could not reach the database. Please check your connection and try again.",
+                    "Sign in",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
-
-
         }
 
-
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object? sender, EventArgs e)
         {
-            this.Close();
-            Form1 form = new Form1();
-            form.Show();
+            Navigation.GoTo(this, new Form1());
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void Form4_Load(object? sender, EventArgs e)
         {
             byte[] imageBytes = Resource1.that;
             using (var ms = new System.IO.MemoryStream(imageBytes))
             {
-                var image = System.Drawing.Image.FromStream(ms);
-                this.BackgroundImage = image;
+                // Copied into a new Bitmap so the background survives the stream being disposed.
+                this.BackgroundImage = new Bitmap(System.Drawing.Image.FromStream(ms));
             }
 
             this.BackgroundImageLayout = ImageLayout.Stretch;
-
-
-
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label4_Click(object? sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
-            this.Hide();
-
-            form8.Location = this.Location;
-            form8.Size = this.Size;
-            form8.StartPosition = FormStartPosition.Manual;
-            form8.Show();
+            Navigation.GoTo(this, new Form8());
         }
     }
 }
-
