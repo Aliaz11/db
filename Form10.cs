@@ -1,18 +1,26 @@
-﻿using System.Data;
+using System.Data;
+using System.Globalization;
 using Microsoft.Data.SqlClient;
 using WinFormsApp3;
+using db.Security;
 
 namespace db
 {
     public partial class Form10 : Form
     {
-        int pricer = 0;
-        int bookcounter = 0;
-        string connection = Locator.GetConnectionString();
-        int full_income = 0;
+        private readonly string connection = Locator.GetConnectionString();
+        private readonly SalesDashboard salesDashboard;
+
         public Form10()
         {
             InitializeComponent();
+            salesDashboard = new SalesDashboard
+            {
+                Name = "modernSalesDashboard",
+                TabStop = true
+            };
+            Controls.Add(salesDashboard);
+
             BackPhoto bc = new BackPhoto();
 
             bc.BackSet(this);
@@ -20,66 +28,91 @@ namespace db
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            ModernTheme.Apply(this);
+            AppFeatures.EnableGridTools(this, dataGridView1, GridToolMode.Payments);
         }
 
-        private void Form10_Load(object sender, EventArgs e)
+        private void Form10_Load(object? sender, EventArgs e)
         {
-            string curruser = "";
+            if (Session.DenyIfNotAdmin())
+            {
+                // Deferred: closing a form from inside its own Load event is not safe.
+                BeginInvoke(new Action(() => Navigation.GoTo(this, new Form4())));
+                return;
+            }
 
             using (SqlConnection conn = new SqlConnection(connection))
             {
-
                 DataTable tb = new DataTable();
-                tb.Columns.Add("user");
-                tb.Columns.Add("name of the book");
-                tb.Columns.Add("price of the book");
+                tb.Columns.Add("Customer", typeof(string));
+                tb.Columns.Add("Book", typeof(string));
+                tb.Columns.Add("Author", typeof(string));
+                tb.Columns.Add("Price", typeof(decimal));
+                List<SaleRecord> sales = new List<SaleRecord>();
 
-                string querry = $"SELECT iduser,bookname,price FROM saver1 ORDER BY iduser ";
-                SqlCommand cmd = new SqlCommand(querry, conn);
+                const string query = """
+                    SELECT iduser, bookname, author, price
+                    FROM dbo.saver1
+                    ORDER BY iduser, bookname
+                    """;
+
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                   
-                    full_income += Convert.ToInt32(reader["price"]);
-
-                    if (curruser != null && curruser != reader["iduser"].ToString())
+                    while (reader.Read())
                     {
-                        tb.Rows.Add("total", "total books: "+bookcounter, "total payment: "+pricer);
+                        string user = reader["iduser"]?.ToString()?.Trim() ?? "";
+                        string book = reader["bookname"]?.ToString()?.Trim() ?? "";
+                        string author = reader["author"]?.ToString()?.Trim() ?? "";
+                        decimal price = ParsePrice(reader["price"]);
 
-
-                        pricer = 0;
-                        bookcounter = 0;
+                        tb.Rows.Add(user, book, author, price);
+                        sales.Add(new SaleRecord(user, book, author, price));
                     }
-                    curruser = reader["iduser"].ToString();
-                    tb.Rows.Add(
-                       reader["iduser"],
-                        reader["bookname"],
-                        reader["price"]
-                        );
-                    pricer += Convert.ToInt32(reader["price"]);
-                    bookcounter++;
-
                 }
-                tb.Rows.Add("total","total books: " + bookcounter, "total payment: " + pricer);
-                tb.Rows.Add("the total income is" , full_income);
-                dataGridView1.DataSource = tb;
-                
 
-                conn.Close();
+                dataGridView1.DataSource = tb;
+                if (dataGridView1.Columns["Price"] is { } priceColumn)
+                {
+                    priceColumn.DefaultCellStyle.Format = "C2";
+                    priceColumn.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                }
+
+                salesDashboard.SetSales(sales);
             }
 
+            AppFeatures.RefreshGridTools(this, dataGridView1, GridToolMode.Payments);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>Prices are stored as text, so a decimal or an empty value must not throw.</summary>
+        private static decimal ParsePrice(object? value)
         {
-            this.Close();
-            Form3 form3 = new Form3();
-            form3.Location = this.Location;
-            form3.Size = this.Size;
-            form3.StartPosition = FormStartPosition.Manual;
-            form3.Show();
+            string raw = (value?.ToString() ?? "").Trim();
+            if (raw.Length == 0)
+            {
+                return 0m;
+            }
 
+            const NumberStyles styles = NumberStyles.Number | NumberStyles.AllowCurrencySymbol;
+
+            if (decimal.TryParse(raw, styles, CultureInfo.InvariantCulture, out decimal invariant))
+            {
+                return invariant;
+            }
+
+            if (decimal.TryParse(raw, styles, CultureInfo.CurrentCulture, out decimal current))
+            {
+                return current;
+            }
+
+            return 0m;
+        }
+
+        private void button1_Click(object? sender, EventArgs e)
+        {
+            Navigation.GoTo(this, new Form3());
         }
     }
 }

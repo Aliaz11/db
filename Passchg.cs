@@ -1,13 +1,9 @@
-﻿using Microsoft.Data.SqlClient;
-using WinFormsApp3;
-
 namespace db
 {
     public partial class Passchg : Form
     {
         string email;
-        string connection = Locator.GetConnectionString();
-        string password;
+
         public Passchg(string email)
         {
             InitializeComponent();
@@ -15,25 +11,29 @@ namespace db
 
             bc.BackSet(this);
             this.email = email;
-
-
-
+            ModernTheme.Apply(this);
+            AppFeatures.EnablePasswordToggle(this, "modernShowNewPasswords", textBox1, textBox2);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label1_Click(object? sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label2_Click(object? sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object? sender, EventArgs e)
         {
             PasswordUpdator passer = new PasswordUpdator(email, this);
-            passer.updator(textBox1,textBox2);
+
+            // updator reports its own validation failures; only a successful change navigates on.
+            if (passer.updator(textBox1, textBox2))
+            {
+                Navigation.GoTo(this, new Form4());
+            }
         }
     }
 }

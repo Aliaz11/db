@@ -1,9 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Text.RegularExpressions;
 using Microsoft.Data.SqlClient;
-using Org.BouncyCastle.Asn1.Crmf;
 using WinFormsApp3;
 
 namespace db
@@ -33,51 +31,65 @@ namespace db
         private  StringLengthValidDel _length = CommonFieldValidatorFunctions.StringLengthFieldValidDel;
         private  PatternMatchValidDel _pattern = CommonFieldValidatorFunctions.PatternMatchValidDel;
         private  CompareFieldsValidDel _compare = CommonFieldValidatorFunctions.FieldsCompareValidDel;
-        public void selectoring(string email,string username,TextBox text_email,TextBox text_user)
+
+        /// <summary>
+        /// Checks whether the username or the email is already taken and clears the offending textbox.
+        /// Blank values are never treated as a collision, so several users may have no email at all.
+        /// </summary>
+        public void selectoring(string email, string username, TextBox text_email, TextBox text_user)
         {
             try
             {
-
-                SqlConnection sqlConnection = new SqlConnection(connection);
-                sqlConnection.Open();
-                string query = "SELECT username,email FROM Stu1";
-                SqlCommand command = new SqlCommand(query, sqlConnection);
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
+                using (SqlConnection sqlConnection = new SqlConnection(connection))
                 {
+                    sqlConnection.Open();
 
-                     string user1 =reader["username"].ToString();
-                    string email1 = reader["email"].ToString();
-                    if (user1==username)
+                    if (!string.IsNullOrWhiteSpace(username) &&
+                        Exists(sqlConnection, "SELECT COUNT(1) FROM Stu1 WHERE username = @value", username))
                     {
                         MessageBox.Show("the user name exists");
-                        text_user.Text = "";
+                        if (text_user != null)
+                            text_user.Text = "";
                         return;
                     }
-                    else if (email1==email)
+
+                    if (!string.IsNullOrWhiteSpace(email) &&
+                        Exists(sqlConnection, "SELECT COUNT(1) FROM Stu1 WHERE Email = @value", email))
                     {
-                        if (string.IsNullOrEmpty(email1))
-                        {
-                            continue;
-                        }
                         MessageBox.Show("the email already exists");
-                        text_email.Text = "";
-                        return;
+                        if (text_email != null)
+                            text_email.Text = "";
                     }
-
-
                 }
-
             }
-            catch (Exception ex)
+            catch (SqlException)
             {
-                MessageBox.Show(ex.ToString());
+                // Never surface ex.ToString(): the stack trace carries the connection string.
+                MessageBox.Show("Could not check the username and email against the database. Please try again.",
+                    "Database error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Could not open a connection to the database. Please try again.",
+                    "Database error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage(
+            "Security", "CA2100:Review SQL queries for security vulnerabilities",
+            Justification = "Both call sites pass a compile-time string literal; the only user-supplied " +
+                            "value is bound through the @value SqlParameter below. The analyser cannot " +
+                            "follow the literal across the method parameter.")]
+        private static bool Exists(SqlConnection sqlConnection, string query, string value)
+        {
+            using (SqlCommand command = new SqlCommand(query, sqlConnection))
+            {
+                command.Parameters.Add("@value", System.Data.SqlDbType.NVarChar, 4000).Value = value;
+                object? scalar = command.ExecuteScalar();
+                return scalar != null && scalar != DBNull.Value && Convert.ToInt32(scalar) > 0;
+            }
+        }
 
-     
 
         public IEnumerable<ValidationError> Validate(IUser user)
         {
@@ -99,10 +111,12 @@ namespace db
             if (string.IsNullOrEmpty(user.Gender))
                 yield return new ValidationError("label_gender", "Gender must be chosen", new Point(300, 300));
 
+            // All three password branches use the same field name so that the previously shown
+            // label is actually removed on the next validation pass.
             if (!_required(user.Password))
                 yield return new ValidationError("label_password", "Password must be entered", new Point(300, 400));
             else if (!_pattern(user.Password, Regex.Strong_Password_RegEx_Pattern))
-                yield return new ValidationError("label_password1", "Password must have uppercase, lowercase and special char", new Point(300, 400));
+                yield return new ValidationError("label_password", "Password must be 8–64 characters with upper, lower, digit and special char, and no spaces", new Point(300, 400));
             else if (!_compare(user.Password, user.PasswordR))
                 yield return new ValidationError("label_password", "Passwords don’t match", new Point(300, 400));
         }
@@ -116,9 +130,9 @@ namespace db
         {
 
             var old = form.Controls.Find(name, true);
-            foreach (var c in old) 
+            foreach (var c in old)
             {
-               
+
                 form.Controls.Remove(c);
             }
 
@@ -127,11 +141,18 @@ namespace db
             {
                 Name = name,
                 Text = message,
-                BackColor = Color.Red,
+                BackColor = Color.Transparent,
+                ForeColor = ModernTheme.Danger,
+                Font = new Font("Segoe UI", 8.5F, FontStyle.Bold),
                 Location = pos,
-                AutoSize = true
+                Size = new Size(Math.Max(180, form.ClientSize.Width - pos.X - 24), 24),
+                AutoSize = false,
+                AutoEllipsis = false,
+                UseCompatibleTextRendering = false
             };
             form.Controls.Add(lbl);
+            lbl.BringToFront();
+            ModernTheme.Refresh(form);
         }
     }
 }

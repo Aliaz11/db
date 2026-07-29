@@ -1,20 +1,17 @@
-﻿namespace db
+namespace db
 {
     public class BackPhoto : IBackphoto
     {
-
+        /// <summary>
+        /// Keeps the historical background service as a compatibility seam while the modern visual
+        /// system uses a calm solid canvas instead of the old full-window photograph.
+        /// </summary>
         public void BackSet(Form form)
         {
-            byte[] imageBytes = Resource1.that;
-            using (var ms = new System.IO.MemoryStream(imageBytes))
-            {
-                var image = System.Drawing.Image.FromStream(ms);
-                form.BackgroundImage = image;
-            }
+            if (form == null)
+                return;
 
-            form.BackgroundImageLayout = ImageLayout.Stretch;
-
-
+            ModernTheme.ApplyBackdrop(form);
         }
     }
 }

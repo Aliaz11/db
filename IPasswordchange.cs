@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace db
 {
     internal interface IPasswordchange
     {
-        void updator(TextBox textBox1, TextBox textBox2);
+        /// <summary>Returns true when the password was validated and stored.</summary>
+        bool updator(TextBox newPassword, TextBox confirmPassword);
     }
 }

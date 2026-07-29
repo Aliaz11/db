@@ -129,7 +129,6 @@ namespace WinFormsApp3
         private Panel panel1;
         private Button button4;
         private Button button3;
-        private Label label1;
         private Button button1;
         private System.Windows.Forms.Timer timer1;
     }

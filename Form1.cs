@@ -1,4 +1,5 @@
 using db;
+using db.Security;
 
 namespace WinFormsApp3
 {
@@ -6,83 +7,43 @@ namespace WinFormsApp3
     {
         public Form1()
         {
-
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.Size = new Size(1300, 800);
-
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-
-
-
-
+            ModernTheme.Apply(this);
         }
 
-
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object? sender, EventArgs e)
         {
-            this.Hide();
-            var form2 = new Form2();
-            form2.Location = this.Location;
-            form2.Size = this.Size;
-            form2.StartPosition = FormStartPosition.Manual;
-            form2.Show();
+            Navigation.GoTo(this, new Form2());
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void button3_Click_1(object? sender, EventArgs e)
         {
-            this.Hide();
-            Form3 form3 = new Form3();
-            form3.Location = this.Location;
-            form3.Size = this.Size;
-            form3.StartPosition = FormStartPosition.Manual;
-
-            form3.StartPosition = FormStartPosition.Manual;
-            form3.Show();
+            // This button used to open Form3 — the admin user manager — directly, with no sign-in.
+            // Administration is reached by signing in as an administrator; Form4 routes there.
+            Navigation.GoTo(this, new Form4());
         }
 
-        private void rjButton1_Click(object sender, EventArgs e)
+        private void panel1_Paint(object? sender, PaintEventArgs e)
         {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Form1_Load(object? sender, EventArgs e)
         {
-
-        }
-
-        private async void Form1_Load(object sender, EventArgs e)
-        {
-
+            // Returning to the main menu ends the session.
+            Session.SignOut();
 
             BackPhoto bc = new BackPhoto();
 
             bc.BackSet(this);
-
-
         }
 
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object? sender, EventArgs e)
         {
-            this.Hide();
-            Form4 form4 = new Form4();
-            form4.Location = this.Location;
-            form4.Size = this.Size;
-            form4.StartPosition = FormStartPosition.Manual;
-            form4.Show();
-
+            Navigation.GoTo(this, new Form4());
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object? sender, EventArgs e)
         {
 
         }
